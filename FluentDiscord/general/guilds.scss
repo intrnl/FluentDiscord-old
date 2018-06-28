@@ -79,12 +79,13 @@
     &.unread::before {
       content: '';
       background-color: $accent-color;
-      opacity: .65;
+      opacity: .55;
       height: 8px;
     }
     &.selected::before, &.active::before {
       content: '';
       background-color: $accent-color;
+      opacity: 1;
       height: 25px;
     }
 
