@@ -78,7 +78,8 @@
     }
     &.unread::before {
       content: '';
-      background-color: transparentize($accent-color, .35);
+      background-color: $accent-color;
+      opacity: .65;
       height: 8px;
     }
     &.selected::before, &.active::before {
