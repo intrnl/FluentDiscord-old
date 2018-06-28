@@ -1,0 +1,343 @@
+#app-mount {
+  .guilds-wrapper {
+    background-color: $theme-dark;
+    width: 48px;
+
+    .scroller-wrap { width: 100%; }
+  }
+
+  .guilds {
+    display: block;
+    padding-top: 0;
+    padding-bottom: $guilds-separator;
+    padding-left: 0;
+
+    &::-webkit-scrollbar { display: none; }
+  }
+
+  .friends-online { display: none; }
+
+  .guild-separator {
+    height: 0;
+    width: 0;
+    margin-bottom: $guilds-separator;
+
+    &::after { display: none; }
+  }
+
+  .guild {
+    height: $guilds-height;
+    width: $guilds-width;
+
+    & + .guild { margin-top: 0; }
+
+    &.guild-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      border-radius: 0;
+
+      &::after {
+        background-color: lighten($theme-dark, 10%);
+        content: '';
+        height: $guilds-height - (13 * 2);
+        width: $guilds-width - (13 * 2);
+        margin: 13px;
+        border-radius: 50%;
+      }
+    }
+
+    .badge {
+      transform: translateY(-56%) transateX(-56%);
+      font-size: 0;
+      line-height: 0;
+      height: 12px;
+      width: 12px;
+      padding: 0;
+      border-radius: 50%;
+      position: absolute;
+      top: 56%;
+      bottom: unset;
+      left: 56%;
+      right: unset;
+    }
+
+    &::before {
+      transform: translateY(-50%);
+      transition: none;
+      pointer-events: none;
+      display: block;
+      width: 5px;
+      margin-top: 0;
+      border-radius: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 3;
+    }
+    &.unread::before {
+      content: '';
+      background-color: transparentize($accent-color, .35);
+      height: 8px;
+    }
+    &.selected::before, &.active::before {
+      content: '';
+      background-color: $accent-color;
+      height: 25px;
+    }
+
+    &.audio, &.video {
+      .guild-inner {
+        &::after {
+          background-image: none;
+          background-color: transparent;
+          color: #fff;
+          font-family: 'Segoe MDL2 Assets';
+          font-size: 16px;
+          height: 100%;
+          width: 100%;
+          border-radius: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+        }
+      }
+      .icon-3o6xvg, .avatar-small:not(.wrapper-2F3Zv8)::after { display: none; }
+    }
+    &.audio {
+      .guild-inner::after { content: ''; }
+    }
+    &.video {
+      .guild-inner::after { content: ''; }
+    }
+  }
+
+  .guild-inner {
+    background-color: transparent !important;
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $guilds-height;
+    width: $guilds-width;
+    border-radius: 0 !important;
+
+    a {
+      cursor: default;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+      &:hover { background-color: $theme-dark-hover; }
+      &:active { background-color: $theme-dark-active; }
+    }
+    .icon-3o6xvg {
+      background-size: 0;
+      line-height: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 1px;
+
+      &::after {
+        background-image: inherit;
+        background-size: 24px;
+        background-position: center;
+        background-repeat: no-repeat;
+        content: '';
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+      }
+      &.noIcon-1a_FrS::after { display: none; }
+
+      &.noIcon-1a_FrS {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding: 5px;
+        box-sizing: border-box;
+        overflow: hidden;
+
+        @for $i from 10 through 20 {
+          &[style='font-size: #{$i}px;'] { font-size: $i * 0.8px !important; }
+        }
+      }
+    }
+
+    // Discord Home
+    a[draggable="false"]:not(.avatar-small) {
+      &::before {
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 16px;
+        content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+      svg { display: none; }
+    }
+  }
+
+  .dms {
+    margin-top: $guilds-separator;
+    margin-bottom: 0;
+
+    &:empty { margin-top: 0; }
+
+    .wrapper-2F3Zv8 {
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+    }
+    .avatar-small:not(.wrapper-2F3Zv8) {
+      background-size: 0;
+      line-height: normal;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 0;
+
+      &::after {
+        background-image: inherit;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        content: '';
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .guilds-add {
+    background-color: transparent;
+    color: #fff;
+    opacity: 1;
+    transition: none;
+    cursor: default;
+    border: 0;
+    border-radius: 0;
+
+    &::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      font-weight: normal;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+  }
+  .guilds-add-inner { display: none; }
+
+  .guilds-error {
+    background-color: transparent;
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+
+    &::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+  }
+
+  // BD public
+  #bd-pub-li {
+    height: $guilds-height !important;
+
+    .guild-inner { height: $guilds-height !important; }
+  }
+  #bd-pub-button {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    &::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  
+  // Read All Notifications plugin by DevilBro
+  #RANbutton-frame {
+    height: $guilds-height !important;
+    width: $guilds-width !important;
+    margin-top: $guilds-separator;
+    margin-bottom: 0 !important;
+
+    & + .guild-separator { margin-bottom: 0; }
+    .guild-inner {
+      height: $guilds-height !important;
+      width: $guilds-width !important;
+    }
+
+    #RANbutton {
+      font-size: 0 !important;
+      line-height: 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+      &::before {
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 16px;
+        font-weight: normal;
+        text-decoration: none;
+        content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+#app-mount {
+  .stop-animations {
+    .guild {
+      &.selected::before, &.active::before { display: none; }
+      &.unread.selected::before {
+        height: 8px;
+        display: block;
+      }
+    }
+  }
+  .ui-standard-sidebar-view {
+    .tools, .scrollerWrap-2lJEkd, .content-region { position: unset; }
+    .esc-text { display: none; }
+    .btn-close {
+      background-color: transparent;
+      cursor: default;
+      height: 100%;
+      width: $guilds-width;
+      border: 0;
+      border-radius: 0;
+      position: absolute;
+      top: 0;
+      left: -$guilds-width;
+      z-index: 1001;
+
+      svg { display: none; }
+    }
+  }
+}

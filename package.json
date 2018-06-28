@@ -1,0 +1,16 @@
+{
+  "name": "fluentdiscord",
+  "version": "1.0.0",
+  "description": "An MDL2/Fluent Design inspired theme for Discord.",
+  "scripts": {
+    "test": "sass-lint",
+    "bdv1:build": "sass -s compressed FluentDiscord/main.scss:bdv1/main.css",
+    "bdv1:watch": "sass --watch FluentDiscord/main.scss:bdv1/test.css"
+  },
+  "author": "intrnl",
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.7.3",
+    "sass-lint": "^1.12.1"
+  }
+}

@@ -1,0 +1,31 @@
+// BDv1 public server list
+
+#app-mount {
+  .publicServersOpen {
+    .guild {
+      &.selected::before, &.active::before { display: none; }
+      &.unread.selected::before {
+        height: 8px;
+        display: block;
+      }
+    }
+
+    #bd-pub-li {
+      &::before {
+        background-color: $accent-color;
+        transform: translateY(-50%);
+        pointer-events: none;
+        content: '';
+        height: 25px;
+        width: 5px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 3;
+      }
+    }
+  }
+  .bd-layer {
+    margin-left: $guilds-width;
+  }
+}

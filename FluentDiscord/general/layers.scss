@@ -1,0 +1,14 @@
+#app-mount {
+  .layer-3QrUeG {
+    opacity: 1 !important;
+    transform: none !important;
+
+    &.stop-animations {
+      .base-3dtUhz { visibility: hidden; }
+    }
+    & + .layer-3QrUeG {
+      margin-left: $guilds-width;
+      overflow: visible;
+    }
+  }
+}
