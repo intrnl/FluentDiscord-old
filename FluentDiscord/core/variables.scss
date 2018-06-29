@@ -1,9 +1,20 @@
 
 $accent-color: rgb(0, 99, 177) !default;
 
-$theme-dark: rgb(31, 31, 31);
-$theme-dark-hover: rgb(53, 53, 53);
-$theme-dark-active: rgb(76, 74, 72);
+$theme-dark: #141414;
+$theme-dark-hover: rgba(#fff, .1);
+$theme-dark-active: rgba(#fff, .2);
+$theme-dark-bg: #000000;
+
+$theme-dark-scrollbar: #1b1b1b;
+$theme-dark-scrollbar-thumb: #494949;
+$theme-dark-scrollbar-thumb-hover: #767676;
+$theme-dark-scrollbar-thumb-active: #a4a4a4;
+$theme-dark-scrollbar-button-hover: #313131;
+$theme-dark-scrollbar-button-active: #a4a4a4;
+$theme-dark-scrollbar-button-color: #cdcdcd;
+$theme-dark-scrollbar-button-active-color: #444444;
+$theme-dark-scrollbar-overlay: #858585;
 
 $guilds-height: 48px;
 $guilds-width: 48px;

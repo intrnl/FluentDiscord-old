@@ -4,12 +4,14 @@
   "description": "An MDL2/Fluent Design inspired theme for Discord.",
   "scripts": {
     "test": "sass-lint",
-    "bdv1:build": "sass -s compressed FluentDiscord/bdv1.scss:bdv1/main.css",
+    "bdv1:build": "sass FluentDiscord/bdv1.scss:bdv1/main.css && cleancss -o bdv1/main.min.css bdv1/main.css",
     "bdv1:watch": "sass --watch FluentDiscord/bdv1.scss:bdv1/test.css"
   },
   "author": "intrnl",
   "license": "MIT",
   "dependencies": {
+    "clean-css": "^4.1.11",
+    "clean-css-cli": "^4.1.11",
     "sass": "^1.7.3",
     "sass-lint": "^1.12.1"
   }

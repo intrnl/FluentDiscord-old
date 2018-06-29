@@ -9,7 +9,10 @@
     }
   }
   .ui-standard-sidebar-view {
-    .tools, .scrollerWrap-2lJEkd, .content-region { position: unset; }
+    display: flex;
+    flex-direction: row;
+
+    .tools, .scrollerWrap-2lJEkd { position: unset; }
     .esc-text { display: none; }
     .btn-close {
       background-color: transparent;
@@ -24,6 +27,206 @@
       z-index: 1001;
 
       svg { display: none; }
+    }
+  }
+  .content-region { position: unset; }
+  .custom-column {
+    position: relative;
+    max-width: unset;
+    margin-right: -71px;
+  }
+
+  .sidebar-region {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+    justify-content: flex-start;
+    background-color: $theme-dark;
+  }
+  .sidebar-region-scroller {
+    justify-content: flex-start;
+    width: 320px;
+
+    .sidebar {
+      width: 100%;
+      padding: 0 0 16px 0;
+    }
+  }
+
+  .header-2RyJ0Y, .ui-tab-bar-header {
+    background-color: $theme-dark;
+    color: #a5a5a5;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: none;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin-top: 16px;
+    padding: 0 16px;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+
+    &:first-child { margin-top: 0; }
+  }
+  .item-PXvHYJ {
+    color: #fff;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0;
+    padding: 0 16px;
+    border-radius: 0;
+
+    &::after {
+      background-color: transparent;
+      transform: translateY(-50%);
+      transition: none;
+      pointer-events: none;
+      content: '';
+      display: block;
+      width: 5px;
+      margin-top: 0;
+      border-radius: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 3;
+    }
+    &.itemSelected-1qLhcL {
+      background-color: transparent !important;
+
+      &::after {
+        background-color: $accent-color;
+        opacity: 1;
+        height: 25px;
+      }
+    }
+
+    &.selected-3s45Ha, &.notSelected-1N1G5p {
+      &:hover { background-color: $theme-dark-hover !important; }
+      &:active { background-color: $theme-dark-active !important; }
+    }
+
+    // Icons
+    &::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      font-weight: normal;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 12px;
+    }
+  }
+
+  .ui-tab-bar-item {
+    color: #fff;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin: 0;
+    padding: 0 16px;
+    border-radius: 0;
+
+    &::after {
+      background-color: transparent;
+      transform: translateY(-50%);
+      transition: none;
+      pointer-events: none;
+      content: '';
+      display: block;
+      width: 5px;
+      margin-top: 0;
+      border-radius: 0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 3;
+    }
+    &.selected {
+      background-color: transparent;
+
+      &::after {
+        background-color: $accent-color;
+        opacity: 1;
+        height: 25px;
+      }
+    }
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+  }
+
+  .separator-gCa7yv, .ui-tab-bar-separator { display: none; }
+
+  .socialLinks-3jqNFy {
+    padding: 10px 16px;
+  }
+
+  #bd-settings-sidebar {
+    margin-bottom: 16px;
+
+    div[style] {
+      padding: 5px 16px !important;
+    }
+    .ui-tab-bar-item {
+      // Icons
+      &::before {
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 16px;
+        font-weight: normal;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+      }
+
+      &:nth-of-type(3)::before { content: ''; } // Core
+      &:nth-of-type(4)::before { content: ''; } // BandagedBD Settings
+      &:nth-of-type(5)::before { content: ''; } // Emotes
+      &:nth-of-type(6)::before { content: ''; } // Custom CSS
+      &:nth-of-type(7)::before { content: ''; } // Plugins
+      &:nth-of-type(8)::before { content: ''; } // Themes
+    }
+  }
+
+  [layer-id="user-settings"] {
+    .item-PXvHYJ {
+      &:nth-of-type(2)::before { content: ''; } // My Account
+      &:nth-of-type(3)::before { content: ''; } // Privacy & Safety
+      &:nth-of-type(4)::before { content: ''; } // Authorized Apps
+      &:nth-of-type(5)::before { content: ''; } // Connections
+      &:nth-of-type(10)::before { content: ''; } // Voice & Video
+      &:nth-of-type(11)::before { content: ''; } // Overlay
+      &:nth-of-type(12)::before { content: ''; } // Notifications
+      &:nth-of-type(13)::before { content: ''; } // Keybinds
+      &:nth-of-type(14)::before { content: ''; } // Games
+      &:nth-of-type(15)::before { content: ''; } // Text & Images
+      &:nth-of-type(16)::before { content: ''; } // Appearance
+      &:nth-of-type(17)::before { content: ''; } // Streamer Mode
+      &:nth-of-type(18)::before { content: ''; } // Language
+      &:nth-of-type(19)::before { content: ''; } // OS Settings
+      &:nth-of-type(21)::before { content: ''; } // Changelog
+      &:nth-of-type(22)::before { content: ''; } // Experiments
+      &:nth-of-type(23)::before { content: ''; } // Developer Options
+
+      // Discord Nitro
+      &:nth-of-type(7)::before {
+        content: '';
+        height: 16px;
+        width: 16px;
+        background-image: var(--theme-icon-discord);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
 #app-mount {
   .guilds-wrapper {
-    background-color: $theme-dark;
+    background-color: $theme-dark-bg;
     width: 48px;
 
     .scroller-wrap { width: 100%; }
@@ -64,9 +64,11 @@
     }
 
     &::before {
+      background-color: transparent;
       transform: translateY(-50%);
       transition: none;
       pointer-events: none;
+      content: '';
       display: block;
       width: 5px;
       margin-top: 0;
@@ -77,13 +79,11 @@
       z-index: 3;
     }
     &.unread::before {
-      content: '';
       background-color: $accent-color;
       opacity: .55;
       height: 8px;
     }
     &.selected::before, &.active::before {
-      content: '';
       background-color: $accent-color;
       opacity: 1;
       height: 25px;
@@ -334,6 +334,39 @@
         font-weight: normal;
         text-decoration: none;
         content: '';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  // ServerSearch plugin by Zerebos
+  #server-search {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    & + #RANbutton-frame { margin-top: 0 !important; }
+    & + .guild-separator { margin-bottom: 0; }
+
+    .avatar-search {
+      background-image: none;
+      font-size: 0 !important;
+      line-height: 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+
+      &::before {
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 16px;
+        font-weight: normal;
+        text-decoration: none;
+        content: '';
         display: flex;
         justify-content: center;
         align-items: center;
