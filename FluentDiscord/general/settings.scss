@@ -97,6 +97,7 @@
       z-index: 3;
     }
     &.itemSelected-1qLhcL {
+      color: $accent-color !important;
       background-color: transparent !important;
 
       &::after {
@@ -150,12 +151,13 @@
       z-index: 3;
     }
     &.selected {
+      color: $accent-color;
       background-color: transparent;
 
       &::after {
         background-color: $accent-color;
         opacity: 1;
-        height: 25px;
+        height: 100%;
       }
     }
 
@@ -216,17 +218,6 @@
       &:nth-of-type(21)::before { content: ''; } // Changelog
       &:nth-of-type(22)::before { content: ''; } // Experiments
       &:nth-of-type(23)::before { content: ''; } // Developer Options
-
-      // Discord Nitro
-      &:nth-of-type(7)::before {
-        content: '';
-        height: 16px;
-        width: 16px;
-        background-image: var(--theme-icon-discord);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
     }
   }
 }
