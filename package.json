@@ -4,7 +4,7 @@
   "description": "An MDL2/Fluent Design inspired theme for Discord.",
   "scripts": {
     "test": "sass-lint",
-    "bdv1:build": "sass FluentDiscord/bdv1.scss:bdv1/main.css && cleancss -o bdv1/main.min.css bdv1/main.css",
+    "bdv1:build": "node bdv1_build.js",
     "bdv1:watch": "sass --watch FluentDiscord/bdv1.scss:bdv1/test.css"
   },
   "author": "intrnl",

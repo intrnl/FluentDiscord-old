@@ -8,6 +8,36 @@
 
   .container-PNkimc { background-color: transparent; }
 
+  // Server header
+  .container-2Rl01u { pointer-events: none; }
+  .header-2o-2hj {
+    background-color: transparent;
+    box-shadow: 0 0;
+    transition: none;
+    cursor: default;
+    pointer-events: none;
+    padding: 0 0 0 12px;
+
+    &:hover::after { background-color: $theme-dark-hover; }
+    &:active::after { background-color: $theme-dark-active; }
+
+    &::after {
+      color: #fff;
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      pointer-events: all;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      width: 48px;
+    }
+
+    svg { display: none; }
+  }
+
+  // Channels stuff
   .wrapper-KpKNwI {
     cursor: default;
     height: 34px;
@@ -84,7 +114,77 @@
     left: 0;
   }
 
+  // Unread bar
   .container-35XQWE {
     z-index: 10;
+  }
+  .unreadBar-17qm9c {
+    box-shadow: 0 0;
+  }
+
+  // Categories
+  .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+  }
+  .wrapperDefault-10Jfvz {
+    color: #a5a5a5;
+  }
+
+  .iconTransition-2pOJ7l {
+    width: 16px;
+    margin-right: 8px;
+    position: unset;
+    top: unset;
+    left: unset;
+  }
+
+  // Notices
+  .channelNotice-1-XFjC {
+    background-color: rgba(#fff, .04);
+  }
+  .close-relY5R {
+    background-image: none;
+    opacity: 1;
+    cursor: default;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+
+    &::before {
+      color: #fff;
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      content: '';
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .message-3SOT5P {
+    color: #999;
+  }
+  .btn-11C5_u {
+    background-color: lighten($theme-dark, 10%);
+    cursor: default;
+    height: 33px;
+    padding: 0 14px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    &:hover { border-color: $theme-dark-active; }
+    &:active {
+      background-color: $theme-dark-active;
+      border-color: transparent;
+    }
   }
 }

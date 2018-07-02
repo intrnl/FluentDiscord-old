@@ -8,9 +8,8 @@
 
   .guilds {
     display: block;
-    padding-top: 0;
+    padding: 0;
     padding-bottom: $guilds-separator;
-    padding-left: 0;
 
     &::-webkit-scrollbar { display: none; }
   }
@@ -49,7 +48,7 @@
     }
 
     .badge {
-      transform: translateY(-56%) transateX(-56%);
+      transform: translateY(-72%) translateX(-72%);
       font-size: 0;
       line-height: 0;
       height: 12px;
@@ -57,9 +56,9 @@
       padding: 0;
       border-radius: 50%;
       position: absolute;
-      top: 56%;
+      top: 72%;
       bottom: unset;
-      left: 56%;
+      left: 72%;
       right: unset;
     }
 
