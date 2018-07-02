@@ -1,0 +1,21 @@
+{
+  "info": {
+    "type": "sass",
+
+    "name": "FluentDiscord",
+    "description": "An MDL2/Fluent Design inspired theme for Discord.",
+    "version": 1.0,
+    "authors": [
+      {
+        "name": "intrnl",
+        "discord_id": "443765978132643850",
+        "github_username": "intrnl",
+        "twitter_username": "intrnl_"
+      }
+    ],
+
+    "source": "https://github.com/intrnl/FluentDiscord"
+  },
+
+  "main": "main.scss"
+}
