@@ -4,7 +4,7 @@ const cleancss = require('clean-css')
 
 // Make a META configuration using BDv2's config.json file
 console.log('Reading configuration')
-const config = JSON.parse(fs.readFileSync('./FluentDiscord/config.json'))['info']
+const { info: config } = require('./FluentDiscord/config.json')
 
 const meta = {
   name: config.name,
