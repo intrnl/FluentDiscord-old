@@ -976,8 +976,8 @@
   width: auto !important;
   transform: none !important;
   overflow: visible !important;
-  left: -100% !important;
   margin-top: 8px;
+  left: -100% !important;
 }
 #app-mount .popoutBottom-1YbShG[style*="overflow: hidden;"][style*="width: 140px;"] {
   left: 140px !important;
@@ -1345,8 +1345,32 @@
   content: "";
 }
 #app-mount .separator-2zcjq8 {
-  border-color: #767676;
+  border-bottom: 1px solid #767676;
   margin: 4px 12px;
+}
+
+#app-mount .popoutTopLeft-b5Eb3O[style*="overflow: hidden;"] {
+  height: auto !important;
+  width: auto !important;
+  transform: none !important;
+  margin-top: -18px;
+  left: 56px !important;
+  overflow: visible !important;
+}
+#app-mount .alt-3btY0e {
+  margin-top: -100%;
+}
+#app-mount .alt-3btY0e .item-1GzJrl {
+  flex-direction: row;
+}
+#app-mount .status-3fQvEa {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+#app-mount .helper-2c73HK {
+  display: none;
 }
 
 #app-mount ::-webkit-scrollbar {

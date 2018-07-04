@@ -1,12 +1,12 @@
 #app-mount {
-  .popoutBottom-1YbShG[style*="overflow: hidden;"] {
+  .popoutBottom-1YbShG[style*='overflow: hidden;'] {
     // Inline overrides
     height: auto !important;
     width: auto !important;
     transform: none !important;
     overflow: visible !important;
-    left: -100% !important;
     margin-top: 8px;
+    left: -100% !important;
 
     @for $i from 140 through 240 {
       &[style*='width: #{$i}px;'] { left: $guilds-width + (240px - $i) - 8px !important; }
@@ -60,7 +60,7 @@
   }
 
   .separator-2zcjq8 {
-    border-color: $theme-dark-outline;
+    border-bottom: 1px solid $theme-dark-outline;
     margin: 4px 12px;
   }
 }
