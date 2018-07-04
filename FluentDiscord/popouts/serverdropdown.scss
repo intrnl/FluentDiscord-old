@@ -1,0 +1,66 @@
+#app-mount {
+  .popoutBottom-1YbShG[style*="overflow: hidden;"] {
+    // Inline overrides
+    height: auto !important;
+    width: auto !important;
+    transform: none !important;
+    overflow: visible !important;
+    left: -100% !important;
+    margin-top: 8px;
+
+    @for $i from 140 through 240 {
+      &[style*='width: #{$i}px;'] { left: $guilds-width + (240px - $i) - 8px !important; }
+    }
+  }
+  .menu-Sp6bN1 {
+    background-color: $theme-dark;
+    width: auto;
+    padding: 8px 0;
+    border: 1px solid $theme-dark-outline;
+    border-radius: 0;
+  }
+
+  .item-1GzJrl {
+    color: #fff;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+    padding: 8px 12px;
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+  }
+  .icon-2doZ3q {
+    background-image: none !important;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-right: 0;
+
+    &::after {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      margin-right: 12px;
+    }
+
+    &[style='background-image: url("/assets/d4ff0d2af68cd1119f0d16ef79d1369c.svg");']::after { content: ''; } // Invite Friend
+    &[style='background-image: url("/assets/9a93097ab591379729c68f15a17b26af.svg");']::after { content: ''; } // Server Settings
+    &[style='background-image: url("/assets/2fc862597335421b35a79aa9aaba4a86.svg");']::after { content: ''; } // Add Channel
+    &[style='background-image: url("/assets/52bc30f8a2b1a51f808a785819ca00b5.svg");']::after { content: ''; } // Add Category
+    &[style='background-image: url("/assets/6a711bd91522e885413464a88a4e3c69.svg");']::after { content: ''; } // Notification Settings
+    &[style='background-image: url("/assets/6afcd5d6a8c9d467e27e1bb48755dce0.svg");']::after { content: ''; } // Privacy Settings
+    &[style='background-image: url("/assets/bc11a9099f5729962c095cb49d5042f6.svg");']::after { content: ''; } // Change Nickname
+    &[style='background-image: url("/assets/00de6b3cbb5c4dbcec817c91262f5f5b.svg");']::after { content: ''; } // Leave Server
+  }
+
+  .separator-2zcjq8 {
+    border-color: $theme-dark-outline;
+    margin: 4px 12px;
+  }
+}
