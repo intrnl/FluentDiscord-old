@@ -4,7 +4,7 @@
     transform: none !important;
 
     &.stop-animations {
-      .base-3dtUhz { visibility: hidden; }
+      .base-3dtUhz, .headerBar-UHpsPw { visibility: hidden; }
     }
     & + .layer-3QrUeG {
       margin-left: $guilds-width;

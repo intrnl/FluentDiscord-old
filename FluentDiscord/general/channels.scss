@@ -1,7 +1,9 @@
 #app-mount {
   .channels-Ie2l6A {
     background-color: $theme-dark;
+
     z-index: 4;
+
 
     .scroller-2FKFPG { overflow-y: auto; }
   }
@@ -13,23 +15,31 @@
   .header-2o-2hj {
     background-color: transparent;
     box-shadow: 0 0;
+
     transition: none;
+
     cursor: default;
     pointer-events: none;
+
     padding: 0 0 0 12px;
+
 
     &:hover::after { background-color: $theme-dark-hover; }
     &:active::after { background-color: $theme-dark-active; }
 
     &::after {
       color: #fff;
+
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
+
       pointer-events: all;
+
       content: '';
       display: flex;
       justify-content: center;
       align-items: center;
+
       height: 48px;
       width: 48px;
     }
@@ -37,37 +47,197 @@
     svg { display: none; }
   }
 
+  // Home header
+  .private-channels {
+    .search-bar {
+      box-shadow: 0 0;
+
+      display: flex;
+      justify-content: flex-end;
+      height: 48px;
+
+      padding: 0 0 0 12px;
+
+      &::before {
+        color: #fff;
+
+        font-size: 16px;
+
+        content: 'Home';
+
+        margin-right: auto;
+      }
+    }
+    .search-bar-inner {
+      background-color: transparent;
+
+      flex: 0;
+      height: 100%;
+      width: 48px;
+
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+
+      position: relative;
+
+
+      &:hover { background-color: $theme-dark-hover; }
+      &:active { background-color: $theme-dark-active; }
+
+      &::before {
+        color: #fff;
+
+        font-family: 'Segoe MDL2 Assets';
+        font-size: 16px;
+
+        pointer-events: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        content: '';
+        height: 100%;
+        width: 100%;
+
+        position: absolute;
+      }
+
+      input {
+        font-size: 0;
+
+        cursor: default;
+
+        flex: 1;
+        height: 100%;
+        width: 100%;
+
+        padding: 0;
+      }
+    }
+  }
+
+  // DM channel stuff
+  .private-channels {
+    header {
+      $height: 25px;
+
+      color: #72767d;
+      opacity: 1;
+
+      font-size: 12px;
+      font-weight: 600;
+      line-height: normal;
+
+      display: flex;
+      align-items: center;
+
+      height: $height;
+
+      margin-top: 42px - $height;
+      padding: 0 12px;
+      box-sizing: border-box;
+    }
+
+    .channel {
+      cursor: default;
+
+      height: 42px;
+
+      box-sizing: border-box;
+
+
+      &:hover { background-color: $theme-dark-hover; }
+      &:active { background-color: $theme-dark-active; }
+      &.selected::before {
+        background-color: $accent-color;
+        opacity: .55;
+
+        content: '';
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+      }
+
+      a {
+        background-color: transparent;
+
+        cursor: default;
+
+        height: 100%;
+
+        margin: 0;
+        padding: 8px 12px;
+
+        z-index: 5;
+      }
+      svg {
+        margin-right: 12px;
+
+        z-index: 5;
+      }
+      .wrapper-2F3Zv8 {
+        margin-right: 12px;
+
+        z-index: 5;
+      }
+      .channel-name {
+        z-index: 5;
+      }
+      .close {
+        z-index: 5;
+      }
+    }
+  }
+
   // Channels stuff
   .wrapper-KpKNwI {
     cursor: default;
+
     height: 34px;
+
     position: relative;
+
 
     &:hover { background-color: $theme-dark-hover; }
     &:active { background-color: $theme-dark-active; }
 
     &::after {
       transform: translateY(-50%);
+
       content: '';
+
       width: 5px;
+
       margin: 0;
       border-radius: 0;
+
       position: absolute;
       top: 50%;
       left: 0;
     }
   }
-  
+
 
   .content-20Aix8 {
     background-color: transparent;
+
     cursor: default;
+
     display: flex;
     align-items: center;
     height: 100%;
+
     margin: 0;
     padding: 0 12px;
     border-radius: 0;
+
 
     & > * { z-index: 6; }
 
@@ -84,6 +254,7 @@
       &::before {
         background-color: $accent-color;
         opacity: .55;
+
         content: '';
       }
     }
@@ -98,6 +269,7 @@
   }
   .name-3M0b8v {
     line-height: normal;
+
     margin-top: -2px;
   }
 
@@ -105,10 +277,13 @@
     background-color: $accent-color;
     transform: translateY(-50%);
     opacity: .55;
+
     height: 8px;
     width: 5px;
+
     margin: 0;
     border-radius: 0;
+
     position: absolute;
     top: 50%;
     left: 0;
@@ -123,18 +298,46 @@
   }
 
   // Categories
+  .containerDefault-3GGEv_, .containerDragAfter-3TEhpe, .containerDragBefore-3Dzc5x, .containerUserOver-1Tcb7l {
+    $height: 25px;
+
+    transition: none;
+
+    height: $height;
+
+    margin-top: 48px - $height;
+    padding: 0 12px;
+    box-sizing: border-box;
+
+
+    &:hover { background-color: $theme-dark-hover; }
+    &:active { background-color: $theme-dark-active; }
+  }
   .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
+    background-color: transparent;
+
+    cursor: default;
+
     display: flex;
     align-items: center;
-    padding: 0 12px;
-  }
-  .wrapperDefault-10Jfvz {
-    color: #a5a5a5;
+    height: 100%;
+
+    padding: 0;
   }
 
+  .nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB, .nameMuted-1MCOt4, .nameUnread-njOjIS {
+    transition: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
   .iconTransition-2pOJ7l {
     width: 16px;
+
     margin-right: 8px;
+
     position: unset;
     top: unset;
     left: unset;
@@ -147,20 +350,26 @@
   .close-relY5R {
     background-image: none;
     opacity: 1;
+
     cursor: default;
+
     height: 48px;
     width: 48px;
+
     position: absolute;
     top: 0;
     right: 0;
+
 
     &:hover { background-color: $theme-dark-hover; }
     &:active { background-color: $theme-dark-active; }
 
     &::before {
       color: #fff;
+
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
+
       content: '';
       display: flex;
       justify-content: center;
@@ -174,16 +383,21 @@
   }
   .btn-11C5_u {
     background-color: lighten($theme-dark, 10%);
+
     cursor: default;
+
     height: 33px;
+
     padding: 0 14px;
     border: 2px solid transparent;
     border-radius: 0;
     box-sizing: border-box;
 
+
     &:hover { border-color: $theme-dark-active; }
     &:active {
       background-color: $theme-dark-active;
+
       border-color: transparent;
     }
   }
