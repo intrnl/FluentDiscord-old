@@ -1,18 +1,21 @@
 
-@import "core/variables";
-@import "core/fonts";
-@import "core/icons";
+@import 'core/variables';
+@import 'core/fonts';
+@import 'core/icons';
 
-@import "general/guilds";
-@import "general/channels";
+@import 'general/general';
 
-@import "general/layers";
-@import "general/publicservers";
-@import "general/settings";
+@import 'general/guilds';
+@import 'general/channels';
 
-@import "popouts/general";
-@import "popouts/serverdropdown";
-@import "popouts/statuspicker";
+@import 'general/layers';
+@import 'general/publicservers';
+@import 'general/settings';
 
-@import "ui/avatars";
-@import "ui/scrollbars";
+@import 'popouts/general';
+@import 'popouts/serverdropdown';
+@import 'popouts/statuspicker';
+
+@import 'ui/avatars';
+@import 'ui/scrollbars';
+@import 'ui/titlebars';

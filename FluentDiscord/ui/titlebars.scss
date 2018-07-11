@@ -1,0 +1,76 @@
+
+.titleBar-AC4pGV {
+  background-color: #0063b1;
+
+  -webkit-app-region: drag;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  height: 30px;
+
+  margin-top: 0;
+
+  &::before {
+    -webkit-app-region: no-drag;
+
+    content: '';
+    height: 4px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.wordmark-2iDDfm {
+  opacity: 1;
+
+  order: 1;
+  display: flex;
+
+  margin-left: 10px;
+  margin-right: auto;
+  padding: 0;
+
+  position: unset;
+
+  svg { display: none; }
+
+  &::before {
+    background-image: var(--theme-res-app);
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    content: '';
+    display: block;
+    height: 16px;
+    width: 16px;
+
+    margin-right: 6px;
+  }
+}
+
+.winButton-iRh8-Z {
+  background-color: transparent;
+  opacity: 1;
+
+  transition: background-color .15s ease;
+
+  cursor: default;
+
+  height: 100%;
+  width: 45px;
+
+  position: unset;
+
+  &:hover { background-color: rgba(#fff, .11); }
+  &:active { transition: none; background-color: rgba(#fff, .2); }
+}
+.winButtonClose-1HsbF- {
+  &:hover { background-color: #e81123; }
+  &:active { background-color: rgba(#e81123, .6); }
+}
