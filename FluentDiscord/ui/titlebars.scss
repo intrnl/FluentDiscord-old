@@ -1,6 +1,6 @@
 
 .titleBar-AC4pGV {
-  background-color: #0063b1;
+  background-color: $titlebar-color;
 
   -webkit-app-region: drag;
 
@@ -8,9 +8,14 @@
   flex-direction: row-reverse;
   align-items: center;
 
-  height: 30px;
+  height: 29px;
 
   margin-top: 0;
+  padding-bottom: 1px;
+  border: 1px solid $titlebar-color;
+  border-bottom: 0;
+
+  .hidden-by-NativeTitlebar & { border: 0; }
 
   &::before {
     -webkit-app-region: no-drag;

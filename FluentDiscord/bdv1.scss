@@ -1,7 +1,9 @@
 $accent-color: var(--accent-color);
+$titlebar-color: var(--titlebar-color);
 
 :root {
   --accent-color: #0078d7;
+  --titlebar-color: #4c4a48;
 }
 
 @import "main";

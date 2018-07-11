@@ -4,3 +4,12 @@ body {
 #app-mount {
   background-color: transparent;
 }
+.app-19_DXt {
+  border: 1px solid $titlebar-color;
+  border-top: 0;
+
+  .hidden-by-NativeTitlebar & { border: 0; }
+}
+.base-3dtUhz {
+  border-radius: 0;
+}
