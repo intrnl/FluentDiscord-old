@@ -9,8 +9,12 @@
       border: 0;
       border-radius: 0;
       
-      &:hover { background-color: $theme-dark-scrollbar-thumb-hover; }
-      &:active { background-color: $theme-dark-scrollbar-thumb-active; }
+      &:hover {
+        background-color: $theme-dark-scrollbar-thumb-hover;
+      }
+      &:active {
+        background-color: $theme-dark-scrollbar-thumb-active;
+      }
     }
 
     &-track, &-track-piece {
@@ -26,8 +30,12 @@
       background-repeat: no-repeat;
       height: 17px;
   
-      &:hover { background-color: $theme-dark-scrollbar-button-hover; }
-      &:active { background-color: $theme-dark-scrollbar-button-active; }
+      &:hover {
+        background-color: $theme-dark-scrollbar-button-hover;
+      }
+      &:active {
+        background-color: $theme-dark-scrollbar-button-active;
+      }
 
       &:vertical:increment {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
@@ -36,7 +44,9 @@
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
       }
 
-      &:start:increment, &:end:decrement { height: 0; }
+      &:start:increment, &:end:decrement {
+        height: 0;
+      }
     }
   }
 }

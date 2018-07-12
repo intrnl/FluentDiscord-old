@@ -1,15 +1,11 @@
 
 .titleBar-AC4pGV {
   background-color: $titlebar-color;
-
   -webkit-app-region: drag;
-
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-
   height: 29px;
-
   margin-top: 0;
   padding-bottom: 1px;
   border: 1px solid $titlebar-color;
@@ -17,16 +13,13 @@
 
   .hidden-by-NativeTitlebar & {
     display: none;
-    
     border: 0;
   }
 
   &::before {
     -webkit-app-region: no-drag;
-
     content: '';
     height: 4px;
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -36,29 +29,26 @@
 
 .wordmark-2iDDfm {
   opacity: 1;
-
   order: 1;
   display: flex;
-
   margin-left: 9px;
   margin-right: auto;
   padding: 0;
-
   position: unset;
 
-  svg { display: none; }
+  svg {
+    display: none;
+  }
 
   &::before {
     background-image: var(--theme-res-app);
     background-size: 16px;
     background-position: center;
     background-repeat: no-repeat;
-
     content: '';
     display: block;
     height: 16px;
     width: 16px;
-
     margin-right: 6px;
   }
 }
@@ -66,20 +56,25 @@
 .winButton-iRh8-Z {
   background-color: transparent;
   opacity: 1;
-
   transition: background-color .15s ease;
-
   cursor: default;
-
   height: 100%;
   width: 45px;
-
   position: unset;
 
-  &:hover { background-color: rgba(#fff, .11); }
-  &:active { transition: none; background-color: rgba(#fff, .2); }
+  &:hover {
+    background-color: rgba(#fff, .11);
+  }
+  &:active {
+    background-color: rgba(#fff, .2);
+    transition: none;
+  }
 }
 .winButtonClose-1HsbF- {
-  &:hover { background-color: #e81123; }
-  &:active { background-color: rgba(#e81123, .6); }
+  &:hover {
+    background-color: #e81123;
+  }
+  &:active {
+    background-color: rgba(#e81123, .6);
+  }
 }

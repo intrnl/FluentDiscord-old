@@ -1,25 +1,27 @@
-#app-mount {
-  .popoutTopLeft-b5Eb3O[style*='overflow: hidden;'] {
-    // Inline overrides
-    height: auto !important;
-    width: auto !important;
-    transform: none !important;
-    margin-top: -18px;
-    left: $guilds-width + 8px !important;
-    overflow: visible !important;
-  }
+.popoutTopLeft-b5Eb3O[style*='overflow: hidden;'] {
+  // Inline overrides
+  height: auto !important;
+  width: auto !important;
+  transform: none !important;
+  margin-top: -18px;
+  left: $guilds-width + 8px !important;
+  overflow: visible !important;
+}
 
-  .alt-3btY0e {
-    margin-top: -100%;
-    
-    .item-1GzJrl { flex-direction: row; }
+.alt-3btY0e {
+  margin-top: -100%;
+  
+  .item-1GzJrl {
+    flex-direction: row;
   }
+}
 
-  .status-3fQvEa {
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    margin-right: 12px;
-  }
-  .helper-2c73HK { display: none; }
+.status-3fQvEa {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.helper-2c73HK {
+  display: none;
 }

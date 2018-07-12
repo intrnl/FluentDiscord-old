@@ -1,7 +1,46 @@
-#app-mount {
-  .modal-1UGdnR {
-    margin-top: 31px;
+.modal-1UGdnR {
+  margin-top: 31px;
 
-    .hidden-by-NativeTitlebar & { margin-top: 0; }
+  .hidden-by-NativeTitlebar & { margin-top: 0; }
+}
+
+.modal-3HD5ck {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
   }
+
+  box-shadow: 0 0 !important;
+  border: 1px solid $accent-color;
+  border-radius: 0;
+}
+
+.header-1R_AjF {
+  padding: 24px;
+}
+.header-3OkTu9 {
+  font-weight: normal;
+  text-transform: none;
+}
+
+.inner-3wn6Q5 {
+  padding: 0 24px;
+
+  &.scroller-2FKFPG {
+    overflow-y: auto;
+  }
+}
+.content-KhOrDM {
+  padding-bottom: 24px;
+}
+.content-dfabe7 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.footer-2yfCgX {
+  background-color: transparent !important;
+  box-shadow: 0 0 !important;
+  padding: 24px;
+  padding-top: 6px;
+  border-radius: 0;
 }
