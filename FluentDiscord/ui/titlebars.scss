@@ -31,6 +31,7 @@
   opacity: 1;
   order: 1;
   display: flex;
+  align-items: center;
   margin-left: 9px;
   margin-right: auto;
   padding: 0;
@@ -51,19 +52,26 @@
     width: 16px;
     margin-right: 6px;
   }
+  &::after {
+    color: #fff;
+    content: 'Discord';
+    font-size: 12px;
+  }
 }
 
 .winButton-iRh8-Z {
   background-color: transparent;
   opacity: 1;
-  transition: background-color .15s ease;
+  transition: background-color .18s ease;
   cursor: default;
   height: 100%;
   width: 45px;
+  border-left: 1px solid $titlebar-color;
   position: unset;
 
   &:hover {
     background-color: rgba(#fff, .11);
+    transition: background-color .1s ease;
   }
   &:active {
     background-color: rgba(#fff, .2);

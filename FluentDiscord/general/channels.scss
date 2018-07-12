@@ -29,7 +29,7 @@
       margin-right: auto;
     }
   }
-  .search-bar-inner {
+  .search-bar .search-bar-inner {
     .theme-dark & {
       &:hover {
         background-color: $theme-dark-hover;
@@ -66,8 +66,9 @@
       font-size: 0;
       cursor: default;
       flex: 1;
-      height: 100%;
-      width: 100%;
+      height: inherit;
+      min-width: unset !important;
+      width: inherit;
       padding: 0;
     }
   }
@@ -121,7 +122,7 @@
     }
 
     a {
-      background-color: transparent;
+      background-color: transparent !important;
       cursor: default;
       height: 100%;
       margin: 0;
@@ -142,6 +143,9 @@
     .close {
       z-index: 5;
     }
+    .badge {
+      z-index: 5;
+    }
   }
 }
 
@@ -159,7 +163,7 @@
     }
   }
 
-  background-color: transparent;
+  background-color: transparent !important;
   box-shadow: 0 0;
   transition: none;
   cursor: default;

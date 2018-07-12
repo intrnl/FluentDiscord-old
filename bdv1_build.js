@@ -19,9 +19,11 @@ const builtmeta = `/*//META${JSON.stringify(meta)}*//**/\r\n`
 // Build the theme file and minify it.
 console.log('Building theme file')
 const built = sass.renderSync({ file: './FluentDiscord/bdv1.scss' })
+const remote = sass.renderSync({ file: './FluentDiscord/bdv1_remote.scss' })
 const mini = new cleancss({ level: 2 }).minify(built.css)
 
 // Write to disk.
 console.log('Writing to disk')
 fs.writeFileSync('./bdv1/FluentDiscord.theme.css', builtmeta + built.css)
 fs.writeFileSync('./bdv1/FluentDiscord.min.theme.css', builtmeta + mini.styles)
+fs.writeFileSync('./bdv1/FluentDiscord.remote.theme.css', builtmeta + remote.css)

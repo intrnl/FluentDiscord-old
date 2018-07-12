@@ -79,7 +79,7 @@
     right: unset;
   }
 
-  &::before {
+  &::before, &.unread::before, &.selected::before, &.active::before {
     background-color: transparent;
     transform: translateY(-50%);
     transition: none;

@@ -1,10 +1,37 @@
 /*//META{"name":"FluentDiscord","description":"An MDL2/Fluent Design inspired theme for Discord.","author":"intrnl","version":"1","source":"https://github.com/intrnl/FluentDiscord"}*//**/
 @charset "UTF-8";
+/* Customizable code */
+/*
+  Visit the link below to see the available color swatches from Windows 10.
+  https://git.io/fNLVP
+*/
 :root {
   --accent-color: #0078d7;
   --titlebar-color: #4c4a48;
 }
 
+/* End of customizable code */
+/*
+  Copyright (c) 2018 .intrnl
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+*/
 @font-face {
   font-family: "Segoe UI Semilight";
   src: local("Segoe UI Semilight"), local("SegoeUI-Semilight"), url("https://intrnl.github.io/FluentDiscord/assets/fonts/SegoeUI-Semilight.ttf") format("truetype");
@@ -183,7 +210,7 @@ body {
   left: 72%;
   right: unset;
 }
-.guilds-wrapper .guilds .guild::before {
+.guilds-wrapper .guilds .guild::before, .guilds-wrapper .guilds .guild.unread::before, .guilds-wrapper .guilds .guild.selected::before, .guilds-wrapper .guilds .guild.active::before {
   background-color: transparent;
   transform: translateY(-50%);
   transition: none;
@@ -568,7 +595,7 @@ body {
   content: "Home";
   margin-right: auto;
 }
-.private-channels .search-bar-inner {
+.private-channels .search-bar .search-bar-inner {
   background-color: transparent;
   flex: 0;
   height: 100%;
@@ -578,13 +605,13 @@ body {
   border-radius: 0;
   position: relative;
 }
-.theme-dark .private-channels .search-bar-inner:hover {
+.theme-dark .private-channels .search-bar .search-bar-inner:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .private-channels .search-bar-inner:active {
+.theme-dark .private-channels .search-bar .search-bar-inner:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.private-channels .search-bar-inner::before {
+.private-channels .search-bar .search-bar-inner::before {
   color: #fff;
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -597,12 +624,13 @@ body {
   width: 100%;
   position: absolute;
 }
-.private-channels .search-bar-inner input {
+.private-channels .search-bar .search-bar-inner input {
   font-size: 0;
   cursor: default;
   flex: 1;
-  height: 100%;
-  width: 100%;
+  height: inherit;
+  min-width: unset !important;
+  width: inherit;
   padding: 0;
 }
 
@@ -644,7 +672,7 @@ body {
   z-index: 2;
 }
 .private-channels .channel a {
-  background-color: transparent;
+  background-color: transparent !important;
   cursor: default;
   height: 100%;
   margin: 0;
@@ -665,13 +693,16 @@ body {
 .private-channels .channel .close {
   z-index: 5;
 }
+.private-channels .channel .badge {
+  z-index: 5;
+}
 
 .container-2Rl01u {
   pointer-events: none;
 }
 
 .header-2o-2hj {
-  background-color: transparent;
+  background-color: transparent !important;
   box-shadow: 0 0;
   transition: none;
   cursor: default;
@@ -1751,6 +1782,7 @@ body {
   opacity: 1;
   order: 1;
   display: flex;
+  align-items: center;
   margin-left: 9px;
   margin-right: auto;
   padding: 0;
@@ -1770,18 +1802,25 @@ body {
   width: 16px;
   margin-right: 6px;
 }
+.wordmark-2iDDfm::after {
+  color: #fff;
+  content: "Discord";
+  font-size: 12px;
+}
 
 .winButton-iRh8-Z {
   background-color: transparent;
   opacity: 1;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.18s ease;
   cursor: default;
   height: 100%;
   width: 45px;
+  border-left: 1px solid var(--titlebar-color);
   position: unset;
 }
 .winButton-iRh8-Z:hover {
   background-color: rgba(255, 255, 255, 0.11);
+  transition: background-color 0.1s ease;
 }
 .winButton-iRh8-Z:active {
   background-color: rgba(255, 255, 255, 0.2);
