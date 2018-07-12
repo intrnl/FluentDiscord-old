@@ -15,7 +15,11 @@
   border: 1px solid $titlebar-color;
   border-bottom: 0;
 
-  .hidden-by-NativeTitlebar & { border: 0; }
+  .hidden-by-NativeTitlebar & {
+    display: none;
+    
+    border: 0;
+  }
 
   &::before {
     -webkit-app-region: no-drag;
@@ -36,7 +40,7 @@
   order: 1;
   display: flex;
 
-  margin-left: 10px;
+  margin-left: 9px;
   margin-right: auto;
   padding: 0;
 

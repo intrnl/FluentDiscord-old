@@ -2,6 +2,7 @@
 @charset "UTF-8";
 :root {
   --accent-color: #0078d7;
+  --titlebar-color: #4c4a48;
 }
 
 @font-face {
@@ -88,55 +89,87 @@
   font-weight: bold;
   font-style: normal;
 }
-#app-mount .guilds-wrapper {
+:root {
+  --theme-res-app: url("https://intrnl.github.io/FluentDiscord/assets/app.png");
+}
+
+body {
   background-color: #000000;
+}
+
+#app-mount {
+  background-color: transparent;
+}
+
+.app-19_DXt {
+  border: 1px solid var(--titlebar-color);
+  border-top: 0;
+}
+.hidden-by-NativeTitlebar .app-19_DXt {
+  border: 0;
+}
+
+.base-3dtUhz {
+  border-radius: 0;
+}
+
+.guilds-wrapper {
   width: 48px;
 }
-#app-mount .guilds-wrapper .scroller-wrap {
+.theme-dark .guilds-wrapper {
+  background-color: #000000;
+}
+.guilds-wrapper .scroller-wrap {
   width: 100%;
 }
-#app-mount .guilds {
+
+.guilds-wrapper .guilds {
   display: block;
   padding: 0;
   padding-bottom: 8px;
 }
-#app-mount .guilds::-webkit-scrollbar {
+.guilds-wrapper .guilds::-webkit-scrollbar {
   display: none;
 }
-#app-mount .friends-online {
+
+.guilds-wrapper .guilds .friends-online {
   display: none;
 }
-#app-mount .guild-separator {
+
+.guilds-wrapper .guild-separator {
   height: 0;
   width: 0;
   margin-bottom: 8px;
 }
-#app-mount .guild-separator::after {
+.guilds-wrapper .guild-separator::after {
   display: none;
 }
-#app-mount .guild {
+
+.guilds-wrapper .guilds .guild {
   height: 48px;
   width: 48px;
 }
-#app-mount .guild + .guild {
+.guilds-wrapper .guilds .guild + .guild {
   margin-top: 0;
 }
-#app-mount .guild.guild-placeholder {
+.guilds-wrapper .guilds .guild.guild-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0;
   border-radius: 0;
 }
-#app-mount .guild.guild-placeholder::after {
+.theme-dark .guilds-wrapper .guilds .guild.guild-placeholder::after {
   background-color: #2e2e2e;
+}
+.guilds-wrapper .guilds .guild.guild-placeholder::after {
   content: "";
   height: 22px;
   width: 22px;
   margin: 13px;
   border-radius: 50%;
 }
-#app-mount .guild .badge {
+.guilds-wrapper .guilds .guild .badge {
   transform: translateY(-72%) translateX(-72%);
   font-size: 0;
   line-height: 0;
@@ -150,7 +183,7 @@
   left: 72%;
   right: unset;
 }
-#app-mount .guild::before {
+.guilds-wrapper .guilds .guild::before {
   background-color: transparent;
   transform: translateY(-50%);
   transition: none;
@@ -165,20 +198,19 @@
   left: 0;
   z-index: 3;
 }
-#app-mount .guild.unread::before {
+.guilds-wrapper .guilds .guild.unread::before {
   background-color: var(--accent-color);
   opacity: 0.55;
   height: 8px;
 }
-#app-mount .guild.selected::before, #app-mount .guild.active::before {
+.guilds-wrapper .guilds .guild.selected::before, .guilds-wrapper .guilds .guild.active::before {
   background-color: var(--accent-color);
   opacity: 1;
   height: 25px;
 }
-#app-mount .guild.audio .guild-inner::after, #app-mount .guild.video .guild-inner::after {
+.guilds-wrapper .guilds .guild.audio .guild-inner::after, .guilds-wrapper .guilds .guild.video .guild-inner::after {
   background-image: none;
   background-color: transparent;
-  color: #fff;
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   height: 100%;
@@ -190,16 +222,20 @@
   left: 0;
   right: 0;
 }
-#app-mount .guild.audio .icon-3o6xvg, #app-mount .guild.audio .avatar-small:not(.wrapper-2F3Zv8)::after, #app-mount .guild.video .icon-3o6xvg, #app-mount .guild.video .avatar-small:not(.wrapper-2F3Zv8)::after {
+.theme-dark .guilds-wrapper .guilds .guild.audio .guild-inner::after, .theme-dark .guilds-wrapper .guilds .guild.video .guild-inner::after {
+  color: #fff;
+}
+.guilds-wrapper .guilds .guild.audio .icon-3o6xvg, .guilds-wrapper .guilds .guild.audio .avatar-small:not(.wrapper-2F3Zv8)::after, .guilds-wrapper .guilds .guild.video .icon-3o6xvg, .guilds-wrapper .guilds .guild.video .avatar-small:not(.wrapper-2F3Zv8)::after {
   display: none;
 }
-#app-mount .guild.audio .guild-inner::after {
+.guilds-wrapper .guilds .guild.audio .guild-inner::after {
   content: "";
 }
-#app-mount .guild.video .guild-inner::after {
+.guilds-wrapper .guilds .guild.video .guild-inner::after {
   content: "";
 }
-#app-mount .guild-inner {
+
+.guilds-wrapper .guilds .guild .guild-inner {
   background-color: transparent !important;
   cursor: default;
   display: flex;
@@ -209,7 +245,7 @@
   width: 48px;
   border-radius: 0 !important;
 }
-#app-mount .guild-inner a {
+.guilds-wrapper .guilds .guild .guild-inner a {
   cursor: default;
   display: flex;
   justify-content: center;
@@ -217,13 +253,13 @@
   height: 100%;
   width: 100%;
 }
-#app-mount .guild-inner a:hover {
+.theme-dark .guilds-wrapper .guilds .guild .guild-inner a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .guild-inner a:active {
+.theme-dark .guilds-wrapper .guilds .guild .guild-inner a:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .guild-inner .icon-3o6xvg {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg {
   background-size: 0;
   line-height: normal;
   display: flex;
@@ -233,7 +269,7 @@
   width: 100%;
   border-radius: 1px;
 }
-#app-mount .guild-inner .icon-3o6xvg::after {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg::after {
   background-image: inherit;
   background-size: 24px;
   background-position: center;
@@ -243,50 +279,50 @@
   width: 24px;
   border-radius: 50%;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS::after {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS::after {
   display: none;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding: 5px;
   box-sizing: border-box;
   overflow: hidden;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 10px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 10px;"] {
   font-size: 8px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 11px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 11px;"] {
   font-size: 8.8px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 12px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 12px;"] {
   font-size: 9.6px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 13px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 13px;"] {
   font-size: 10.4px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 14px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 14px;"] {
   font-size: 11.2px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 15px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 15px;"] {
   font-size: 12px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 16px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 16px;"] {
   font-size: 12.8px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 17px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 17px;"] {
   font-size: 13.6px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 18px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 18px;"] {
   font-size: 14.4px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 19px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 19px;"] {
   font-size: 15.2px !important;
 }
-#app-mount .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 20px;"] {
+.guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg.noIcon-1a_FrS[style="font-size: 20px;"] {
   font-size: 16px !important;
 }
-#app-mount .guild-inner a[draggable=false]:not(.avatar-small)::before {
+.guilds-wrapper .guilds .guild .guild-inner a[draggable=false]:not(.avatar-small)::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   content: "";
@@ -296,22 +332,23 @@
   height: 100%;
   width: 100%;
 }
-#app-mount .guild-inner a[draggable=false]:not(.avatar-small) svg {
+.guilds-wrapper .guilds .guild .guild-inner a[draggable=false]:not(.avatar-small) svg {
   display: none;
 }
-#app-mount .dms {
+
+.guilds-wrapper .dms {
   margin-top: 8px;
   margin-bottom: 0;
 }
-#app-mount .dms:empty {
+.guilds-wrapper .dms:empty {
   margin-top: 0;
 }
-#app-mount .dms .wrapper-2F3Zv8 {
+.guilds-wrapper .dms .wrapper-2F3Zv8 {
   height: 100%;
   width: 100%;
   border-radius: 0;
 }
-#app-mount .dms .avatar-small:not(.wrapper-2F3Zv8) {
+.guilds-wrapper .dms .avatar-small:not(.wrapper-2F3Zv8) {
   background-size: 0;
   line-height: normal;
   display: flex;
@@ -321,7 +358,7 @@
   width: 100%;
   border-radius: 0;
 }
-#app-mount .dms .avatar-small:not(.wrapper-2F3Zv8)::after {
+.guilds-wrapper .dms .avatar-small:not(.wrapper-2F3Zv8)::after {
   background-image: inherit;
   background-size: cover;
   background-position: center;
@@ -331,16 +368,22 @@
   width: 24px;
   border-radius: 50%;
 }
-#app-mount .guilds-add {
+
+.guilds-wrapper .guilds .guilds-add {
   background-color: transparent;
-  color: #fff;
   opacity: 1;
   transition: none;
   cursor: default;
   border: 0;
   border-radius: 0;
 }
-#app-mount .guilds-add::before {
+.theme-dark .guilds-wrapper .guilds .guilds-add:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .guilds-wrapper .guilds .guilds-add:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.guilds-wrapper .guilds .guilds-add::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   font-weight: normal;
@@ -351,16 +394,15 @@
   height: 100%;
   width: 100%;
 }
-#app-mount .guilds-add:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.theme-dark .guilds-wrapper .guilds .guilds-add::before {
+  color: #fff;
 }
-#app-mount .guilds-add:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-#app-mount .guilds-add-inner {
+
+.guilds-wrapper .guilds-add-inner {
   display: none;
 }
-#app-mount .guilds-error {
+
+.guilds-wrapper .guilds-error {
   background-color: transparent;
   font-size: 0;
   line-height: 0;
@@ -371,7 +413,13 @@
   border: 0;
   border-radius: 0;
 }
-#app-mount .guilds-error::before {
+.theme-dark .guilds-wrapper .guilds-error:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .guilds-wrapper .guilds-error:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.guilds-wrapper .guilds-error::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   font-weight: normal;
@@ -383,19 +431,18 @@
   height: 100%;
   width: 100%;
 }
-#app-mount .guilds-error:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+.theme-dark .guilds-wrapper .guilds-error::before {
+  color: #fff;
 }
-#app-mount .guilds-error:active {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-#app-mount #bd-pub-li {
+
+#bd-pub-li {
   height: 48px !important;
 }
-#app-mount #bd-pub-li .guild-inner {
+#bd-pub-li .guild-inner {
   height: 48px !important;
 }
-#app-mount #bd-pub-button {
+
+#bd-pub-button {
   font-size: 0 !important;
   line-height: 0 !important;
   display: flex;
@@ -404,7 +451,7 @@
   height: 100%;
   width: 100%;
 }
-#app-mount #bd-pub-button::before {
+#bd-pub-button::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   font-weight: normal;
@@ -416,20 +463,24 @@
   height: 100%;
   width: 100%;
 }
-#app-mount #RANbutton-frame {
+.theme-dark #bd-pub-button::before {
+  color: #fff;
+}
+
+#RANbutton-frame {
   height: 48px !important;
   width: 48px !important;
   margin-top: 8px;
   margin-bottom: 0 !important;
 }
-#app-mount #RANbutton-frame + .guild-separator {
+#RANbutton-frame + .guild-separator {
   margin-bottom: 0;
 }
-#app-mount #RANbutton-frame .guild-inner {
+#RANbutton-frame .guild-inner {
   height: 48px !important;
   width: 48px !important;
 }
-#app-mount #RANbutton-frame #RANbutton {
+#RANbutton-frame #RANbutton {
   font-size: 0 !important;
   line-height: 0 !important;
   display: flex;
@@ -438,7 +489,7 @@
   height: 100%;
   width: 100%;
 }
-#app-mount #RANbutton-frame #RANbutton::before {
+#RANbutton-frame #RANbutton::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   font-weight: normal;
@@ -450,17 +501,21 @@
   height: 100%;
   width: 100%;
 }
-#app-mount #server-search {
+.theme-dark #RANbutton-frame #RANbutton::before {
+  color: #fff;
+}
+
+#server-search {
   margin-top: 0;
   margin-bottom: 0;
 }
-#app-mount #server-search + #RANbutton-frame {
+#server-search + #RANbutton-frame {
   margin-top: 0 !important;
 }
-#app-mount #server-search + .guild-separator {
+#server-search + .guild-separator {
   margin-bottom: 0;
 }
-#app-mount #server-search .avatar-search {
+#server-search .avatar-search {
   background-image: none;
   font-size: 0 !important;
   line-height: 0 !important;
@@ -470,7 +525,7 @@
   height: 100%;
   width: 100%;
 }
-#app-mount #server-search .avatar-search::before {
+#server-search .avatar-search::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   font-weight: normal;
@@ -482,63 +537,38 @@
   height: 100%;
   width: 100%;
 }
+.theme-dark #server-search .avatar-search::before {
+  color: #fff;
+}
 
-#app-mount .channels-Ie2l6A {
-  background-color: #141414;
+.channels-Ie2l6A {
   z-index: 4;
 }
-#app-mount .channels-Ie2l6A .scroller-2FKFPG {
+.theme-dark .channels-Ie2l6A {
+  background-color: #141414;
+}
+.channels-Ie2l6A .scroller-2FKFPG {
   overflow-y: auto;
 }
-#app-mount .container-PNkimc {
+
+.container-PNkimc {
   background-color: transparent;
 }
-#app-mount .container-2Rl01u {
-  pointer-events: none;
-}
-#app-mount .header-2o-2hj {
-  background-color: transparent;
-  box-shadow: 0 0;
-  transition: none;
-  cursor: default;
-  pointer-events: none;
-  padding: 0 0 0 12px;
-}
-#app-mount .header-2o-2hj:hover::after {
-  background-color: rgba(255, 255, 255, 0.1);
-}
-#app-mount .header-2o-2hj:active::after {
-  background-color: rgba(255, 255, 255, 0.2);
-}
-#app-mount .header-2o-2hj::after {
-  color: #fff;
-  font-family: "Segoe MDL2 Assets";
-  font-size: 16px;
-  pointer-events: all;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
-  width: 48px;
-}
-#app-mount .header-2o-2hj svg {
-  display: none;
-}
-#app-mount .private-channels .search-bar {
+
+.private-channels .search-bar {
   box-shadow: 0 0;
   display: flex;
   justify-content: flex-end;
   height: 48px;
   padding: 0 0 0 12px;
 }
-#app-mount .private-channels .search-bar::before {
+.private-channels .search-bar::before {
   color: #fff;
   font-size: 16px;
   content: "Home";
   margin-right: auto;
 }
-#app-mount .private-channels .search-bar-inner {
+.private-channels .search-bar-inner {
   background-color: transparent;
   flex: 0;
   height: 100%;
@@ -548,13 +578,13 @@
   border-radius: 0;
   position: relative;
 }
-#app-mount .private-channels .search-bar-inner:hover {
+.theme-dark .private-channels .search-bar-inner:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .private-channels .search-bar-inner:active {
+.theme-dark .private-channels .search-bar-inner:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .private-channels .search-bar-inner::before {
+.private-channels .search-bar-inner::before {
   color: #fff;
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -567,7 +597,7 @@
   width: 100%;
   position: absolute;
 }
-#app-mount .private-channels .search-bar-inner input {
+.private-channels .search-bar-inner input {
   font-size: 0;
   cursor: default;
   flex: 1;
@@ -575,7 +605,8 @@
   width: 100%;
   padding: 0;
 }
-#app-mount .private-channels header {
+
+.private-channels header {
   color: #72767d;
   opacity: 1;
   font-size: 12px;
@@ -588,23 +619,23 @@
   padding: 0 12px;
   box-sizing: border-box;
 }
-#app-mount .private-channels .channel {
+.private-channels .channel {
   cursor: default;
   height: 42px;
   box-sizing: border-box;
 }
-#app-mount .private-channels .channel:hover {
+.theme-dark .private-channels .channel:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .private-channels .channel:active {
+.theme-dark .private-channels .channel:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .private-channels .channel.selected::before {
+.private-channels .channel.selected::before {
   background-color: var(--accent-color);
   opacity: 0.55;
   content: "";
 }
-#app-mount .private-channels .channel::before {
+.private-channels .channel::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -612,7 +643,7 @@
   right: 0;
   z-index: 2;
 }
-#app-mount .private-channels .channel a {
+.private-channels .channel a {
   background-color: transparent;
   cursor: default;
   height: 100%;
@@ -620,32 +651,67 @@
   padding: 8px 12px;
   z-index: 5;
 }
-#app-mount .private-channels .channel svg {
+.private-channels .channel svg {
   margin-right: 12px;
   z-index: 5;
 }
-#app-mount .private-channels .channel .wrapper-2F3Zv8 {
+.private-channels .channel .wrapper-2F3Zv8 {
   margin-right: 12px;
   z-index: 5;
 }
-#app-mount .private-channels .channel .channel-name {
+.private-channels .channel .channel-name {
   z-index: 5;
 }
-#app-mount .private-channels .channel .close {
+.private-channels .channel .close {
   z-index: 5;
 }
-#app-mount .wrapper-KpKNwI {
+
+.container-2Rl01u {
+  pointer-events: none;
+}
+
+.header-2o-2hj {
+  background-color: transparent;
+  box-shadow: 0 0;
+  transition: none;
+  cursor: default;
+  pointer-events: none;
+  padding: 0 0 0 12px;
+}
+.theme-dark .header-2o-2hj:hover::after {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-dark .header-2o-2hj:active::after {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header-2o-2hj::after {
+  color: #fff;
+  font-family: "Segoe MDL2 Assets";
+  font-size: 16px;
+  pointer-events: all;
+  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+}
+.header-2o-2hj svg {
+  display: none;
+}
+
+.wrapper-KpKNwI {
   cursor: default;
   height: 34px;
   position: relative;
 }
-#app-mount .wrapper-KpKNwI:hover {
+.theme-dark .wrapper-KpKNwI:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .wrapper-KpKNwI:active {
+.theme-dark .wrapper-KpKNwI:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .wrapper-KpKNwI::after {
+.wrapper-KpKNwI::after {
   transform: translateY(-50%);
   content: "";
   width: 5px;
@@ -655,7 +721,8 @@
   top: 50%;
   left: 0;
 }
-#app-mount .content-20Aix8 {
+
+.content-20Aix8 {
   background-color: transparent;
   cursor: default;
   display: flex;
@@ -665,10 +732,10 @@
   padding: 0 12px;
   border-radius: 0;
 }
-#app-mount .content-20Aix8 > * {
+.content-20Aix8 > * {
   z-index: 6;
 }
-#app-mount .content-20Aix8::before {
+.content-20Aix8::before {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -676,22 +743,25 @@
   right: 0;
   z-index: 4;
 }
-#app-mount .content-20Aix8.contentSelectedText-3wUhMi::before, #app-mount .content-20Aix8.contentSelectedVoice-1WDIBM::before {
+.content-20Aix8.contentSelectedText-3wUhMi::before, .content-20Aix8.contentSelectedVoice-1WDIBM::before {
   background-color: var(--accent-color);
   opacity: 0.55;
   content: "";
 }
-#app-mount .content-20Aix8 .marginReset-3RfdVe:last-child:not(:empty) {
+.content-20Aix8 .marginReset-3RfdVe:last-child:not(:empty) {
   margin-left: 12px;
 }
-#app-mount .icon-sxakjD {
+
+.icon-sxakjD {
   margin-right: 8px;
 }
-#app-mount .name-3M0b8v {
+
+.name-3M0b8v {
   line-height: normal;
   margin-top: -2px;
 }
-#app-mount .unread-1Dp-OI {
+
+.unread-1Dp-OI {
   background-color: var(--accent-color);
   transform: translateY(-50%);
   opacity: 0.55;
@@ -703,26 +773,30 @@
   top: 50%;
   left: 0;
 }
-#app-mount .container-35XQWE {
+
+.container-35XQWE {
   z-index: 10;
 }
-#app-mount .unreadBar-17qm9c {
+
+.unreadBar-17qm9c {
   box-shadow: 0 0;
 }
-#app-mount .containerDefault-3GGEv_, #app-mount .containerDragAfter-3TEhpe, #app-mount .containerDragBefore-3Dzc5x, #app-mount .containerUserOver-1Tcb7l {
+
+.containerDefault-3GGEv_, .containerDragAfter-3TEhpe, .containerDragBefore-3Dzc5x, .containerUserOver-1Tcb7l {
   transition: none;
   height: 25px;
   margin-top: 23px;
   padding: 0 12px;
   box-sizing: border-box;
 }
-#app-mount .containerDefault-3GGEv_:hover, #app-mount .containerDragAfter-3TEhpe:hover, #app-mount .containerDragBefore-3Dzc5x:hover, #app-mount .containerUserOver-1Tcb7l:hover {
+.theme-dark .containerDefault-3GGEv_:hover, .theme-dark .containerDragAfter-3TEhpe:hover, .theme-dark .containerDragBefore-3Dzc5x:hover, .theme-dark .containerUserOver-1Tcb7l:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .containerDefault-3GGEv_:active, #app-mount .containerDragAfter-3TEhpe:active, #app-mount .containerDragBefore-3Dzc5x:active, #app-mount .containerUserOver-1Tcb7l:active {
+.theme-dark .containerDefault-3GGEv_:active, .theme-dark .containerDragAfter-3TEhpe:active, .theme-dark .containerDragBefore-3Dzc5x:active, .theme-dark .containerUserOver-1Tcb7l:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .wrapperCollapsed-3Fbxl6, #app-mount .wrapperDefault-10Jfvz, #app-mount .wrapperHovered-28fu1D, #app-mount .wrapperHoveredCollapsed-1PADEo, #app-mount .wrapperMuted-3KeA2M, #app-mount .wrapperUnread-1JPWj3 {
+
+.wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
   background-color: transparent;
   cursor: default;
   display: flex;
@@ -730,24 +804,28 @@
   height: 100%;
   padding: 0;
 }
-#app-mount .nameCollapsed-34uFWo, #app-mount .nameDefault-2DI02H, #app-mount .nameHovered-1gxhWH, #app-mount .nameHoveredCollapsed-2orEWB, #app-mount .nameMuted-1MCOt4, #app-mount .nameUnread-njOjIS {
+
+.nameCollapsed-34uFWo, .nameDefault-2DI02H, .nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB, .nameMuted-1MCOt4, .nameUnread-njOjIS {
   transition: none;
   font-size: 12px;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
 }
-#app-mount .iconTransition-2pOJ7l {
+
+.iconTransition-2pOJ7l {
   width: 16px;
   margin-right: 8px;
   position: unset;
   top: unset;
   left: unset;
 }
-#app-mount .channelNotice-1-XFjC {
+
+.theme-dark .channelNotice-1-XFjC {
   background-color: rgba(255, 255, 255, 0.04);
 }
-#app-mount .close-relY5R {
+
+.close-relY5R {
   background-image: none;
   opacity: 1;
   cursor: default;
@@ -757,14 +835,16 @@
   top: 0;
   right: 0;
 }
-#app-mount .close-relY5R:hover {
+.theme-dark .close-relY5R:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-#app-mount .close-relY5R:active {
+.theme-dark .close-relY5R:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .close-relY5R::before {
+.theme-dark .close-relY5R::before {
   color: #fff;
+}
+.close-relY5R::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   content: "";
@@ -774,11 +854,12 @@
   height: 100%;
   width: 100%;
 }
-#app-mount .message-3SOT5P {
+
+.theme-dark .message-3SOT5P {
   color: #999;
 }
-#app-mount .btn-11C5_u {
-  background-color: #2e2e2e;
+
+.btn-11C5_u {
   cursor: default;
   height: 33px;
   padding: 0 14px;
@@ -786,11 +867,16 @@
   border-radius: 0;
   box-sizing: border-box;
 }
-#app-mount .btn-11C5_u:hover {
+.theme-dark .btn-11C5_u {
+  background-color: #2e2e2e;
+}
+.theme-dark .btn-11C5_u:hover {
   border-color: rgba(255, 255, 255, 0.2);
 }
-#app-mount .btn-11C5_u:active {
+.theme-dark .btn-11C5_u:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.btn-11C5_u:active {
   border-color: transparent;
 }
 
@@ -1004,7 +1090,10 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 #app-mount .separator-gCa7yv, #app-mount .ui-tab-bar-separator {
+  background-color: transparent;
   display: none;
+  height: 0;
+  margin: 0;
 }
 #app-mount .socialLinks-3jqNFy {
   padding: 10px 16px;
@@ -1042,6 +1131,10 @@
 }
 #app-mount #bd-settings-sidebar .ui-tab-bar-item:nth-of-type(8)::before {
   content: "";
+}
+#app-mount .ed-settings + .separator-gCa7yv {
+  display: block;
+  margin-top: 16px;
 }
 #app-mount [layer-id=user-settings] .item-PXvHYJ:nth-of-type(2)::before {
   content: "";
@@ -1502,6 +1595,21 @@
   display: none;
 }
 
+#app-mount .modal-1UGdnR {
+  margin-top: 31px;
+}
+.hidden-by-NativeTitlebar #app-mount .modal-1UGdnR {
+  margin-top: 0;
+}
+
+#app-mount .backdrop-1wrmKB {
+  margin: 1px;
+  margin-top: 31px;
+}
+.hidden-by-NativeTitlebar #app-mount .backdrop-1wrmKB {
+  margin: 0;
+}
+
 #app-mount .avatar-large .status, #app-mount .avatar-profile .status, #app-mount .avatar-small .status, #app-mount .avatar-xlarge .status, #app-mount .avatar-xsmall .status, #app-mount .avatar-xxlarge .status {
   height: 12px;
   width: 12px;
@@ -1552,4 +1660,78 @@
 }
 #app-mount ::-webkit-scrollbar-button:start:increment, #app-mount ::-webkit-scrollbar-button:end:decrement {
   height: 0;
+}
+
+.titleBar-AC4pGV {
+  background-color: var(--titlebar-color);
+  -webkit-app-region: drag;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 29px;
+  margin-top: 0;
+  padding-bottom: 1px;
+  border: 1px solid var(--titlebar-color);
+  border-bottom: 0;
+}
+.hidden-by-NativeTitlebar .titleBar-AC4pGV {
+  display: none;
+  border: 0;
+}
+.titleBar-AC4pGV::before {
+  -webkit-app-region: no-drag;
+  content: "";
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.wordmark-2iDDfm {
+  opacity: 1;
+  order: 1;
+  display: flex;
+  margin-left: 9px;
+  margin-right: auto;
+  padding: 0;
+  position: unset;
+}
+.wordmark-2iDDfm svg {
+  display: none;
+}
+.wordmark-2iDDfm::before {
+  background-image: var(--theme-res-app);
+  background-size: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: "";
+  display: block;
+  height: 16px;
+  width: 16px;
+  margin-right: 6px;
+}
+
+.winButton-iRh8-Z {
+  background-color: transparent;
+  opacity: 1;
+  transition: background-color 0.15s ease;
+  cursor: default;
+  height: 100%;
+  width: 45px;
+  position: unset;
+}
+.winButton-iRh8-Z:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+}
+.winButton-iRh8-Z:active {
+  transition: none;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.winButtonClose-1HsbF-:hover {
+  background-color: #e81123;
+}
+.winButtonClose-1HsbF-:active {
+  background-color: rgba(232, 17, 35, 0.6);
 }

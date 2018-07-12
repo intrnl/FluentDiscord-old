@@ -172,7 +172,14 @@
     &:active { background-color: $theme-dark-active; }
   }
 
-  .separator-gCa7yv, .ui-tab-bar-separator { display: none; }
+  .separator-gCa7yv, .ui-tab-bar-separator {
+    background-color: transparent;
+
+    display: none;
+    height: 0;
+
+    margin: 0;
+  }
 
   .socialLinks-3jqNFy {
     padding: 10px 16px;
@@ -204,6 +211,12 @@
       &:nth-of-type(7)::before { content: ''; } // Plugins
       &:nth-of-type(8)::before { content: ''; } // Themes
     }
+  }
+
+  // EnhancedDiscord
+  .ed-settings + .separator-gCa7yv {
+    display: block;
+    margin-top: 16px;
   }
 
   [layer-id="user-settings"] {
