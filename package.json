@@ -12,6 +12,7 @@
   "dependencies": {
     "clean-css": "^4.1.11",
     "clean-css-cli": "^4.1.11",
+    "crass": "^0.12.3",
     "sass": "^1.7.3",
     "sass-lint": "^1.12.1"
   }

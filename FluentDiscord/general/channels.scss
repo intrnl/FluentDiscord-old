@@ -2,10 +2,14 @@
   .theme-dark & {
     background-color: $theme-dark;
   }
+  .theme-light & {
+    background-color: $theme-light;
+  }
 
   z-index: 4;
 
   .scroller-2FKFPG {
+    padding-bottom: 20px;
     overflow-y: auto;
   }
 }
@@ -25,12 +29,26 @@
     &::before {
       color: #fff;
       font-size: 16px;
-      content: 'Home';
+      content: 'i18n_home';
       margin-right: auto;
+
+      @each $id, $text in $i18n-home {
+        html[lang='#{$id}'] & {
+          content: $text;
+        }
+      }
     }
   }
   .search-bar .search-bar-inner {
     .theme-dark & {
+      &:hover {
+        background-color: $theme-dark-hover;
+      }
+      &:active {
+        background-color: $theme-dark-active;
+      }
+    }
+    .theme-light & {
       &:hover {
         background-color: $theme-dark-hover;
       }
@@ -101,6 +119,14 @@
         background-color: $theme-dark-active;
       }
     }
+    .theme-light & {
+      &:hover {
+        background-color: $theme-light-hover;
+      }
+      &:active {
+        background-color: $theme-light-active;
+      }
+    }
 
     cursor: default;
     height: 42px;
@@ -155,11 +181,27 @@
 }
 .header-2o-2hj {
   .theme-dark & {
+    &::after {
+      color: #fff;
+    }
+
     &:hover::after {
       background-color: $theme-dark-hover;
     }
     &:active::after {
       background-color: $theme-dark-active;
+    }
+  }
+  .theme-light & {
+    &::after {
+      color: #000;
+    }
+
+    &:hover::after {
+      background-color: $theme-light-hover;
+    }
+    &:active::after {
+      background-color: $theme-light-active;
     }
   }
 
@@ -171,7 +213,6 @@
   padding: 0 0 0 12px;
 
   &::after {
-    color: #fff;
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
     pointer-events: all;
@@ -187,6 +228,14 @@
     display: none;
   }
 }
+.name-3YKhmS {
+  .theme-dark & {
+    color: #fff;
+  }
+  .theme-light & {
+    color: #000;
+  }
+}
 
 // Channel
 .wrapper-KpKNwI {
@@ -196,6 +245,14 @@
     }
     &:active {
       background-color: $theme-dark-active;
+    }
+  }
+  .theme-light & {
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
     }
   }
   
@@ -291,6 +348,14 @@
       background-color: $theme-dark-active;
     }
   }
+  .theme-light & {
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
+    }
+  }
   
   transition: none;
   height: $height;
@@ -327,6 +392,9 @@
   .theme-dark & {
     background-color: rgba(#fff, .04);
   }
+  .theme-light & {
+    background-color: rgba(#000, .04);
+  }
 }
 .close-relY5R {
   .theme-dark & {
@@ -339,6 +407,18 @@
 
     &::before {
       color: #fff;
+    }
+  }
+  .theme-light & {
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
+    }
+
+    &::before {
+      color: #000;
     }
   }
   
@@ -366,6 +446,9 @@
   .theme-dark & {
     color: #999;
   }
+  .theme-light & {
+    color: #666;
+  }
 }
 .btn-11C5_u {
   .theme-dark & {
@@ -376,6 +459,16 @@
     }
     &:active {
       background-color: $theme-dark-active;
+    }
+  }
+  .theme-light & {
+    background-color: lighten($theme-light, 10%);
+
+    &:hover {
+      border-color: $theme-light-active;
+    }
+    &:active {
+      background-color: $theme-light-active;
     }
   }
   

@@ -1,0 +1,47 @@
+.sizeMin-1mJd1x, .sizeSmall-2cSMqn, .sizeMedium-1AC_Sl {
+  .theme-dark & {
+    color: #fff;
+    background-color: $theme-dark;
+
+    &:hover {
+      background-color: $theme-dark;
+      border-color: $theme-dark-active !important;
+    }
+    &:active {
+      background-color: $theme-dark-active;
+      border-color: transparent !important;
+    }
+  }
+
+  line-height: normal;
+  opacity: 1;
+  transition: transform .1s ease;
+  cursor: default !important;
+  height: 33px;
+  min-height: unset;
+  width: auto;
+  min-width: unset;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-radius: 0;
+  border: 2px solid;
+  border-color: transparent !important;
+
+  &:hover {
+    text-decoration: none;
+
+    .contents-18-Yxp {
+      background-image: none !important;
+    }
+  }
+  &:active {
+    transform: scale(0.99);
+    transition: none;
+  }
+
+  & + & {
+    .directionRowReverse-m8IjIq & {
+      margin-right: 8px;
+    }
+  }
+}

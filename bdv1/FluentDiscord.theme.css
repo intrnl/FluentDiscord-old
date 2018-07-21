@@ -140,11 +140,18 @@ body {
   border-radius: 0;
 }
 
+.bd-blue {
+  --accent-color: #3e82e5;
+}
+
 .guilds-wrapper {
   width: 48px;
 }
 .theme-dark .guilds-wrapper {
   background-color: #000000;
+}
+.theme-light .guilds-wrapper {
+  background-color: #ffffff;
 }
 .guilds-wrapper .scroller-wrap {
   width: 100%;
@@ -188,6 +195,9 @@ body {
 }
 .theme-dark .guilds-wrapper .guilds .guild.guild-placeholder::after {
   background-color: #2e2e2e;
+}
+.theme-light .guilds-wrapper .guilds .guild.guild-placeholder::after {
+  background-color: white;
 }
 .guilds-wrapper .guilds .guild.guild-placeholder::after {
   content: "";
@@ -235,6 +245,9 @@ body {
   opacity: 1;
   height: 25px;
 }
+.guilds-wrapper .guilds .guild.audio .guild-inner .icon-3o6xvg, .guilds-wrapper .guilds .guild.audio .guild-inner .avatar-small:not(.wrapper-2F3Zv8)::after, .guilds-wrapper .guilds .guild.video .guild-inner .icon-3o6xvg, .guilds-wrapper .guilds .guild.video .guild-inner .avatar-small:not(.wrapper-2F3Zv8)::after {
+  display: none;
+}
 .guilds-wrapper .guilds .guild.audio .guild-inner::after, .guilds-wrapper .guilds .guild.video .guild-inner::after {
   background-image: none;
   background-color: transparent;
@@ -252,8 +265,8 @@ body {
 .theme-dark .guilds-wrapper .guilds .guild.audio .guild-inner::after, .theme-dark .guilds-wrapper .guilds .guild.video .guild-inner::after {
   color: #fff;
 }
-.guilds-wrapper .guilds .guild.audio .icon-3o6xvg, .guilds-wrapper .guilds .guild.audio .avatar-small:not(.wrapper-2F3Zv8)::after, .guilds-wrapper .guilds .guild.video .icon-3o6xvg, .guilds-wrapper .guilds .guild.video .avatar-small:not(.wrapper-2F3Zv8)::after {
-  display: none;
+.theme-light .guilds-wrapper .guilds .guild.audio .guild-inner::after, .theme-light .guilds-wrapper .guilds .guild.video .guild-inner::after {
+  color: #fff;
 }
 .guilds-wrapper .guilds .guild.audio .guild-inner::after {
   content: "";
@@ -280,13 +293,26 @@ body {
   height: 100%;
   width: 100%;
 }
+.theme-dark .guilds-wrapper .guilds .guild .guild-inner a {
+  color: #fff;
+}
 .theme-dark .guilds-wrapper .guilds .guild .guild-inner a:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .theme-dark .guilds-wrapper .guilds .guild .guild-inner a:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .guilds-wrapper .guilds .guild .guild-inner a {
+  color: #000;
+}
+.theme-light .guilds-wrapper .guilds .guild .guild-inner a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .guilds-wrapper .guilds .guild .guild-inner a:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .guilds-wrapper .guilds .guild .guild-inner .icon-3o6xvg {
+  color: inherit;
   background-size: 0;
   line-height: normal;
   display: flex;
@@ -410,6 +436,12 @@ body {
 .theme-dark .guilds-wrapper .guilds .guilds-add:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .guilds-wrapper .guilds .guilds-add:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .guilds-wrapper .guilds .guilds-add:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .guilds-wrapper .guilds .guilds-add::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -423,6 +455,9 @@ body {
 }
 .theme-dark .guilds-wrapper .guilds .guilds-add::before {
   color: #fff;
+}
+.theme-light .guilds-wrapper .guilds .guilds-add::before {
+  color: #000;
 }
 
 .guilds-wrapper .guilds-add-inner {
@@ -446,6 +481,12 @@ body {
 .theme-dark .guilds-wrapper .guilds-error:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .guilds-wrapper .guilds-error:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .guilds-wrapper .guilds-error:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .guilds-wrapper .guilds-error::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -460,6 +501,9 @@ body {
 }
 .theme-dark .guilds-wrapper .guilds-error::before {
   color: #fff;
+}
+.theme-light .guilds-wrapper .guilds-error::before {
+  color: #000;
 }
 
 #bd-pub-li {
@@ -492,6 +536,9 @@ body {
 }
 .theme-dark #bd-pub-button::before {
   color: #fff;
+}
+.theme-light #bd-pub-button::before {
+  color: #000;
 }
 
 #RANbutton-frame {
@@ -531,6 +578,9 @@ body {
 .theme-dark #RANbutton-frame #RANbutton::before {
   color: #fff;
 }
+.theme-light #RANbutton-frame #RANbutton::before {
+  color: #000;
+}
 
 #server-search {
   margin-top: 0;
@@ -567,6 +617,9 @@ body {
 .theme-dark #server-search .avatar-search::before {
   color: #fff;
 }
+.theme-light #server-search .avatar-search::before {
+  color: #000;
+}
 
 .channels-Ie2l6A {
   z-index: 4;
@@ -574,7 +627,11 @@ body {
 .theme-dark .channels-Ie2l6A {
   background-color: #141414;
 }
+.theme-light .channels-Ie2l6A {
+  background-color: #e6e6e6;
+}
 .channels-Ie2l6A .scroller-2FKFPG {
+  padding-bottom: 20px;
   overflow-y: auto;
 }
 
@@ -592,8 +649,89 @@ body {
 .private-channels .search-bar::before {
   color: #fff;
   font-size: 16px;
-  content: "Home";
+  content: "i18n_home";
   margin-right: auto;
+}
+html[lang=bg] .private-channels .search-bar::before {
+  content: "У дома";
+}
+html[lang=cs] .private-channels .search-bar::before {
+  content: "Domov";
+}
+html[lang=da] .private-channels .search-bar::before {
+  content: "Hjem";
+}
+html[lang=de] .private-channels .search-bar::before {
+  content: "Zuhause";
+}
+html[lang=el] .private-channels .search-bar::before {
+  content: "Σπίτι";
+}
+html[lang=en-GB] .private-channels .search-bar::before {
+  content: "Home";
+}
+html[lang=en-US] .private-channels .search-bar::before {
+  content: "Home";
+}
+html[lang=es-ES] .private-channels .search-bar::before {
+  content: "Casa";
+}
+html[lang=fi] .private-channels .search-bar::before {
+  content: "Koti";
+}
+html[lang=fr] .private-channels .search-bar::before {
+  content: "Accueil";
+}
+html[lang=hr] .private-channels .search-bar::before {
+  content: "Dom";
+}
+html[lang=hu] .private-channels .search-bar::before {
+  content: "itthon";
+}
+html[lang=it] .private-channels .search-bar::before {
+  content: "Casa";
+}
+html[lang=ja] .private-channels .search-bar::before {
+  content: "家";
+}
+html[lang=ko] .private-channels .search-bar::before {
+  content: "집";
+}
+html[lang=lt] .private-channels .search-bar::before {
+  content: "Namai";
+}
+html[lang=nl] .private-channels .search-bar::before {
+  content: "Huis";
+}
+html[lang=no] .private-channels .search-bar::before {
+  content: "Hjem";
+}
+html[lang=pl] .private-channels .search-bar::before {
+  content: "Dom";
+}
+html[lang=pt-BR] .private-channels .search-bar::before {
+  content: "Casa";
+}
+html[lang=ro] .private-channels .search-bar::before {
+  content: "Acasă";
+}
+html[lang=ru] .private-channels .search-bar::before {
+  content: "Главная";
+}
+html[lang=sv-SE] .private-channels .search-bar::before {
+  content: "Hem";
+}
+html[lang=tr] .private-channels .search-bar::before {
+  content: "Ev";
+}
+html[lang=uk] .private-channels .search-bar::before {
+  content: "будинки";
+}
+html[lang=zh-CN] .private-channels .search-bar::before {
+  content: "家";
+}
+html[lang=zh-TW] .private-channels .search-bar::before {
+  content: "家";
 }
 .private-channels .search-bar .search-bar-inner {
   background-color: transparent;
@@ -609,6 +747,12 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .theme-dark .private-channels .search-bar .search-bar-inner:active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.theme-light .private-channels .search-bar .search-bar-inner:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.theme-light .private-channels .search-bar .search-bar-inner:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .private-channels .search-bar .search-bar-inner::before {
@@ -657,6 +801,12 @@ body {
 }
 .theme-dark .private-channels .channel:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.theme-light .private-channels .channel:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .private-channels .channel:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .private-channels .channel.selected::before {
   background-color: var(--accent-color);
@@ -709,14 +859,25 @@ body {
   pointer-events: none;
   padding: 0 0 0 12px;
 }
+.theme-dark .header-2o-2hj::after {
+  color: #fff;
+}
 .theme-dark .header-2o-2hj:hover::after {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .theme-dark .header-2o-2hj:active::after {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .header-2o-2hj::after {
+  color: #000;
+}
+.theme-light .header-2o-2hj:hover::after {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .header-2o-2hj:active::after {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .header-2o-2hj::after {
-  color: #fff;
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
   pointer-events: all;
@@ -731,6 +892,13 @@ body {
   display: none;
 }
 
+.theme-dark .name-3YKhmS {
+  color: #fff;
+}
+.theme-light .name-3YKhmS {
+  color: #000;
+}
+
 .wrapper-KpKNwI {
   cursor: default;
   height: 34px;
@@ -741,6 +909,12 @@ body {
 }
 .theme-dark .wrapper-KpKNwI:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.theme-light .wrapper-KpKNwI:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .wrapper-KpKNwI:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .wrapper-KpKNwI::after {
   transform: translateY(-50%);
@@ -826,6 +1000,12 @@ body {
 .theme-dark .containerDefault-3GGEv_:active, .theme-dark .containerDragAfter-3TEhpe:active, .theme-dark .containerDragBefore-3Dzc5x:active, .theme-dark .containerUserOver-1Tcb7l:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .containerDefault-3GGEv_:hover, .theme-light .containerDragAfter-3TEhpe:hover, .theme-light .containerDragBefore-3Dzc5x:hover, .theme-light .containerUserOver-1Tcb7l:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .containerDefault-3GGEv_:active, .theme-light .containerDragAfter-3TEhpe:active, .theme-light .containerDragBefore-3Dzc5x:active, .theme-light .containerUserOver-1Tcb7l:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
   background-color: transparent;
@@ -855,6 +1035,9 @@ body {
 .theme-dark .channelNotice-1-XFjC {
   background-color: rgba(255, 255, 255, 0.04);
 }
+.theme-light .channelNotice-1-XFjC {
+  background-color: rgba(0, 0, 0, 0.04);
+}
 
 .close-relY5R {
   background-image: none;
@@ -875,6 +1058,15 @@ body {
 .theme-dark .close-relY5R::before {
   color: #fff;
 }
+.theme-light .close-relY5R:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .close-relY5R:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.theme-light .close-relY5R::before {
+  color: #000;
+}
 .close-relY5R::before {
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -888,6 +1080,9 @@ body {
 
 .theme-dark .message-3SOT5P {
   color: #999;
+}
+.theme-light .message-3SOT5P {
+  color: #666;
 }
 
 .btn-11C5_u {
@@ -906,6 +1101,15 @@ body {
 }
 .theme-dark .btn-11C5_u:active {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.theme-light .btn-11C5_u {
+  background-color: white;
+}
+.theme-light .btn-11C5_u:hover {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.theme-light .btn-11C5_u:active {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .btn-11C5_u:active {
   border-color: transparent;
@@ -1546,6 +1750,10 @@ body {
   background-color: #141414;
   border-color: #767676;
 }
+.theme-light .menu-Sp6bN1 {
+  background-color: #e6e6e6;
+  border-color: #8a8a8a;
+}
 
 .item-1GzJrl {
   background-color: transparent;
@@ -1565,6 +1773,15 @@ body {
 .theme-dark .item-1GzJrl:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.theme-light .item-1GzJrl {
+  color: #000 !important;
+}
+.theme-light .item-1GzJrl:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.theme-light .item-1GzJrl:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 .icon-2doZ3q {
   background-image: none !important;
@@ -1582,6 +1799,9 @@ body {
 }
 .theme-dark .icon-2doZ3q::after {
   color: #fff;
+}
+.theme-light .icon-2doZ3q::after {
+  color: #000;
 }
 .icon-2doZ3q[style='background-image: url("/assets/d4ff0d2af68cd1119f0d16ef79d1369c.svg");']::after {
   content: "";
@@ -1614,6 +1834,9 @@ body {
 }
 .theme-dark .separator-2zcjq8 {
   border-bottom-color: #767676;
+}
+.theme-light .separator-2zcjq8 {
+  border-bottom-color: #8a8a8a;
 }
 
 .popoutTopLeft-b5Eb3O[style*="overflow: hidden;"] {
@@ -1706,6 +1929,47 @@ body {
   border: 0;
   bottom: -1px;
   right: -1px;
+}
+
+.sizeMin-1mJd1x, .sizeSmall-2cSMqn, .sizeMedium-1AC_Sl {
+  line-height: normal;
+  opacity: 1;
+  transition: transform 0.1s ease;
+  cursor: default !important;
+  height: 33px;
+  min-height: unset;
+  width: auto;
+  min-width: unset;
+  box-sizing: border-box;
+  padding: 0 8px;
+  border-radius: 0;
+  border: 2px solid;
+  border-color: transparent !important;
+}
+.theme-dark .sizeMin-1mJd1x, .theme-dark .sizeSmall-2cSMqn, .theme-dark .sizeMedium-1AC_Sl {
+  color: #fff;
+  background-color: #141414;
+}
+.theme-dark .sizeMin-1mJd1x:hover, .theme-dark .sizeSmall-2cSMqn:hover, .theme-dark .sizeMedium-1AC_Sl:hover {
+  background-color: #141414;
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.theme-dark .sizeMin-1mJd1x:active, .theme-dark .sizeSmall-2cSMqn:active, .theme-dark .sizeMedium-1AC_Sl:active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: transparent !important;
+}
+.sizeMin-1mJd1x:hover, .sizeSmall-2cSMqn:hover, .sizeMedium-1AC_Sl:hover {
+  text-decoration: none;
+}
+.sizeMin-1mJd1x:hover .contents-18-Yxp, .sizeSmall-2cSMqn:hover .contents-18-Yxp, .sizeMedium-1AC_Sl:hover .contents-18-Yxp {
+  background-image: none !important;
+}
+.sizeMin-1mJd1x:active, .sizeSmall-2cSMqn:active, .sizeMedium-1AC_Sl:active {
+  transform: scale(0.99);
+  transition: none;
+}
+.directionRowReverse-m8IjIq .sizeMin-1mJd1x + .sizeMin-1mJd1x, .directionRowReverse-m8IjIq .sizeMin-1mJd1x + .sizeSmall-2cSMqn, .directionRowReverse-m8IjIq .sizeMin-1mJd1x + .sizeMedium-1AC_Sl, .directionRowReverse-m8IjIq .sizeSmall-2cSMqn + .sizeMin-1mJd1x, .directionRowReverse-m8IjIq .sizeSmall-2cSMqn + .sizeSmall-2cSMqn, .directionRowReverse-m8IjIq .sizeSmall-2cSMqn + .sizeMedium-1AC_Sl, .directionRowReverse-m8IjIq .sizeMedium-1AC_Sl + .sizeMin-1mJd1x, .directionRowReverse-m8IjIq .sizeMedium-1AC_Sl + .sizeSmall-2cSMqn, .directionRowReverse-m8IjIq .sizeMedium-1AC_Sl + .sizeMedium-1AC_Sl {
+  margin-right: 8px;
 }
 
 #app-mount ::-webkit-scrollbar {

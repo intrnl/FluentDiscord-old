@@ -18,6 +18,10 @@
     background-color: $theme-dark;
     border-color: $theme-dark-outline;
   }
+  .theme-light & {
+    background-color: $theme-light;
+    border-color: $theme-light-outline;
+  }
 
   width: auto;
   padding: 8px 0;
@@ -34,6 +38,16 @@
     }
     &:active {
       background-color: $theme-dark-active;
+    }
+  }
+  .theme-light & {
+    color: #000 !important;
+
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
     }
   }
 
@@ -57,6 +71,9 @@
   &::after {
     .theme-dark & {
       color: #fff;
+    }
+    .theme-light & {
+      color: #000;
     }
     
     font-family: 'Segoe MDL2 Assets';
@@ -101,6 +118,9 @@
 .separator-2zcjq8 {
   .theme-dark & {
     border-bottom-color: $theme-dark-outline;
+  }
+  .theme-light & {
+    border-bottom-color: $theme-light-outline;
   }
 
   border-bottom: 1px solid;

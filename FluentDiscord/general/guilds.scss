@@ -2,6 +2,9 @@
   .theme-dark & {
     background-color: $theme-dark-bg;
   }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
 
   width: 48px;
 
@@ -46,6 +49,11 @@
     .theme-dark & {
       &::after {
         background-color: lighten($theme-dark, 10%);
+      }
+    }
+    .theme-light & {
+      &::after {
+        background-color: lighten($theme-light, 10%);
       }
     }
 
@@ -107,8 +115,14 @@
 
   &.audio, &.video {
     .guild-inner {
+      .icon-3o6xvg, .avatar-small:not(.wrapper-2F3Zv8)::after {
+        display: none;
+      }
       &::after {
         .theme-dark & {
+          color: #fff;
+        }
+        .theme-light & {
           color: #fff;
         }
 
@@ -125,9 +139,6 @@
         left: 0;
         right: 0;
       }
-    }
-    .icon-3o6xvg, .avatar-small:not(.wrapper-2F3Zv8)::after {
-      display: none;
     }
   }
   &.audio {
@@ -154,11 +165,23 @@
 
   a {
     .theme-dark & {
+      color: #fff;
+
       &:hover {
         background-color: $theme-dark-hover;
       }
       &:active {
         background-color: $theme-dark-active;
+      }
+    }
+    .theme-light & {
+      color: #000;
+
+      &:hover {
+        background-color: $theme-light-hover;
+      }
+      &:active {
+        background-color: $theme-light-active;
       }
     }
 
@@ -170,6 +193,7 @@
     width: 100%;
   }
   .icon-3o6xvg {
+    color: inherit;
     background-size: 0;
     line-height: normal;
     display: flex;
@@ -209,7 +233,7 @@
   }
 
   // Discord Home
-  a[draggable="false"]:not(.avatar-small) {
+  a[draggable='false']:not(.avatar-small) {
     &::before {
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
@@ -271,6 +295,14 @@
       background-color: $theme-dark-active;
     }
   }
+  .theme-light & {
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
+    }
+  }
 
   background-color: transparent;
   opacity: 1;
@@ -282,6 +314,9 @@
   &::before {
     .theme-dark & {
       color: #fff;
+    }
+    .theme-light & {
+      color: #000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -308,6 +343,14 @@
       background-color: $theme-dark-active;
     }
   }
+  .theme-light & {
+    &:hover {
+      background-color: $theme-light-hover;
+    }
+    &:active {
+      background-color: $theme-light-active;
+    }
+  }
 
   background-color: transparent;
   font-size: 0;
@@ -322,6 +365,9 @@
   &::before {
     .theme-dark & {
       color: #fff;
+    }
+    .theme-light & {
+      color: #000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -357,6 +403,9 @@
   &::before {
     .theme-dark & {
       color: #fff;
+    }
+    .theme-light & {
+      color: #000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -400,6 +449,9 @@
       .theme-dark & {
         color: #fff;
       }
+      .theme-light & {
+        color: #000;
+      }
 
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
@@ -440,6 +492,9 @@
     &::before {
       .theme-dark & {
         color: #fff;
+      }
+      .theme-light & {
+        color: #000;
       }
 
       font-family: 'Segoe MDL2 Assets';
