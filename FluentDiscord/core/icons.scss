@@ -1,3 +1,26 @@
-:root {
-  --theme-res-app: url('https://intrnl.github.io/FluentDiscord/assets/app.png');
+$theme-icons: (
+  scroll-chevron-top: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 2048 2048%22 fill=%22%23fff%22%3E%3Cpath d=%22M1955 1533l-931-930-931 930-90-90L1024 421l1021 1022z%22/%3E%3C/svg%3E',
+  scroll-chevron-bottom: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 2048 2048%22 fill=%22%23fff%22%3E%3Cpath d=%22M1939 467l90 90-1005 1005L19 557l90-90 915 915z%22/%3E%3C/svg%3E',
+  scroll-chevron-left: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 2048 2048%22 fill=%22%23fff%22%3E%3Cpath d=%22M1443 2045L421 1024 1443 3l90 90-930 931 930 931z%22/%3E%3C/svg%3E',
+  scroll-chevron-right: 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 2048 2048%22 fill=%22%23fff%22%3E%3Cpath d=%22M515 1955l930-931L515 93l90-90 1022 1021L605 2045z%22/%3E%3C/svg%3E',
+);
+$theme-res: (
+  app: 'https://intrnl.github.io/FluentDiscord/assets/app.png',
+);
+
+body {
+  @each $res, $url in $theme-res {
+    --theme-res-#{$res}: url('#{$url}');
+  }
+}
+
+.theme-dark {
+  @each $icon, $res in $theme-icons {
+    --theme-icon-#{$icon}: url('#{str-replace($res, 'fill=%22%23fff%', 'fill=%22%23fff%')}');
+  }
+}
+.theme-light {
+  @each $icon, $res in $theme-icons {
+    --theme-icon-#{$icon}: url('#{str-replace($res, 'fill=%22%23fff%', 'fill=%22%23000%')}');
+  }
 }

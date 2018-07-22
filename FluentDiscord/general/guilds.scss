@@ -73,6 +73,7 @@
   }
 
   .badge {
+    box-shadow: 0 0;
     transform: translateY(-72%) translateX(-72%);
     font-size: 0;
     line-height: 0;
@@ -120,10 +121,10 @@
       }
       &::after {
         .theme-dark & {
-          color: #fff;
+          color: #ffffff;
         }
         .theme-light & {
-          color: #fff;
+          color: #ffffff;
         }
 
         background-image: none;
@@ -165,7 +166,7 @@
 
   a {
     .theme-dark & {
-      color: #fff;
+      color: #ffffff;
 
       &:hover {
         background-color: $theme-dark-hover;
@@ -175,7 +176,7 @@
       }
     }
     .theme-light & {
-      color: #000;
+      color: #000000;
 
       &:hover {
         background-color: $theme-light-hover;
@@ -313,10 +314,10 @@
 
   &::before {
     .theme-dark & {
-      color: #fff;
+      color: #ffffff;
     }
     .theme-light & {
-      color: #000;
+      color: #000000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -364,10 +365,10 @@
 
   &::before {
     .theme-dark & {
-      color: #fff;
+      color: #ffffff;
     }
     .theme-light & {
-      color: #000;
+      color: #000000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -402,10 +403,10 @@
 
   &::before {
     .theme-dark & {
-      color: #fff;
+      color: #ffffff;
     }
     .theme-light & {
-      color: #000;
+      color: #000000;
     }
 
     font-family: 'Segoe MDL2 Assets';
@@ -447,10 +448,10 @@
 
     &::before {
       .theme-dark & {
-        color: #fff;
+        color: #ffffff;
       }
       .theme-light & {
-        color: #000;
+        color: #000000;
       }
 
       font-family: 'Segoe MDL2 Assets';
@@ -491,10 +492,10 @@
 
     &::before {
       .theme-dark & {
-        color: #fff;
+        color: #ffffff;
       }
       .theme-light & {
-        color: #000;
+        color: #000000;
       }
 
       font-family: 'Segoe MDL2 Assets';

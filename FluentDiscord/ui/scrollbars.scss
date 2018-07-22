@@ -1,52 +1,100 @@
-#app-mount {
-  ::-webkit-scrollbar {
-    background-color: $theme-dark-scrollbar;
-    width: 16px;
+::-webkit-scrollbar {
+  .theme-dark & {
+    background-color: $theme-dark-scrollbar !important;
 
     &-thumb {
-      background-color: $theme-dark-scrollbar-thumb;
-      visibility: visible;
-      border: 0;
-      border-radius: 0;
-      
+      background-color: $theme-dark-scrollbar-thumb !important;
+    
       &:hover {
-        background-color: $theme-dark-scrollbar-thumb-hover;
+        background-color: $theme-dark-scrollbar-thumb-hover !important;
       }
       &:active {
-        background-color: $theme-dark-scrollbar-thumb-active;
+        background-color: $theme-dark-scrollbar-thumb-active !important;
       }
     }
-
-    &-track, &-track-piece {
-      background-color: transparent;
-      border: 0;
-      border-radius: 0;
-    }
-
+  
     &-button {
-      background-color: transparent;
-      background-size: 12px 13px;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 17px;
+      &:hover {
+        background-color: $theme-dark-scrollbar-button-hover !important;
+      }
+      &:active {
+        background-color: $theme-dark-scrollbar-button-active !important;
+      }
+
+      &:vertical:decrement {
+        background-image: var(--theme-icon-scroll-chevron-top) !important;
+      }
+      &:vertical:increment {
+        background-image: var(--theme-icon-scroll-chevron-bottom) !important;
+      }
+      &:horizontal:decrement {
+        background-image: var(--theme-icon-scroll-chevron-left) !important;
+      }
+      &:horizontal:increment {
+        background-image: var(--theme-icon-scroll-chevron-right) !important;
+      }
+    }
+  }
+  .theme-light & {
+    background-color: $theme-light-scrollbar !important;
+
+    &-thumb {
+      background-color: $theme-light-scrollbar-thumb !important;
   
       &:hover {
-        background-color: $theme-dark-scrollbar-button-hover;
+        background-color: $theme-light-scrollbar-thumb-hover !important;
       }
       &:active {
-        background-color: $theme-dark-scrollbar-button-active;
+        background-color: $theme-light-scrollbar-thumb-active !important;
+      }
+    }
+  
+    &-button {
+      &:hover {
+        background-color: $theme-light-scrollbar-button-hover !important;
+      }
+      &:active {
+        background-color: $theme-light-scrollbar-button-active !important;
       }
 
-      &:vertical:increment {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAUVBMVEX///////////////////////////////////////////////////////////////////////////////////////////////////////////94FlRsAAAAG3RSTlMAAQocHTA2Nzo7PT5ERUtNVHSAqqzP0OPm5+njouU9AAAAQklEQVR4AWOgHIhwovIFpFggDD5hCC0kxgSieCRZIXxGERFGBgYuCXaYDiZRIQY2CW6EEcxSgpK8yGZyiPMzUAUAAOHsAejjafRJAAAAAElFTkSuQmCC);
-      }
       &:vertical:decrement {
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAAM1BMVEX////////////////////////////////////////////////////////////////////lEOhHAAAAEXRSTlMAAQodHjs8VICBjKyt0NHk6Xsnr0IAAABCSURBVHjarYnLDoAwCAQX+sLSVv7/azUQY+86h51MFv9QzrJnsm7pTZ6CY/KTpEqgcU8gfvGSyGbZna25tSKois9cjPoBMSXUqnYAAAAASUVORK5CYII=);
+        background-image: var(--theme-icon-scroll-chevron-top) !important;
       }
+      &:vertical:increment {
+        background-image: var(--theme-icon-scroll-chevron-bottom) !important;
+      }
+      &:horizontal:decrement {
+        background-image: var(--theme-icon-scroll-chevron-left) !important;
+      }
+      &:horizontal:increment {
+        background-image: var(--theme-icon-scroll-chevron-right) !important;
+      }
+    }
+  }
 
-      &:start:increment, &:end:decrement {
-        height: 0;
-      }
+  width: 16px !important;
+  
+  &-thumb {
+    visibility: visible !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  &-track, &-track-piece {
+    background-color: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+  }
+  
+  &-button {
+    background-color: transparent !important;
+    background-size: 8px !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    height: 17px !important;
+
+    &:start:increment, &:end:decrement {
+      height: 0 !important;
     }
   }
 }

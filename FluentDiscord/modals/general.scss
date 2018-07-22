@@ -8,6 +8,9 @@
   .theme-dark & {
     background-color: $theme-dark-bg;
   }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
 
   box-shadow: 0 0 !important;
   border: 1px solid $accent-color;
