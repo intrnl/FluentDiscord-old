@@ -1,4 +1,4 @@
-.guilds-wrapper {
+.guildsWrapper-5TJh6A {
   .theme-dark & {
     background-color: $theme-dark-bg;
   }
@@ -13,7 +13,7 @@
   }
 }
 
-.guilds-wrapper .guilds {
+.guilds-1q_RqH {
   display: block;
   padding: 0;
   padding-bottom: $guilds-separator;
@@ -23,11 +23,11 @@
   }
 }
 
-.guilds-wrapper .guilds .friends-online {
+.friendsOnline-_wi_fM {
   display: none;
 }
 
-.guilds-wrapper .guild-separator {
+.guildSeparator-1X4GQ1 {
   height: 0;
   width: 0;
   margin-bottom: $guilds-separator;
@@ -37,11 +37,11 @@
   }
 }
 
-.guilds-wrapper .guilds .guild {
+.guild-1EfMGQ {
   height: $guilds-height;
   width: $guilds-width;
 
-  & + .guild {
+  & + & {
     margin-top: 0;
   }
 
@@ -72,7 +72,7 @@
     }
   }
 
-  .badge {
+  .wrapper-232cHJ {
     box-shadow: 0 0;
     transform: translateY(-72%) translateX(-72%);
     font-size: 0;
@@ -88,13 +88,12 @@
     right: unset;
   }
 
-  &::before, &.unread::before, &.selected::before, &.active::before {
+  &::before, &.unread-qLkInr::before, &.selected-ML3OIq::before {
     background-color: transparent;
     transform: translateY(-50%);
     transition: none;
     pointer-events: none;
     content: '';
-    display: block;
     width: 5px;
     margin-top: 0;
     border-radius: 0;
@@ -103,19 +102,25 @@
     left: 0;
     z-index: 3;
   }
-  &.unread::before {
-    background-color: $accent-color;
+  &.unread-qLkInr::before, .stop-animations &.unread-qLkInr.selected-ML3OIq::before, .publicServersOpen &.unread-qLkInr.selected-ML3OIq::before {
+    background-color: $accent-color !important;
     opacity: .55;
+    display: block;
     height: 8px;
   }
-  &.selected::before, &.active::before {
-    background-color: $accent-color;
+  &.selected-ML3OIq::before {
+    background-color: $accent-color !important;
     opacity: 1;
+    display: block;
     height: 25px;
+
+    .stop-animations &, .publicServersOpen & {
+      display: none;
+    }
   }
 
-  &.audio, &.video {
-    .guild-inner {
+  &.audio-3vVhBi, &.video-15yGu3 {
+    .guildInner-3DSoA4 {
       .icon-3o6xvg, .avatar-small:not(.wrapper-2F3Zv8)::after {
         display: none;
       }
@@ -124,11 +129,11 @@
           color: #ffffff;
         }
         .theme-light & {
-          color: #ffffff;
+          color: #000000;
         }
 
         background-image: none;
-        background-color: transparent;
+        background-color: transparent !important;
         font-family: 'Segoe MDL2 Assets';
         font-size: 16px;
         height: 100%;
@@ -142,19 +147,19 @@
       }
     }
   }
-  &.audio {
-    .guild-inner::after {
+  &.audio-3vVhBi {
+    .guildInner-3DSoA4::after {
       content: '';
     }
   }
-  &.video {
-    .guild-inner::after {
+  &.video-15yGu3 {
+    .guildInner-3DSoA4::after {
       content: '';
     }
   }
 }
 
-.guilds-wrapper .guilds .guild .guild-inner {
+.guild-1EfMGQ .guildInner-3DSoA4 {
   background-color: transparent !important;
   cursor: default;
   display: flex;
@@ -234,7 +239,7 @@
   }
 
   // Discord Home
-  a[draggable='false']:not(.avatar-small) {
+  a[draggable='false'][class] {
     &::before {
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
@@ -251,7 +256,7 @@
   }
 }
 
-.guilds-wrapper .dms {
+.dms-rcsEnV {
   margin-top: $guilds-separator;
   margin-bottom: 0;
 
@@ -287,8 +292,10 @@
   }
 }
 
-.guilds-wrapper .guilds .guilds-add {
+.guildsAdd-21_IdK {
   .theme-dark & {
+    background-color: transparent;
+    
     &:hover {
       background-color: $theme-dark-hover;
     }
@@ -297,6 +304,8 @@
     }
   }
   .theme-light & {
+    background-color: transparent;
+
     &:hover {
       background-color: $theme-light-hover;
     }
@@ -305,7 +314,6 @@
     }
   }
 
-  background-color: transparent;
   opacity: 1;
   transition: none;
   cursor: default;
@@ -331,11 +339,11 @@
     width: 100%;
   }
 }
-.guilds-wrapper .guilds-add-inner {
+.guildsAddInner-1KMFy- {
   display: none;
 }
 
-.guilds-wrapper .guilds-error {
+.guildsError-3cFMtY {
   .theme-dark & {
     &:hover {
       background-color: $theme-dark-hover;
@@ -388,7 +396,7 @@
 #bd-pub-li {
   height: $guilds-height !important;
 
-  .guild-inner {
+  .guildInner-3DSoA4 {
     height: $guilds-height !important;
   }
 }
@@ -429,10 +437,10 @@
   margin-top: $guilds-separator;
   margin-bottom: 0 !important;
 
-  & + .guild-separator {
+  & + .guildSeparator-1X4GQ1 {
     margin-bottom: 0;
   }
-  .guild-inner {
+  .guildInner-3DSoA4 {
     height: $guilds-height !important;
     width: $guilds-width !important;
   }
@@ -476,7 +484,7 @@
   & + #RANbutton-frame {
     margin-top: 0 !important;
   }
-  & + .guild-separator {
+  & + .guildSeparator-1X4GQ1 {
     margin-bottom: 0;
   }
 

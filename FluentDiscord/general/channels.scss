@@ -19,7 +19,7 @@
 
 // Home header
 .private-channels {
-  .search-bar {
+  .searchBar-2_Yu-C {
     box-shadow: 0 0;
     display: flex;
     justify-content: flex-end;
@@ -39,7 +39,7 @@
       }
     }
   }
-  .search-bar .search-bar-inner {
+  .searchBarInner-1_Tg2R {
     .theme-dark & {
       &:hover {
         background-color: $theme-dark-hover;
@@ -132,6 +132,10 @@
     height: 42px;
     box-sizing: border-box;
 
+    &.private:not([style*='opacity: 1;']) {
+      display: none;
+    }
+
     &.selected::before {
       background-color: $accent-color;
       opacity: .55;
@@ -221,6 +225,7 @@
     align-items: center;
     height: 48px;
     width: 48px;
+    margin-left: 12px;
   }
 
   svg {

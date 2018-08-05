@@ -2,14 +2,6 @@
 
 #app-mount {
   .publicServersOpen {
-    .guild {
-      &.selected::before, &.active::before { display: none; }
-      &.unread.selected::before {
-        height: 8px;
-        display: block;
-      }
-    }
-
     #bd-pub-li {
       &::before {
         background-color: $accent-color;

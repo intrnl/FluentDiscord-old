@@ -1,11 +1,9 @@
-#app-mount {
-  .avatar-large, .avatar-profile, .avatar-small, .avatar-xlarge, .avatar-xsmall, .avatar-xxlarge {
-    .status {
-      height: 12px;
-      width: 12px;
-      border: 0;
-      bottom: -1px;
-      right: -1px;
-    }
+.avatar-large, .avatar-profile, .avatar-small, .avatar-xlarge, .avatar-xsmall, .avatar-xxlarge {
+  .status {
+    height: 12px;
+    width: 12px;
+    border: 0;
+    bottom: -1px;
+    right: -1px;
   }
 }

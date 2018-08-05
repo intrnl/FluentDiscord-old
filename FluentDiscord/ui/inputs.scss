@@ -1,0 +1,42 @@
+.input-cIJ7To {
+  .theme-dark & {
+    color: #fff;
+    border-color: $theme-dark-hover;
+    
+    &:hover {
+      border-color: $theme-dark-active;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $theme-dark-blurb;
+    }
+  }
+  .theme-light {
+    color: #000;
+    border-color: $theme-light-hover;
+
+    &:hover {
+      border-color: $theme-light-active;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $theme-light-blurb;
+    }
+  }
+  
+  background-color: transparent;
+  transition: none;
+  border: 2px solid transparent;
+  border-radius: 0;
+
+  &:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: $accent-color !important;
+  }
+
+  &::selection {
+    color: #fff;
+    background-color: $accent-color;
+  }
+}

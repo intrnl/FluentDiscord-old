@@ -1,0 +1,18 @@
+.tooltip {
+  color: #fff;
+  background-color: $theme-dark !important;
+  box-shadow: 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: normal;
+  max-width: 190px;
+  margin: 0 !important;
+  padding: 5px 10px;
+  border: 1px solid $theme-dark-outline;
+  border-radius: 0;
+  box-sizing: content-box;
+
+  &::before, &::after {
+    display: none;
+  }
+}
