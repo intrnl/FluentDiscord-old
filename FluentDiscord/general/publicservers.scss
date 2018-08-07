@@ -1,23 +1,21 @@
 // BDv1 public server list
 
-#app-mount {
-  .publicServersOpen {
-    #bd-pub-li {
-      &::before {
-        background-color: $accent-color;
-        transform: translateY(-50%);
-        pointer-events: none;
-        content: '';
-        height: 25px;
-        width: 5px;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        z-index: 3;
-      }
+.publicServersOpen {
+  #bd-pub-li {
+    &::before {
+      background-color: $accent-color;
+      transform: translateY(-50%);
+      pointer-events: none;
+      content: '';
+      height: 25px;
+      width: 5px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: 3;
     }
   }
-  .bd-layer {
-    margin-left: $guilds-width;
-  }
+}
+.bd-layer {
+  margin-left: $guilds-width;
 }

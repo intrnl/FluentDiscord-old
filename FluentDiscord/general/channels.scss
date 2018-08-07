@@ -19,7 +19,7 @@
 
 // Home header
 .private-channels {
-  .searchBar-2_Yu-C {
+  .searchBar-2_Yu-C,.search-bar {
     box-shadow: 0 0;
     display: flex;
     justify-content: flex-end;
@@ -39,7 +39,7 @@
       }
     }
   }
-  .searchBarInner-1_Tg2R {
+  .searchBarInner-1_Tg2R, .search-bar-inner {
     .theme-dark & {
       &:hover {
         background-color: $theme-dark-hover;
@@ -82,7 +82,7 @@
 
     input {
       font-size: 0;
-      cursor: default;
+      cursor: default !important;
       flex: 1;
       height: inherit;
       min-width: unset !important;
@@ -173,7 +173,7 @@
     .close {
       z-index: 5;
     }
-    .badge {
+    .wrapper-232cHJ {
       z-index: 5;
     }
   }

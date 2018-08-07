@@ -230,20 +230,20 @@ body {
 .guild-1EfMGQ + .guild-1EfMGQ {
   margin-top: 0;
 }
-.guild-1EfMGQ.guild-placeholder {
+.guild-1EfMGQ.guildPlaceholder-1ioaid {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0;
   border-radius: 0;
 }
-.theme-dark .guild-1EfMGQ.guild-placeholder::after {
+.theme-dark .guild-1EfMGQ.guildPlaceholder-1ioaid::after {
   background-color: #2e2e2e;
 }
-.theme-light .guild-1EfMGQ.guild-placeholder::after {
+.theme-light .guild-1EfMGQ.guildPlaceholder-1ioaid::after {
   background-color: white;
 }
-.guild-1EfMGQ.guild-placeholder::after {
+.guild-1EfMGQ.guildPlaceholder-1ioaid::after {
   content: "";
   height: 22px;
   width: 22px;
@@ -693,101 +693,101 @@ body {
   background-color: transparent;
 }
 
-.private-channels .searchBar-2_Yu-C {
+.private-channels .searchBar-2_Yu-C, .private-channels .search-bar {
   box-shadow: 0 0;
   display: flex;
   justify-content: flex-end;
   height: 48px;
   padding: 0 0 0 12px;
 }
-.private-channels .searchBar-2_Yu-C::before {
+.private-channels .searchBar-2_Yu-C::before, .private-channels .search-bar::before {
   color: #ffffff;
   font-size: 16px;
   content: "i18n_home";
   margin-right: auto;
 }
-html[lang=bg] .private-channels .searchBar-2_Yu-C::before {
+html[lang=bg] .private-channels .searchBar-2_Yu-C::before, html[lang=bg] .private-channels .search-bar::before {
   content: "У дома";
 }
-html[lang=cs] .private-channels .searchBar-2_Yu-C::before {
+html[lang=cs] .private-channels .searchBar-2_Yu-C::before, html[lang=cs] .private-channels .search-bar::before {
   content: "Domov";
 }
-html[lang=da] .private-channels .searchBar-2_Yu-C::before {
+html[lang=da] .private-channels .searchBar-2_Yu-C::before, html[lang=da] .private-channels .search-bar::before {
   content: "Hjem";
 }
-html[lang=de] .private-channels .searchBar-2_Yu-C::before {
+html[lang=de] .private-channels .searchBar-2_Yu-C::before, html[lang=de] .private-channels .search-bar::before {
   content: "Zuhause";
 }
-html[lang=el] .private-channels .searchBar-2_Yu-C::before {
+html[lang=el] .private-channels .searchBar-2_Yu-C::before, html[lang=el] .private-channels .search-bar::before {
   content: "Σπίτι";
 }
-html[lang=en-GB] .private-channels .searchBar-2_Yu-C::before {
+html[lang=en-GB] .private-channels .searchBar-2_Yu-C::before, html[lang=en-GB] .private-channels .search-bar::before {
   content: "Home";
 }
-html[lang=en-US] .private-channels .searchBar-2_Yu-C::before {
+html[lang=en-US] .private-channels .searchBar-2_Yu-C::before, html[lang=en-US] .private-channels .search-bar::before {
   content: "Home";
 }
-html[lang=es-ES] .private-channels .searchBar-2_Yu-C::before {
+html[lang=es-ES] .private-channels .searchBar-2_Yu-C::before, html[lang=es-ES] .private-channels .search-bar::before {
   content: "Casa";
 }
-html[lang=fi] .private-channels .searchBar-2_Yu-C::before {
+html[lang=fi] .private-channels .searchBar-2_Yu-C::before, html[lang=fi] .private-channels .search-bar::before {
   content: "Koti";
 }
-html[lang=fr] .private-channels .searchBar-2_Yu-C::before {
+html[lang=fr] .private-channels .searchBar-2_Yu-C::before, html[lang=fr] .private-channels .search-bar::before {
   content: "Accueil";
 }
-html[lang=hr] .private-channels .searchBar-2_Yu-C::before {
+html[lang=hr] .private-channels .searchBar-2_Yu-C::before, html[lang=hr] .private-channels .search-bar::before {
   content: "Dom";
 }
-html[lang=hu] .private-channels .searchBar-2_Yu-C::before {
+html[lang=hu] .private-channels .searchBar-2_Yu-C::before, html[lang=hu] .private-channels .search-bar::before {
   content: "itthon";
 }
-html[lang=it] .private-channels .searchBar-2_Yu-C::before {
+html[lang=it] .private-channels .searchBar-2_Yu-C::before, html[lang=it] .private-channels .search-bar::before {
   content: "Casa";
 }
-html[lang=ja] .private-channels .searchBar-2_Yu-C::before {
+html[lang=ja] .private-channels .searchBar-2_Yu-C::before, html[lang=ja] .private-channels .search-bar::before {
   content: "家";
 }
-html[lang=ko] .private-channels .searchBar-2_Yu-C::before {
+html[lang=ko] .private-channels .searchBar-2_Yu-C::before, html[lang=ko] .private-channels .search-bar::before {
   content: "집";
 }
-html[lang=lt] .private-channels .searchBar-2_Yu-C::before {
+html[lang=lt] .private-channels .searchBar-2_Yu-C::before, html[lang=lt] .private-channels .search-bar::before {
   content: "Namai";
 }
-html[lang=nl] .private-channels .searchBar-2_Yu-C::before {
+html[lang=nl] .private-channels .searchBar-2_Yu-C::before, html[lang=nl] .private-channels .search-bar::before {
   content: "Huis";
 }
-html[lang=no] .private-channels .searchBar-2_Yu-C::before {
+html[lang=no] .private-channels .searchBar-2_Yu-C::before, html[lang=no] .private-channels .search-bar::before {
   content: "Hjem";
 }
-html[lang=pl] .private-channels .searchBar-2_Yu-C::before {
+html[lang=pl] .private-channels .searchBar-2_Yu-C::before, html[lang=pl] .private-channels .search-bar::before {
   content: "Dom";
 }
-html[lang=pt-BR] .private-channels .searchBar-2_Yu-C::before {
+html[lang=pt-BR] .private-channels .searchBar-2_Yu-C::before, html[lang=pt-BR] .private-channels .search-bar::before {
   content: "Casa";
 }
-html[lang=ro] .private-channels .searchBar-2_Yu-C::before {
+html[lang=ro] .private-channels .searchBar-2_Yu-C::before, html[lang=ro] .private-channels .search-bar::before {
   content: "Acasă";
 }
-html[lang=ru] .private-channels .searchBar-2_Yu-C::before {
+html[lang=ru] .private-channels .searchBar-2_Yu-C::before, html[lang=ru] .private-channels .search-bar::before {
   content: "Главная";
 }
-html[lang=sv-SE] .private-channels .searchBar-2_Yu-C::before {
+html[lang=sv-SE] .private-channels .searchBar-2_Yu-C::before, html[lang=sv-SE] .private-channels .search-bar::before {
   content: "Hem";
 }
-html[lang=tr] .private-channels .searchBar-2_Yu-C::before {
+html[lang=tr] .private-channels .searchBar-2_Yu-C::before, html[lang=tr] .private-channels .search-bar::before {
   content: "Ev";
 }
-html[lang=uk] .private-channels .searchBar-2_Yu-C::before {
+html[lang=uk] .private-channels .searchBar-2_Yu-C::before, html[lang=uk] .private-channels .search-bar::before {
   content: "будинки";
 }
-html[lang=zh-CN] .private-channels .searchBar-2_Yu-C::before {
+html[lang=zh-CN] .private-channels .searchBar-2_Yu-C::before, html[lang=zh-CN] .private-channels .search-bar::before {
   content: "家";
 }
-html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
+html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before, html[lang=zh-TW] .private-channels .search-bar::before {
   content: "家";
 }
-.private-channels .searchBarInner-1_Tg2R {
+.private-channels .searchBarInner-1_Tg2R, .private-channels .search-bar-inner {
   background-color: transparent;
   flex: 0;
   height: 100%;
@@ -797,19 +797,19 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
   border-radius: 0;
   position: relative;
 }
-.theme-dark .private-channels .searchBarInner-1_Tg2R:hover {
+.theme-dark .private-channels .searchBarInner-1_Tg2R:hover, .theme-dark .private-channels .search-bar-inner:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-dark .private-channels .searchBarInner-1_Tg2R:active {
+.theme-dark .private-channels .searchBarInner-1_Tg2R:active, .theme-dark .private-channels .search-bar-inner:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.theme-light .private-channels .searchBarInner-1_Tg2R:hover {
+.theme-light .private-channels .searchBarInner-1_Tg2R:hover, .theme-light .private-channels .search-bar-inner:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.theme-light .private-channels .searchBarInner-1_Tg2R:active {
+.theme-light .private-channels .searchBarInner-1_Tg2R:active, .theme-light .private-channels .search-bar-inner:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
-.private-channels .searchBarInner-1_Tg2R::before {
+.private-channels .searchBarInner-1_Tg2R::before, .private-channels .search-bar-inner::before {
   color: #ffffff;
   font-family: "Segoe MDL2 Assets";
   font-size: 16px;
@@ -822,9 +822,9 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
   width: 100%;
   position: absolute;
 }
-.private-channels .searchBarInner-1_Tg2R input {
+.private-channels .searchBarInner-1_Tg2R input, .private-channels .search-bar-inner input {
   font-size: 0;
-  cursor: default;
+  cursor: default !important;
   flex: 1;
   height: inherit;
   min-width: unset !important;
@@ -900,7 +900,7 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
 .private-channels .channel .close {
   z-index: 5;
 }
-.private-channels .channel .badge {
+.private-channels .channel .wrapper-232cHJ {
   z-index: 5;
 }
 
@@ -1250,7 +1250,7 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
   font-family: "Segoe UI", "Meiryo", "MS PGothic", "MS Mincho", "Malgun Gothic", "Yu Gothic", "Segoe UI Emoji", "Segoe MDL2 Assets";
 }
 
-#app-mount .publicServersOpen #bd-pub-li::before {
+.publicServersOpen #bd-pub-li::before {
   background-color: var(--accent-color);
   transform: translateY(-50%);
   pointer-events: none;
@@ -1262,7 +1262,8 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before {
   left: 0;
   z-index: 3;
 }
-#app-mount .bd-layer {
+
+.bd-layer {
   margin-left: 48px;
 }
 
