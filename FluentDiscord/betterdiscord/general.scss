@@ -1,0 +1,44 @@
+.bd-settingsButton {
+  box-shadow: 0 0;
+  height: $guilds-height;
+  width: $guilds-width;
+  top: 0;
+  
+  .platform-win32 & {
+    top: 31px;
+    left: 1px;
+  }
+
+  .bd-settingsButtonBtn {
+    background-size: 20px;
+    opacity: .75;
+    filter: grayscale(1);
+    transition: none;
+    cursor: default;
+
+    &:hover {
+      background-color: $theme-dark-hover;
+    }
+    &:active {
+      background-color: $theme-dark-active;
+    }
+  }
+
+  &.bd-active {
+    .bd-settingsButtonBtn {
+      &:hover, &:active {
+        background-color: transparent;
+      }
+    }
+  }
+}
+
+.bd-settings {
+  top: 0;
+
+  .platform-win32 & {
+    top: 31px;
+    bottom: 1px;
+    left: 1px;
+  }
+}

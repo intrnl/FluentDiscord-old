@@ -11,6 +11,13 @@
   .scroller-wrap {
     width: 100%;
   }
+
+  body.bd-v2 & {
+    padding-top: $guilds-height + $guilds-separator !important;
+  }
+  body.bd-v2.bd-hideButton & {
+    padding-top: 0 !important;
+  }
 }
 
 .guilds-1q_RqH {
@@ -239,7 +246,7 @@
   }
 
   // Discord Home
-  a[draggable='false'][class] {
+  a[draggable='false'][class]:not([user]):not([channel]) {
     &::before {
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
@@ -518,4 +525,9 @@
       width: 100%;
     }
   }
+}
+
+
+.unreadMentionsBar-1VrBNe {
+  box-shadow: 0 0 !important;
 }

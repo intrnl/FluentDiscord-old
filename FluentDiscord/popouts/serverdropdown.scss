@@ -15,17 +15,18 @@
 }
 .menu-Sp6bN1 {
   .theme-dark & {
-    background-color: $theme-dark;
-    border-color: $theme-dark-outline;
+    background-color: lighten($theme-dark, 5%);
+    border-color: lighten($theme-dark, 5%);
   }
   .theme-light & {
-    background-color: $theme-light;
-    border-color: $theme-light-outline;
+    background-color: darken($theme-light, 5%);
+    border-color: darken($theme-light, 5%);
   }
 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2) !important;
   width: auto;
   padding: 8px 0;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 0;
 }
 

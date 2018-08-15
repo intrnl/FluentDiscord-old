@@ -2,6 +2,7 @@
 // Customizable variables
 $accent-color: #0078d7 !default;
 $titlebar-color: #4c4a48 !default;
+$titlebar-border-color: lighten($titlebar-color, 5%) !default;
 
 // Guilds
 $guilds-height: 48px;

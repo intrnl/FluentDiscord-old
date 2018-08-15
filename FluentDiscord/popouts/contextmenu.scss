@@ -1,19 +1,21 @@
 .contextMenu-HLZMGh {
   .theme-dark &, &.theme-dark {
-    background-color: $theme-dark;
-    border-color: $theme-dark-outline;
+    background-color: lighten($theme-dark, 5%);
+    border-color: lighten($theme-dark, 5%);
   }
   .theme-light &, &.theme-light {
-    background-color: $theme-light;
-    border-color: $theme-light-outline;
+    background-color: darken($theme-light, 5%);
+    border-color: darken($theme-light, 5%);
   }
 
-  box-shadow: 0 0 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2) !important;
   width: 210px;
   padding: 8px 0;
   border: 1px solid transparent;
   border-radius: 0;
   box-sizing: border-box;
+  z-index: 3005;
+  -webkit-app-region: no-drag;
 
   .scroller-2FKFPG {
     margin: -8px 0;
@@ -24,6 +26,10 @@
 .item-1Yvehc {
   .theme-dark & {
     color: #ffffff;
+
+    &.disabled-2xniQf {
+      color: $theme-dark-blurb;
+    }
 
     &:hover {
       color: #ffffff;
@@ -36,6 +42,10 @@
   .theme-light & {
     color: #000000;
 
+    &.disabled-2xniQf {
+      color: $theme-light-blurb;
+    }
+
     &:hover {
       color: #000000;
       background-color: $theme-light-hover;
@@ -47,15 +57,22 @@
 
   background-color: transparent;
   background-image: none !important;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   min-height: 32px;
   margin: 0;
   padding: 8px 12px 8px (12px + 16px + 12px);
   border-radius: 0;
   box-sizing: border-box;
   position: relative;
+  overflow: hidden;
 
   .contextMenu-HLZMGh .contextMenu-HLZMGh &:not(.itemToggle-S7XGOQ) {
     padding-left: 12px;
+  }
+
+  &.disabled-2xniQf {
+    pointer-events: none;
   }
 
   &::before {
@@ -71,6 +88,8 @@
   }
 }
 .itemSubMenu-1vN_Yn {
+  padding-right: 36px !important;
+
   .theme-dark & {
     &:active {
       background-color: $theme-dark-hover;
@@ -88,6 +107,18 @@
     &::before {
       background-color: $accent-color;
     }
+  }
+
+  &::after {
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 12px;
+    content: '';
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 13px;
   }
 }
 .itemToggle-S7XGOQ {
@@ -141,6 +172,9 @@
     }
   }
 }
+.itemSlider-FZeYw0 {
+  background-color: transparent !important;
+}
 
 .itemGroup-1tL0uz {
   border-top: 0 !important;
@@ -165,6 +199,14 @@
       top: 0;
       left: 12px;
       right: 12px;
+    }
+  }
+  &:empty + &:not(:empty) {
+    margin-top: 0;
+    padding-top: 0;
+    
+    &::before {
+      border-top-width: 0;
     }
   }
 }

@@ -1,7 +1,9 @@
 :root {
   --accent-color: #0078d7;
   --titlebar-color: #4c4a48;
+  --titlebar-border-color: #{lighten(#4c4a48, 5%)};
 }
 
 $accent-color: var(--accent-color);
 $titlebar-color: var(--titlebar-color);
+$titlebar-border-color: var(--titlebar-border-color);
