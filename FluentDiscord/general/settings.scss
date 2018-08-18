@@ -215,13 +215,6 @@
       align-items: center;
       margin-right: 12px;
     }
-
-    &:nth-of-type(3)::before { content: ''; } // Core
-    &:nth-of-type(4)::before { content: ''; } // BandagedBD Settings
-    &:nth-of-type(5)::before { content: ''; } // Emotes
-    &:nth-of-type(6)::before { content: ''; } // Custom CSS
-    &:nth-of-type(7)::before { content: ''; } // Plugins
-    &:nth-of-type(8)::before { content: ''; } // Themes
   }
 }
 
@@ -229,27 +222,4 @@
 .ed-settings + .separator-gCa7yv {
   display: block;
   margin-top: 16px;
-}
-
-[layer-id='user-settings'] {
-  .side-8zPYf6 .item-PXvHYJ {
-    &:nth-of-type(2)::before { content: ''; } // My Account
-    &:nth-of-type(3)::before { content: ''; } // Privacy & Safety
-    &:nth-of-type(4)::before { content: ''; } // Authorized Apps
-    &:nth-of-type(5)::before { content: ''; } // Connections
-    &:nth-of-type(6)::before { content: ''; } // Billing
-    &:nth-of-type(11)::before { content: ''; } // Voice & Video
-    &:nth-of-type(12)::before { content: ''; } // Overlay
-    &:nth-of-type(13)::before { content: ''; } // Notifications
-    &:nth-of-type(14)::before { content: ''; } // Keybinds
-    &:nth-of-type(15)::before { content: ''; } // Games
-    &:nth-of-type(16)::before { content: ''; } // Text & Images
-    &:nth-of-type(17)::before { content: ''; } // Appearance
-    &:nth-of-type(18)::before { content: ''; } // Streamer Mode
-    &:nth-of-type(19)::before { content: ''; } // Language
-    &:nth-of-type(20)::before { content: ''; } // OS Settings
-    &:nth-of-type(22)::before { content: ''; } // Changelog
-    &:nth-of-type(23)::before { content: ''; } // Experiments
-    &:nth-of-type(24)::before { content: ''; } // Developer Options
-  }
 }

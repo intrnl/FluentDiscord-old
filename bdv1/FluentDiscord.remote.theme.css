@@ -8,11 +8,14 @@
 :root {
   --accent-color: #0078d7;
   --titlebar-color: #4c4a48;
-  --titlebar-border-color: #615e5c;
+  --titlebar-border-color: #595754;
 }
 
 /* End of customizable code */
 /*
+  FluentDiscord - an MDL2/Fluent Design inspired theme for Discord
+  Copyright (C) 2018  intrnl
+
   FluentDiscord is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or

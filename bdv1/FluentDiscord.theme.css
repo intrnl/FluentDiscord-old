@@ -8,11 +8,14 @@
 :root {
   --accent-color: #0078d7;
   --titlebar-color: #4c4a48;
-  --titlebar-border-color: #615e5c;
+  --titlebar-border-color: #595754;
 }
 
 /* End of customizable code */
 /*
+  FluentDiscord - an MDL2/Fluent Design inspired theme for Discord
+  Copyright (C) 2018  intrnl
+
   FluentDiscord is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -557,121 +560,6 @@ body.bd-v2.bd-hideButton .guildsWrapper-5TJh6A {
   color: #ffffff;
 }
 .theme-light .guildsError-3cFMtY::before {
-  color: #000000;
-}
-
-#bd-pub-li {
-  height: 48px !important;
-}
-#bd-pub-li .guildInner-3DSoA4 {
-  height: 48px !important;
-}
-
-#bd-pub-button {
-  font-size: 0 !important;
-  line-height: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-#bd-pub-button::before {
-  font-family: "Segoe MDL2 Assets";
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.theme-dark #bd-pub-button::before {
-  color: #ffffff;
-}
-.theme-light #bd-pub-button::before {
-  color: #000000;
-}
-
-#RANbutton-frame {
-  height: 48px !important;
-  width: 48px !important;
-  margin-top: 8px;
-  margin-bottom: 0 !important;
-}
-#RANbutton-frame + .guildSeparator-1X4GQ1 {
-  margin-bottom: 0;
-}
-#RANbutton-frame .guildInner-3DSoA4 {
-  height: 48px !important;
-  width: 48px !important;
-}
-#RANbutton-frame #RANbutton {
-  font-size: 0 !important;
-  line-height: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-#RANbutton-frame #RANbutton::before {
-  font-family: "Segoe MDL2 Assets";
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.theme-dark #RANbutton-frame #RANbutton::before {
-  color: #ffffff;
-}
-.theme-light #RANbutton-frame #RANbutton::before {
-  color: #000000;
-}
-
-#server-search {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-#server-search + #RANbutton-frame {
-  margin-top: 0 !important;
-}
-#server-search + .guildSeparator-1X4GQ1 {
-  margin-bottom: 0;
-}
-#server-search .avatar-search {
-  background-image: none;
-  font-size: 0 !important;
-  line-height: 0 !important;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-#server-search .avatar-search::before {
-  font-family: "Segoe MDL2 Assets";
-  font-size: 16px;
-  font-weight: normal;
-  text-decoration: none;
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-}
-.theme-dark #server-search .avatar-search::before {
-  color: #ffffff;
-}
-.theme-light #server-search .avatar-search::before {
   color: #000000;
 }
 
@@ -1254,23 +1142,6 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before, html[lang=zh-TW] .
   font-family: "Segoe UI", "Meiryo", "MS PGothic", "MS Mincho", "Malgun Gothic", "Yu Gothic", "Segoe UI Emoji", "Segoe MDL2 Assets";
 }
 
-.publicServersOpen #bd-pub-li::before {
-  background-color: var(--accent-color);
-  transform: translateY(-50%);
-  pointer-events: none;
-  content: "";
-  height: 25px;
-  width: 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  z-index: 3;
-}
-
-.bd-layer {
-  margin-left: 48px;
-}
-
 .ui-standard-sidebar-view {
   display: flex;
   flex-direction: row;
@@ -1465,83 +1336,10 @@ html[lang=zh-TW] .private-channels .searchBar-2_Yu-C::before, html[lang=zh-TW] .
   align-items: center;
   margin-right: 12px;
 }
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(3)::before {
-  content: "";
-}
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(4)::before {
-  content: "";
-}
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(5)::before {
-  content: "";
-}
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(6)::before {
-  content: "";
-}
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(7)::before {
-  content: "";
-}
-#bd-settings-sidebar .ui-tab-bar-item:nth-of-type(8)::before {
-  content: "";
-}
 
 .ed-settings + .separator-gCa7yv {
   display: block;
   margin-top: 16px;
-}
-
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(2)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(3)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(4)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(5)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(6)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(11)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(12)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(13)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(14)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(15)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(16)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(17)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(18)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(19)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(20)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(22)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(23)::before {
-  content: "";
-}
-[layer-id=user-settings] .side-8zPYf6 .item-PXvHYJ:nth-of-type(24)::before {
-  content: "";
 }
 
 .popout-3sVMXz {
