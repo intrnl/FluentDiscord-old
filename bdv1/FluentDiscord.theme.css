@@ -240,6 +240,9 @@ body {
 .popout-open .activity-1IYsbk {
   color: #ffffff; }
 
+.activityIconForeground-qYIPPg {
+  fill: currentColor !important; }
+
 .title-3qD0b- {
   background-color: transparent !important;
   box-shadow: 0 0 !important;
@@ -697,10 +700,6 @@ body {
   box-sizing: border-box; }
   .private-channels .channel.private:not([style*='opacity: 1;']) {
     display: none; }
-  .private-channels .channel.selected::before {
-    background-color: var(--accent-color);
-    opacity: .55;
-    content: ''; }
   .private-channels .channel::before {
     position: absolute;
     top: 0;
@@ -716,6 +715,14 @@ body {
     background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .private-channels .channel:active {
     background-color: rgba(0, 0, 0, 0.2); }
+  .theme-dark .private-channels .channel.selected .channel-activity {
+    color: #ffffff; }
+  .theme-light .private-channels .channel.selected .channel-activity {
+    color: #000000; }
+  .private-channels .channel.selected::before {
+    background-color: var(--accent-color);
+    opacity: .55;
+    content: ''; }
   .private-channels .channel.btn-friends a::before {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -739,6 +746,7 @@ body {
   .private-channels .channel a {
     background-color: transparent !important;
     cursor: default;
+    -webkit-user-drag: none;
     height: 100%;
     margin: 0;
     padding: 8px 12px;
@@ -756,6 +764,16 @@ body {
       color: #ffffff; }
     .theme-light .private-channels .channel .channel-name {
       color: #000000; }
+  .private-channels .channel .channel-activity {
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 13px; }
+    .theme-dark .private-channels .channel .channel-activity {
+      color: #8e8e8e; }
+    .theme-light .private-channels .channel .channel-activity {
+      color: #7b7b7b; }
+    .private-channels .channel .channel-activity strong {
+      font-weight: 700; }
   .private-channels .channel .close {
     z-index: 5; }
   .private-channels .channel .wrapper-232cHJ {
@@ -808,14 +826,6 @@ body {
   cursor: default;
   height: 34px;
   position: relative; }
-  .theme-dark .wrapper-KpKNwI:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .wrapper-KpKNwI:active {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .wrapper-KpKNwI:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .theme-light .wrapper-KpKNwI:active {
-    background-color: rgba(0, 0, 0, 0.2); }
   .wrapper-KpKNwI::after {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -826,6 +836,14 @@ body {
     position: absolute;
     top: 50%;
     left: 0; }
+  .theme-dark .wrapper-KpKNwI:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .wrapper-KpKNwI:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .wrapper-KpKNwI:active {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .wrapper-KpKNwI:active {
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .content-20Aix8 {
   background-color: transparent;
@@ -918,10 +936,10 @@ body {
   box-sizing: border-box; }
   .theme-dark .containerDefault-3GGEv_:hover, .theme-dark .containerDragAfter-3TEhpe:hover, .theme-dark .containerDragBefore-3Dzc5x:hover, .theme-dark .containerUserOver-1Tcb7l:hover {
     background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .containerDefault-3GGEv_:active, .theme-dark .containerDragAfter-3TEhpe:active, .theme-dark .containerDragBefore-3Dzc5x:active, .theme-dark .containerUserOver-1Tcb7l:active {
-    background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .containerDefault-3GGEv_:hover, .theme-light .containerDragAfter-3TEhpe:hover, .theme-light .containerDragBefore-3Dzc5x:hover, .theme-light .containerUserOver-1Tcb7l:hover {
     background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .containerDefault-3GGEv_:active, .theme-dark .containerDragAfter-3TEhpe:active, .theme-dark .containerDragBefore-3Dzc5x:active, .theme-dark .containerUserOver-1Tcb7l:active {
+    background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .containerDefault-3GGEv_:active, .theme-light .containerDragAfter-3TEhpe:active, .theme-light .containerDragBefore-3Dzc5x:active, .theme-light .containerUserOver-1Tcb7l:active {
     background-color: rgba(0, 0, 0, 0.2); }
 
@@ -980,18 +998,6 @@ body {
   position: absolute;
   top: 0;
   right: 0; }
-  .theme-dark .close-relY5R:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .close-relY5R:active {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .theme-dark .close-relY5R::before {
-    color: #ffffff; }
-  .theme-light .close-relY5R:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .theme-light .close-relY5R:active {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .theme-light .close-relY5R::before {
-    color: #000000; }
   .close-relY5R::before {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -1001,6 +1007,18 @@ body {
     align-items: center;
     height: 100%;
     width: 100%; }
+    .theme-dark .close-relY5R::before {
+      color: #ffffff; }
+    .theme-light .close-relY5R::before {
+      color: #000000; }
+  .theme-dark .close-relY5R:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .close-relY5R:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .close-relY5R:active {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .close-relY5R:active {
+    background-color: rgba(0, 0, 0, 0.2); }
 
 .theme-dark .message-3SOT5P {
   color: #999; }
@@ -1017,18 +1035,18 @@ body {
   box-sizing: border-box; }
   .theme-dark .btn-11C5_u {
     background-color: #2e2e2e; }
-    .theme-dark .btn-11C5_u:hover {
-      border-color: rgba(255, 255, 255, 0.2); }
-    .theme-dark .btn-11C5_u:active {
-      background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .btn-11C5_u {
     background-color: white; }
-    .theme-light .btn-11C5_u:hover {
-      border-color: rgba(0, 0, 0, 0.2); }
-    .theme-light .btn-11C5_u:active {
-      background-color: rgba(0, 0, 0, 0.2); }
+  .theme-dark .btn-11C5_u:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .btn-11C5_u:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
   .btn-11C5_u:active {
     border-color: transparent; }
+    .theme-dark .btn-11C5_u:active {
+      background-color: rgba(255, 255, 255, 0.2); }
+    .theme-light .btn-11C5_u:active {
+      background-color: rgba(0, 0, 0, 0.2); }
 
 .container-2Thooq {
   margin-bottom: 0; }

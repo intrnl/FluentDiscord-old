@@ -24,17 +24,17 @@ let builtmeta = `/*//META${JSON.stringify(meta)}*//**/\r\n`
 
 gulp.task('build', function () {
   return pump([
-    gulp.src('./FluentDiscord/bdv1.scss'),
+    gulp.src('FluentDiscord/bdv1.scss'),
     sourcemap.init(),
     sass().on('error', sass.logError),
     prefix(),
     prepend(builtmeta),
     rename(`${config.name}.theme.css`),
     sourcemap.write('.'),
-    gulp.dest('./bdv1')
+    gulp.dest('bdv1')
   ])
 })
 
 gulp.task('watch', function () {
-  gulp.watch('./FluentDiscord/**/*.scss', ['build'])
+  gulp.watch('FluentDiscord/**/*.scss', ['build'])
 })

@@ -138,12 +138,6 @@
       display: none;
     }
 
-    &.selected::before {
-      background-color: $accent-color;
-      opacity: .55;
-      content: '';
-    }
-
     &::before {
       position: absolute;
       top: 0;
@@ -167,6 +161,23 @@
       }
       .theme-light & {
         background-color: $theme-light-active;
+      }
+    }
+
+    &.selected {
+      .channel-activity {
+        .theme-dark & {
+          color: $theme-light-bg;
+        }
+        .theme-light & {
+          color: $theme-dark-bg;
+        }
+      }
+
+      &::before {
+        background-color: $accent-color;
+        opacity: .55;
+        content: '';
       }
     }
 
@@ -207,6 +218,7 @@
     a {
       background-color: transparent !important;
       cursor: default;
+      -webkit-user-drag: none;
       height: 100%;
       margin: 0;
       padding: 8px 12px;
@@ -221,17 +233,35 @@
       margin-right: 12px;
       z-index: 5;
     }
+
     .channel-name {
       .theme-dark & {
-        color: #ffffff;
+        color: $theme-light-bg;
       }
       .theme-light & {
-        color: #000000;
+        color: $theme-dark-bg;
       }
 
       opacity: 1;
       z-index: 5;
     }
+    .channel-activity {
+      .theme-dark & {
+        color: $theme-dark-blurb;
+      }
+      .theme-light & {
+        color: $theme-light-blurb;
+      }
+
+      font-size: 11px;
+      font-weight: 400;
+      line-height: 13px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
     .close {
       z-index: 5;
     }
@@ -312,23 +342,6 @@
 
 // Channel
 .wrapper-KpKNwI {
-  .theme-dark & {
-    &:hover {
-      background-color: $theme-dark-hover;
-    }
-    &:active {
-      background-color: $theme-dark-active;
-    }
-  }
-  .theme-light & {
-    &:hover {
-      background-color: $theme-light-hover;
-    }
-    &:active {
-      background-color: $theme-light-active;
-    }
-  }
-
   cursor: default;
   height: 34px;
   position: relative;
@@ -342,6 +355,23 @@
     position: absolute;
     top: 50%;
     left: 0;
+  }
+
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
   }
 }
 .content-20Aix8 {
@@ -447,28 +477,28 @@
 .containerDefault-3GGEv_, .containerDragAfter-3TEhpe, .containerDragBefore-3Dzc5x, .containerUserOver-1Tcb7l {
   $height: 25px;
 
-  .theme-dark & {
-    &:hover {
-      background-color: $theme-dark-hover;
-    }
-    &:active {
-      background-color: $theme-dark-active;
-    }
-  }
-  .theme-light & {
-    &:hover {
-      background-color: $theme-light-hover;
-    }
-    &:active {
-      background-color: $theme-light-active;
-    }
-  }
-
   transition: none;
   height: $height;
   margin-top: 48px - $height;
   padding: 0 12px;
   box-sizing: border-box;
+
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+  }
 }
 
 .wrapperCollapsed-3Fbxl6, .wrapperDefault-10Jfvz, .wrapperHovered-28fu1D, .wrapperHoveredCollapsed-1PADEo, .wrapperMuted-3KeA2M, .wrapperUnread-1JPWj3 {
@@ -512,48 +542,23 @@
 }
 .iconHovered-2L3-fB, .iconHoveredCollapsed-3caIIZ, .nameHovered-1gxhWH, .nameHoveredCollapsed-2orEWB {
   .theme-dark & {
-    color: #ffffff;
+    color: $theme-light-bg;
   }
   .theme-light & {
-    color: #000000;
+    color: $theme-dark-bg;
   }
 }
 
 // Notices
 .channelNotice-1-XFjC {
   .theme-dark & {
-    background-color: rgba(#fff, .04);
+    background-color: rgba($theme-light-bg, .04);
   }
   .theme-light & {
-    background-color: rgba(#000, .04);
+    background-color: rgba($theme-dark-bg, .04);
   }
 }
 .close-relY5R {
-  .theme-dark & {
-    &:hover {
-      background-color: $theme-dark-hover;
-    }
-    &:active {
-      background-color: $theme-dark-active;
-    }
-
-    &::before {
-      color: #ffffff;
-    }
-  }
-  .theme-light & {
-    &:hover {
-      background-color: $theme-light-hover;
-    }
-    &:active {
-      background-color: $theme-light-active;
-    }
-
-    &::before {
-      color: #000000;
-    }
-  }
-
   background-image: none;
   opacity: 1;
   cursor: default;
@@ -564,6 +569,13 @@
   right: 0;
 
   &::before {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
     content: '';
@@ -572,6 +584,23 @@
     align-items: center;
     height: 100%;
     width: 100%;
+  }
+
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
   }
 }
 .message-3SOT5P {
@@ -585,23 +614,9 @@
 .btn-11C5_u {
   .theme-dark & {
     background-color: lighten($theme-dark, 10%);
-
-    &:hover {
-      border-color: $theme-dark-active;
-    }
-    &:active {
-      background-color: $theme-dark-active;
-    }
   }
   .theme-light & {
     background-color: lighten($theme-light, 10%);
-
-    &:hover {
-      border-color: $theme-light-active;
-    }
-    &:active {
-      background-color: $theme-light-active;
-    }
   }
 
   cursor: default;
@@ -611,7 +626,22 @@
   border-radius: 0;
   box-sizing: border-box;
 
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+  }
   &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+
     border-color: transparent;
   }
 }
