@@ -197,27 +197,6 @@
   padding: 10px 16px;
 }
 
-#bd-settings-sidebar {
-  margin-bottom: 16px;
-
-  div[style] {
-    padding: 5px 16px !important;
-  }
-  .ui-tab-bar-item {
-    // Icons
-    &::before {
-      font-family: 'Segoe MDL2 Assets';
-      font-size: 16px;
-      font-weight: normal;
-      text-decoration: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 12px;
-    }
-  }
-}
-
 // EnhancedDiscord
 .ed-settings + .separator-gCa7yv {
   display: block;

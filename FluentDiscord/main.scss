@@ -14,6 +14,9 @@
 @import 'general/layers';
 @import 'general/settings';
 
+@import 'general/activity';
+@import 'general/store';
+
 @import 'popouts/general';
 @import 'popouts/contextmenu';
 @import 'popouts/serverdropdown';
@@ -28,6 +31,8 @@
 @import 'ui/buttons';
 @import 'ui/inputs';
 @import 'ui/scrollbars';
+@import 'ui/search';
+@import 'ui/title';
 @import 'ui/titlebars';
 
 @import 'betterdiscord/general';

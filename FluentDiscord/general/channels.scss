@@ -19,7 +19,7 @@
 
 // Home header
 .private-channels {
-  .searchBar-2_Yu-C,.search-bar {
+  .searchBar-2_Yu-C, .search-bar {
     box-shadow: 0 0;
     display: flex;
     justify-content: flex-end;
@@ -27,7 +27,13 @@
     padding: 0 0 0 12px;
 
     &::before {
-      color: #ffffff;
+      .theme-dark & {
+        color: #ffffff;
+      }
+      .theme-light & {
+        color: #000000;
+      }
+
       font-size: 16px;
       content: 'i18n_home';
       margin-right: auto;
@@ -67,7 +73,13 @@
     position: relative;
 
     &::before {
-      color: #ffffff;
+      .theme-dark & {
+        color: #ffffff;
+      }
+      .theme-light & {
+        color: #000000;
+      }
+
       font-family: 'Segoe MDL2 Assets';
       font-size: 16px;
       pointer-events: none;
@@ -95,9 +107,15 @@
 // DM channel stuff
 .private-channels {
   header {
+    .theme-dark & {
+      color: $theme-dark-blurb;
+    }
+    .theme-light & {
+      color: $theme-light-blurb;
+    }
+
     $height: 25px;
 
-    color: #72767d;
     opacity: 1;
     font-size: 12px;
     font-weight: 600;
@@ -151,6 +169,40 @@
       z-index: 2;
     }
 
+    &.btn-friends {
+      a {
+        &::before {
+          .theme-dark & {
+            color: #ffffff;
+          }
+          .theme-light & {
+            color: #000000;
+          }
+
+          font-family: 'Segoe MDL2 Assets';
+          font-size: 16px;
+          text-align: center;
+          display: block;
+          width: 30px;
+          margin-right: 12px;
+          z-index: 5;
+        }
+
+        &[href="/activity"]::before {
+          content: '';
+        }
+        &[href="/library"]::before {
+          content: '';
+        }
+        &[href="/store"]::before {
+          content: '';
+        }
+        &[href="/channels/@me"]::before {
+          content: '';
+        }
+      }
+    }
+
     a {
       background-color: transparent !important;
       cursor: default;
@@ -159,6 +211,7 @@
       padding: 8px 12px;
       z-index: 5;
     }
+
     svg {
       margin-right: 12px;
       z-index: 5;
@@ -168,6 +221,14 @@
       z-index: 5;
     }
     .channel-name {
+      .theme-dark & {
+        color: #ffffff;
+      }
+      .theme-light & {
+        color: #000000;
+      }
+
+      opacity: 1;
       z-index: 5;
     }
     .close {
@@ -175,6 +236,10 @@
     }
     .wrapper-232cHJ {
       z-index: 5;
+    }
+
+    .link-button-icon {
+      display: none;
     }
   }
 }
@@ -549,6 +614,12 @@
 
 // Account bar
 .container-2Thooq {
-  background-color: transparent;
+  .theme-dark & {
+    background-color: transparent;
+  }
+  .theme-light & {
+    background-color: transparent;
+  }
+
   margin-bottom: 0;
 }

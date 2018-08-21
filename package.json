@@ -1,18 +1,22 @@
 {
-  "name": "fluentdiscord",
+  "name": "FluentDiscord",
   "version": "1.0.0",
-  "description": "An MDL2/Fluent Design inspired theme for Discord.",
+  "description": "An MDL2/Fluent Design inspired theme for Discord",
+  "repository": "https://github.com/intrnl/FluentDiscord.git",
+  "author": "intrnl <intrnl28@gmail.com>",
+  "license": "GPL-3.0",
   "scripts": {
-    "test": "sass-lint",
-    "bdv1:build": "node bdv1_build.js",
-    "bdv1:watch": "sass --watch FluentDiscord/bdv1.scss:bdv1/test.css"
+    "build": "gulp build",
+    "watch": "gulp watch"
   },
-  "author": "intrnl",
-  "license": "MIT",
-  "dependencies": {
-    "clean-css": "^4.1.11",
-    "clean-css-cli": "^4.1.11",
-    "sass": "^1.7.3",
-    "sass-lint": "^1.12.1"
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-inject-string": "^1.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "pump": "^3.0.0"
   }
 }

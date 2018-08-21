@@ -1,0 +1,53 @@
+.headerBar-UHpsPw {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+    box-shadow: 0 0;
+  }
+
+  .title-1aVOXw {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+  }
+}
+
+.iconMargin-2YXk4F {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+  margin: 0;
+
+  svg {
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-hover;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-dark-active;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
+    }
+  }
+  g, path {
+    display: none;
+  }
+}

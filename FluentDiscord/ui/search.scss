@@ -1,0 +1,11 @@
+.search-results-wrap {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+  
+  margin-top: -48px;
+  padding-top: 48px;
+}

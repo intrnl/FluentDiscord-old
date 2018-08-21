@@ -1,0 +1,99 @@
+.chat-3bRxxu {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+
+  form {
+    background-color: transparent !important;
+  }
+}
+.content-yTz4x3 {
+  background-color: transparent !important;
+}
+
+.messagesWrapper-3lZDfY {
+  background-color: transparent !important;
+}
+
+.typing-2GQL18 {
+  background-color: transparent !important;
+}
+
+
+.membersWrap-2h-GB4 {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+
+  margin-top: -48px;
+  padding-top: 48px;
+}
+.members-1998pB {
+  background-color: transparent !important;
+}
+
+.member-3W1lQa {
+  cursor: default;
+  margin: 0;
+  padding: 8px;
+  border-radius: 0;
+  position: relative;
+  
+  &::before {
+    opacity: .55;
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+  }
+  
+  &.popout-open {
+    &::before {
+      background-color: $accent-color;
+    }
+  }
+}
+
+.content-OzHfo4 {
+  background-color: transparent !important;
+  z-index: 3;
+}
+
+.username-1cB_5E {
+  .popout-open & {
+    color: #ffffff !important;
+  }
+}
+
+
+.title-3qD0b- {
+  background-color: transparent !important;
+  box-shadow: 0 0 !important;
+  padding-right: 0;
+}

@@ -1,0 +1,39 @@
+.missingAccess-3szpts {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: ':(';
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  &::after {
+    font-size: 1rem;
+    white-space: pre-wrap;
+    text-align: center;
+    content: 'Oops! You don\'t have access to the Store!\aTry again later, maybe you\'ll get it next time!\a\aHow did you even get here anyway?';
+  }
+
+  &::before, &::after {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+  }
+
+  .embedVideo-3nf0O9 {
+    display: none;
+  }
+}
+
+// That's all there is to it at the moment.
+// Don't have access to the Store :shrug:
