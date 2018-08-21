@@ -194,7 +194,7 @@ body {
 .member-3W1lQa {
   cursor: default;
   margin: 0;
-  padding: 8px;
+  padding: 8px 15px;
   border-radius: 0;
   position: relative; }
   .member-3W1lQa::before {
@@ -219,10 +219,26 @@ body {
 
 .content-OzHfo4 {
   background-color: transparent !important;
+  padding: 0;
   z-index: 3; }
 
-.popout-open .username-1cB_5E {
-  color: #ffffff !important; }
+.memberInner-2CPc3V {
+  width: auto;
+  max-width: 150px; }
+
+.username-1cB_5E {
+  text-overflow: ellipsis; }
+  .popout-open .username-1cB_5E {
+    color: #ffffff !important; }
+
+.theme-dark .activity-1IYsbk {
+  color: #8e8e8e; }
+
+.theme-light .activity-1IYsbk {
+  color: #7b7b7b; }
+
+.popout-open .activity-1IYsbk {
+  color: #ffffff; }
 
 .title-3qD0b- {
   background-color: transparent !important;
@@ -355,6 +371,7 @@ body {
   width: 48px;
   border-radius: 0 !important; }
   .guild-1EfMGQ .guildInner-3DSoA4 a {
+    transition: none;
     cursor: default;
     display: flex;
     justify-content: center;
@@ -363,16 +380,16 @@ body {
     width: 100%; }
     .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 a {
       color: #ffffff; }
-      .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 a:hover {
-        background-color: rgba(255, 255, 255, 0.1); }
-      .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 a:active {
-        background-color: rgba(255, 255, 255, 0.2); }
     .theme-light .guild-1EfMGQ .guildInner-3DSoA4 a {
       color: #000000; }
-      .theme-light .guild-1EfMGQ .guildInner-3DSoA4 a:hover {
-        background-color: rgba(0, 0, 0, 0.1); }
-      .theme-light .guild-1EfMGQ .guildInner-3DSoA4 a:active {
-        background-color: rgba(0, 0, 0, 0.2); }
+    .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 a:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+    .theme-light .guild-1EfMGQ .guildInner-3DSoA4 a:hover {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .theme-dark .guild-1EfMGQ .guildInner-3DSoA4 a:active {
+      background-color: rgba(255, 255, 255, 0.2); }
+    .theme-light .guild-1EfMGQ .guildInner-3DSoA4 a:active {
+      background-color: rgba(0, 0, 0, 0.2); }
   .guild-1EfMGQ .guildInner-3DSoA4 .icon-3o6xvg {
     color: inherit;
     background-size: 0;
@@ -626,14 +643,6 @@ body {
   border: 0;
   border-radius: 0;
   position: relative; }
-  .theme-dark .private-channels .searchBarInner-1_Tg2R:hover, .theme-dark .private-channels .search-bar-inner:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .private-channels .searchBarInner-1_Tg2R:active, .theme-dark .private-channels .search-bar-inner:active {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .private-channels .searchBarInner-1_Tg2R:hover, .theme-light .private-channels .search-bar-inner:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-light .private-channels .searchBarInner-1_Tg2R:active, .theme-light .private-channels .search-bar-inner:active {
-    background-color: rgba(255, 255, 255, 0.2); }
   .private-channels .searchBarInner-1_Tg2R::before, .private-channels .search-bar-inner::before {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -649,6 +658,14 @@ body {
       color: #ffffff; }
     .theme-light .private-channels .searchBarInner-1_Tg2R::before, .theme-light .private-channels .search-bar-inner::before {
       color: #000000; }
+  .theme-dark .private-channels .searchBarInner-1_Tg2R:hover, .theme-dark .private-channels .search-bar-inner:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .private-channels .searchBarInner-1_Tg2R:hover, .theme-light .private-channels .search-bar-inner:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+  .theme-dark .private-channels .searchBarInner-1_Tg2R:active, .theme-dark .private-channels .search-bar-inner:active {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-light .private-channels .searchBarInner-1_Tg2R:active, .theme-light .private-channels .search-bar-inner:active {
+    background-color: rgba(0, 0, 0, 0.2); }
   .private-channels .searchBarInner-1_Tg2R input, .private-channels .search-bar-inner input {
     font-size: 0;
     cursor: default !important;
@@ -678,14 +695,6 @@ body {
   cursor: default;
   height: 42px;
   box-sizing: border-box; }
-  .theme-dark .private-channels .channel:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .private-channels .channel:active {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .private-channels .channel:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .theme-light .private-channels .channel:active {
-    background-color: rgba(0, 0, 0, 0.2); }
   .private-channels .channel.private:not([style*='opacity: 1;']) {
     display: none; }
   .private-channels .channel.selected::before {
@@ -699,6 +708,14 @@ body {
     left: 0;
     right: 0;
     z-index: 2; }
+  .theme-dark .private-channels .channel:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .private-channels .channel:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .private-channels .channel:active {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .private-channels .channel:active {
+    background-color: rgba(0, 0, 0, 0.2); }
   .private-channels .channel.btn-friends a::before {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -755,18 +772,6 @@ body {
   cursor: default;
   pointer-events: none;
   padding: 0 0 0 12px; }
-  .theme-dark .header-2o-2hj::after {
-    color: #ffffff; }
-  .theme-dark .header-2o-2hj:hover::after {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .header-2o-2hj:active::after {
-    background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .header-2o-2hj::after {
-    color: #000000; }
-  .theme-light .header-2o-2hj:hover::after {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .theme-light .header-2o-2hj:active::after {
-    background-color: rgba(0, 0, 0, 0.2); }
   .header-2o-2hj::after {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -778,6 +783,18 @@ body {
     height: 48px;
     width: 48px;
     margin-left: 12px; }
+    .theme-dark .header-2o-2hj::after {
+      color: #ffffff; }
+    .theme-light .header-2o-2hj::after {
+      color: #000000; }
+  .theme-dark .header-2o-2hj:hover::after {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .header-2o-2hj:hover::after {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .header-2o-2hj:active::after {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .header-2o-2hj:active::after {
+    background-color: rgba(0, 0, 0, 0.2); }
   .header-2o-2hj svg {
     display: none; }
 
@@ -1264,26 +1281,26 @@ body {
   overflow: hidden; }
   .theme-dark .item-1Yvehc {
     color: #ffffff; }
-    .theme-dark .item-1Yvehc.disabled-2xniQf {
-      color: #8e8e8e; }
-    .theme-dark .item-1Yvehc:hover {
-      color: #ffffff;
-      background-color: rgba(255, 255, 255, 0.1); }
-    .theme-dark .item-1Yvehc:active {
-      background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .item-1Yvehc {
     color: #000000; }
-    .theme-light .item-1Yvehc.disabled-2xniQf {
-      color: #7b7b7b; }
-    .theme-light .item-1Yvehc:hover {
-      color: #000000;
-      background-color: rgba(0, 0, 0, 0.1); }
-    .theme-light .item-1Yvehc:active {
-      background-color: rgba(0, 0, 0, 0.2); }
+  .theme-dark .item-1Yvehc:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .item-1Yvehc:hover {
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .item-1Yvehc:active {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .item-1Yvehc:active {
+    background-color: rgba(0, 0, 0, 0.2); }
   .contextMenu-HLZMGh .contextMenu-HLZMGh .item-1Yvehc:not(.itemToggle-S7XGOQ) {
     padding-left: 12px; }
   .item-1Yvehc.disabled-2xniQf {
     pointer-events: none; }
+    .theme-dark .item-1Yvehc.disabled-2xniQf {
+      color: #8e8e8e; }
+    .theme-light .item-1Yvehc.disabled-2xniQf {
+      color: #7b7b7b; }
   .item-1Yvehc::before {
     opacity: .45;
     pointer-events: none;
@@ -1297,14 +1314,14 @@ body {
 
 .itemSubMenu-1vN_Yn {
   padding-right: 36px !important; }
-  .theme-dark .itemSubMenu-1vN_Yn:active {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-light .itemSubMenu-1vN_Yn:active {
-    background-color: rgba(0, 0, 0, 0.1); }
   .itemSubMenu-1vN_Yn:hover {
     background-color: transparent !important; }
     .itemSubMenu-1vN_Yn:hover::before {
       background-color: var(--accent-color); }
+  .theme-dark .itemSubMenu-1vN_Yn:active {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .itemSubMenu-1vN_Yn:active {
+    background-color: rgba(0, 0, 0, 0.1); }
   .itemSubMenu-1vN_Yn::after {
     font-family: 'Segoe MDL2 Assets';
     font-size: 12px;

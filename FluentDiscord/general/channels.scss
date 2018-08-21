@@ -46,22 +46,6 @@
     }
   }
   .searchBarInner-1_Tg2R, .search-bar-inner {
-    .theme-dark & {
-      &:hover {
-        background-color: $theme-dark-hover;
-      }
-      &:active {
-        background-color: $theme-dark-active;
-      }
-    }
-    .theme-light & {
-      &:hover {
-        background-color: $theme-dark-hover;
-      }
-      &:active {
-        background-color: $theme-dark-active;
-      }
-    }
 
     background-color: transparent;
     flex: 0;
@@ -90,6 +74,23 @@
       height: 100%;
       width: 100%;
       position: absolute;
+    }
+
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-light-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
     }
 
     input {
@@ -129,23 +130,6 @@
   }
 
   .channel {
-    .theme-dark & {
-      &:hover {
-        background-color: $theme-dark-hover;
-      }
-      &:active {
-        background-color: $theme-dark-active;
-      }
-    }
-    .theme-light & {
-      &:hover {
-        background-color: $theme-light-hover;
-      }
-      &:active {
-        background-color: $theme-light-active;
-      }
-    }
-
     cursor: default;
     height: 42px;
     box-sizing: border-box;
@@ -167,6 +151,23 @@
       left: 0;
       right: 0;
       z-index: 2;
+    }
+
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-hover;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-dark-active;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
     }
 
     &.btn-friends {
@@ -249,38 +250,20 @@
   pointer-events: none;
 }
 .header-2o-2hj {
-  .theme-dark & {
-    &::after {
-      color: #ffffff;
-    }
-
-    &:hover::after {
-      background-color: $theme-dark-hover;
-    }
-    &:active::after {
-      background-color: $theme-dark-active;
-    }
-  }
-  .theme-light & {
-    &::after {
-      color: #000000;
-    }
-
-    &:hover::after {
-      background-color: $theme-light-hover;
-    }
-    &:active::after {
-      background-color: $theme-light-active;
-    }
-  }
-
   background-color: transparent !important;
   box-shadow: 0 0;
   cursor: default;
   pointer-events: none;
   padding: 0 0 0 12px;
-  
+
   &::after {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
     pointer-events: all;
@@ -293,16 +276,37 @@
     margin-left: 12px;
   }
 
+  &:hover {
+    &::after {
+      .theme-dark & {
+        background-color: $theme-dark-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-hover;
+      }
+    }
+  }
+  &:active {
+    &::after {
+      .theme-dark & {
+        background-color: $theme-dark-active;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
+    }
+  }
+
   svg {
     display: none;
   }
 }
 .name-3YKhmS {
   .theme-dark & {
-    color: #ffffff;
+    color: $theme-light-bg;
   }
   .theme-light & {
-    color: #000000;
+    color: $theme-dark-bg;
   }
 }
 
@@ -324,7 +328,7 @@
       background-color: $theme-light-active;
     }
   }
-  
+
   cursor: default;
   height: 34px;
   position: relative;
@@ -459,7 +463,7 @@
       background-color: $theme-light-active;
     }
   }
-  
+
   transition: none;
   height: $height;
   margin-top: 48px - $height;
@@ -549,7 +553,7 @@
       color: #000000;
     }
   }
-  
+
   background-image: none;
   opacity: 1;
   cursor: default;
@@ -599,7 +603,7 @@
       background-color: $theme-light-active;
     }
   }
-  
+
   cursor: default;
   height: 33px;
   padding: 0 14px;

@@ -25,34 +25,10 @@
 
 .item-1Yvehc {
   .theme-dark & {
-    color: #ffffff;
-
-    &.disabled-2xniQf {
-      color: $theme-dark-blurb;
-    }
-
-    &:hover {
-      color: #ffffff;
-      background-color: $theme-dark-hover;
-    }
-    &:active {
-      background-color: $theme-dark-active;
-    }
+    color: $theme-light-bg;
   }
   .theme-light & {
-    color: #000000;
-
-    &.disabled-2xniQf {
-      color: $theme-light-blurb;
-    }
-
-    &:hover {
-      color: #000000;
-      background-color: $theme-light-hover;
-    }
-    &:active {
-      background-color: $theme-light-active;
-    }
+    color: $theme-dark-bg;
   }
 
   background-color: transparent;
@@ -67,11 +43,37 @@
   position: relative;
   overflow: hidden;
 
+  &:hover {
+    .theme-dark & {
+      color: $theme-light-bg;
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+  }
+
   .contextMenu-HLZMGh .contextMenu-HLZMGh &:not(.itemToggle-S7XGOQ) {
     padding-left: 12px;
   }
 
   &.disabled-2xniQf {
+    .theme-dark & {
+      color: $theme-dark-blurb;
+    }
+    .theme-light & {
+      color: $theme-light-blurb;
+    }
+
     pointer-events: none;
   }
 
@@ -90,22 +92,19 @@
 .itemSubMenu-1vN_Yn {
   padding-right: 36px !important;
 
-  .theme-dark & {
-    &:active {
-      background-color: $theme-dark-hover;
-    }
-  }
-  .theme-light & {
-    &:active {
-      background-color: $theme-light-hover;
-    }
-  }
-
   &:hover {
     background-color: transparent !important;
 
     &::before {
       background-color: $accent-color;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
     }
   }
 
@@ -151,10 +150,10 @@
     }
     span::before {
       .theme-dark & {
-        color: #ffffff;
+        color: $theme-light-bg;
       }
       .theme-light & {
-        color: #000000;
+        color: $theme-dark-bg;
       }
 
       font-family: 'Segoe MDL2 Assets';
@@ -204,7 +203,7 @@
   &:empty + &:not(:empty) {
     margin-top: 0;
     padding-top: 0;
-    
+
     &::before {
       border-top-width: 0;
     }

@@ -31,10 +31,6 @@ gulp.task('build', function () {
     prepend(builtmeta),
     rename(`${config.name}.theme.css`),
     sourcemap.write('.'),
-    gulp.dest('./bdv1'),
-    cssnano(),
-    prepend(builtmeta),
-    rename(`${config.name}.min.theme.css`),
     gulp.dest('./bdv1')
   ])
 })

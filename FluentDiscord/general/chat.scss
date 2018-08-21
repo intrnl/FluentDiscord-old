@@ -41,10 +41,10 @@
 .member-3W1lQa {
   cursor: default;
   margin: 0;
-  padding: 8px;
+  padding: 8px 15px;
   border-radius: 0;
   position: relative;
-  
+
   &::before {
     opacity: .55;
     pointer-events: none;
@@ -55,7 +55,7 @@
     left: 0;
     right: 0;
   }
-  
+
   &:hover {
     .theme-dark & {
       background-color: $theme-dark-hover;
@@ -72,7 +72,7 @@
       background-color: $theme-light-active;
     }
   }
-  
+
   &.popout-open {
     &::before {
       background-color: $accent-color;
@@ -82,12 +82,31 @@
 
 .content-OzHfo4 {
   background-color: transparent !important;
+  padding: 0;
   z-index: 3;
+}
+.memberInner-2CPc3V {
+  width: auto;
+  max-width: 150px;
 }
 
 .username-1cB_5E {
+  text-overflow: ellipsis;
+
   .popout-open & {
-    color: #ffffff !important;
+    color: $theme-light-bg !important;
+  }
+}
+.activity-1IYsbk {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  .popout-open & {
+    color: $theme-light-bg;
   }
 }
 

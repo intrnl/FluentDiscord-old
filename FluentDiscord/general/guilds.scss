@@ -178,32 +178,36 @@
 
   a {
     .theme-dark & {
-      color: #ffffff;
-
-      &:hover {
-        background-color: $theme-dark-hover;
-      }
-      &:active {
-        background-color: $theme-dark-active;
-      }
+      color: $theme-light-bg;
     }
     .theme-light & {
-      color: #000000;
-
-      &:hover {
-        background-color: $theme-light-hover;
-      }
-      &:active {
-        background-color: $theme-light-active;
-      }
+      color: $theme-dark-bg;
     }
 
+    transition: none;
     cursor: default;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
     width: 100%;
+
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-hover;
+      }
+      .theme-light & {
+        background-color: $theme-light-hover;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-dark-active;
+      }
+      .theme-light & {
+        background-color: $theme-light-active;
+      }
+    }
   }
   .icon-3o6xvg {
     color: inherit;
@@ -302,7 +306,7 @@
 .guildsAdd-21_IdK {
   .theme-dark & {
     background-color: transparent;
-    
+
     &:hover {
       background-color: $theme-dark-hover;
     }
