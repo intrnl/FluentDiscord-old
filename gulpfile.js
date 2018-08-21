@@ -4,7 +4,6 @@ let gulp = require('gulp')
 let rename = require('gulp-rename')
 let sass = require('gulp-sass')
 let prefix = require('gulp-autoprefixer')
-let cssnano = require('gulp-cssnano')
 let sourcemap = require('gulp-sourcemaps')
 let { prepend } = require('gulp-inject-string')
 

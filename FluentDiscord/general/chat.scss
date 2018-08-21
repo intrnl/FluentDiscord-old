@@ -94,7 +94,12 @@
   text-overflow: ellipsis;
 
   .popout-open & {
-    color: $theme-light-bg !important;
+    .theme-dark & {
+      color: $theme-light-bg !important;
+    }
+    .theme-light & {
+      color: $theme-dark-bg !important;
+    }
   }
 }
 .activity-1IYsbk {
@@ -106,7 +111,12 @@
   }
 
   .popout-open & {
-    color: $theme-light-bg;
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
   }
 }
 .activityIconForeground-qYIPPg {

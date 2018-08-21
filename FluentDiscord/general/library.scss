@@ -1,4 +1,4 @@
-.activityFeed-28jde9 {
+.gameLibrary-TTDw4Y {
   .theme-dark & {
     background-color: $theme-dark-bg;
   }
@@ -6,12 +6,9 @@
     background-color: $theme-light-bg;
   }
 
-  position: relative;
-  overflow-y: auto;
-
   .headerBar-UHpsPw {
     height: auto;
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
 
     .flex-1xMQg5 {
       display: none;
@@ -21,11 +18,4 @@
     font-size: 21px;
     font-weight: normal;
   }
-}
-
-.feed-1o0xmF {
-  overflow-y: visible;
-}
-.body-vr4WiF {
-  padding-bottom: 30px;
 }

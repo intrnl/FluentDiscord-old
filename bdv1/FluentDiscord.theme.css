@@ -228,8 +228,10 @@ body {
 
 .username-1cB_5E {
   text-overflow: ellipsis; }
-  .popout-open .username-1cB_5E {
+  .theme-dark .popout-open .username-1cB_5E {
     color: #ffffff !important; }
+  .theme-light .popout-open .username-1cB_5E {
+    color: #000000 !important; }
 
 .theme-dark .activity-1IYsbk {
   color: #8e8e8e; }
@@ -237,8 +239,11 @@ body {
 .theme-light .activity-1IYsbk {
   color: #7b7b7b; }
 
-.popout-open .activity-1IYsbk {
+.theme-dark .popout-open .activity-1IYsbk {
   color: #ffffff; }
+
+.theme-light .popout-open .activity-1IYsbk {
+  color: #000000; }
 
 .activityIconForeground-qYIPPg {
   fill: currentColor !important; }
@@ -1238,6 +1243,25 @@ body {
 
 .feed-1o0xmF {
   overflow-y: visible; }
+
+.body-vr4WiF {
+  padding-bottom: 30px; }
+
+.theme-dark .gameLibrary-TTDw4Y {
+  background-color: #000000; }
+
+.theme-light .gameLibrary-TTDw4Y {
+  background-color: #ffffff; }
+
+.gameLibrary-TTDw4Y .headerBar-UHpsPw {
+  height: auto;
+  padding: 20px; }
+  .gameLibrary-TTDw4Y .headerBar-UHpsPw .flex-1xMQg5 {
+    display: none; }
+
+.gameLibrary-TTDw4Y .title-1aVOXw {
+  font-size: 21px;
+  font-weight: normal; }
 
 .missingAccess-3szpts {
   display: flex;
