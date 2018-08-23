@@ -1852,6 +1852,7 @@ body, button, input, select, textarea {
   font-size: 14px;
   font-weight: normal;
   line-height: normal;
+  pointer-events: none;
   max-width: 190px;
   margin: 0 !important;
   padding: 5px 10px;
@@ -2118,6 +2119,13 @@ body, button, input, select, textarea {
     .theme-light .iconMargin-2YXk4F svg:active {
       background-color: rgba(0, 0, 0, 0.2); }
   .iconMargin-2YXk4F g, .iconMargin-2YXk4F path {
+    display: none; }
+
+.iconDisabled-XgNR1p {
+  opacity: 1;
+  height: 48px;
+  width: 48px; }
+  .iconDisabled-XgNR1p g, .iconDisabled-XgNR1p path {
     display: none; }
 
 .titleBar-AC4pGV {
