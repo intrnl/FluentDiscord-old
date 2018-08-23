@@ -2223,6 +2223,7 @@ body, button, input, select, textarea {
 .bd-notifications .bd-notificationContainer {
   background-color: #272727;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  height: auto;
   width: 365px;
   border-radius: 0; }
   .bd-notifications .bd-notificationContainer .bd-notificationHeader {
@@ -2238,20 +2239,30 @@ body, button, input, select, textarea {
       background-color: #4c4c4c;
       color: #ffffff;
       line-height: normal;
+      transition: -webkit-transform .125s ease;
+      transition: transform .125s ease;
+      transition: transform .125s ease, -webkit-transform .125s ease;
       cursor: default;
       display: flex;
       align-items: center;
       justify-content: center;
+      flex: 1;
       height: auto;
       min-height: 33px;
+      margin-left: 0;
       padding: 0 8px;
       border: 2px solid transparent;
       border-radius: 0;
       box-sizing: border-box; }
+      .bd-notifications .bd-notificationContainer .bd-notificationFooter .bd-notificationBtn + .bd-notificationBtn {
+        margin-left: 4px; }
       .bd-notifications .bd-notificationContainer .bd-notificationFooter .bd-notificationBtn:hover {
         border-color: #6d6d6d; }
       .bd-notifications .bd-notificationContainer .bd-notificationFooter .bd-notificationBtn:active {
         background-color: #6d6d6d;
+        -webkit-transform: scale(0.99);
+                transform: scale(0.99);
+        transition: none;
         border-color: transparent; }
 
 /*# sourceMappingURL=FluentDiscord.theme.css.map */
