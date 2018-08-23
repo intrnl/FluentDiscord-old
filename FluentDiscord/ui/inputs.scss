@@ -1,42 +1,42 @@
 .input-cIJ7To {
   .theme-dark & {
-    color: #fff;
+    color: $theme-light-bg;
     border-color: $theme-dark-hover;
-    
-    &:hover {
-      border-color: $theme-dark-active;
-    }
-
-    &::-webkit-input-placeholder {
-      color: $theme-dark-blurb;
-    }
   }
   .theme-light {
-    color: #000;
+    color: $theme-dark-bg;
     border-color: $theme-light-hover;
-
-    &:hover {
-      border-color: $theme-light-active;
-    }
-
-    &::-webkit-input-placeholder {
-      color: $theme-light-blurb;
-    }
   }
-  
+
   background-color: transparent;
   transition: none;
   border: 2px solid transparent;
   border-radius: 0;
 
+  &:hover {
+    .theme-dark & {
+      border-color: $theme-dark-active;
+    }
+    .theme-light & {
+      border-color: $theme-light-active;
+    }
+  }
   &:focus {
-    color: #000;
-    background-color: #fff;
+    color: $theme-dark-bg;
+    background-color: $theme-light-bg;
     border-color: $accent-color !important;
   }
 
   &::selection {
-    color: #fff;
+    color: $theme-light-bg;
     background-color: $accent-color;
+  }
+  &::placeholder {
+    .theme-dark & {
+      color: $theme-dark-blurb;
+    }
+    .theme-light & {
+      color: $theme-light-blurb;
+    }
   }
 }

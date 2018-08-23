@@ -1,3 +1,4 @@
+// Main chat
 .chat-3bRxxu {
   .theme-dark & {
     background-color: $theme-dark-bg;
@@ -17,12 +18,70 @@
 .messagesWrapper-3lZDfY {
   background-color: transparent !important;
 }
+.messages-3amgkR {
+  padding-bottom: 10px;
+}
 
 .typing-2GQL18 {
   background-color: transparent !important;
 }
 
 
+.containerCozy-jafyvG {
+  padding: 10px 0;
+}
+.messageGroupWrapperOffsetCorrection-phOU-k {
+  margin: -10px 0 -10px -20px;
+}
+
+.markup-2BOw-j {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  pre {
+    border: 0;
+    border-radius: 0;
+  }
+  code, code.inline {
+    .theme-dark & {
+      background-color: $theme-dark;
+    }
+    .theme-light & {
+      background-color: $theme-light;
+    }
+
+    border: 0;
+    border-radius: 0;
+  }
+}
+.username-_4ZSMR {
+  backface-visibility: hidden;
+
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.timestampCozy-2hLAPV {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+
+.divider-32i8lo {
+  display: none;
+}
+
+// Member list
 .membersWrap-2h-GB4 {
   .theme-dark & {
     background-color: $theme-dark;
@@ -39,6 +98,13 @@
 }
 
 .member-3W1lQa {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
   cursor: default;
   margin: 0;
   padding: 8px 15px;
@@ -82,6 +148,7 @@
 
 .content-OzHfo4 {
   background-color: transparent !important;
+  color: currentColor !important;
   padding: 0;
   z-index: 3;
 }
@@ -90,10 +157,15 @@
   max-width: 150px;
 }
 
+.nameTag-3p0yK- {
+  line-height: normal;
+}
 .username-1cB_5E {
   text-overflow: ellipsis;
 
   .popout-open & {
+    font-weight: 500;
+
     .theme-dark & {
       color: $theme-light-bg !important;
     }
@@ -102,7 +174,21 @@
     }
   }
 }
+.ownerIcon-uZ6mE7 {
+  path {
+    .popout-open & {
+      .theme-dark & {
+        fill: $theme-light-bg;
+      }
+      .theme-light & {
+        fill: $theme-dark-bg;
+      }
+    }
+  }
+}
 .activity-1IYsbk {
+  line-height: normal;
+
   .theme-dark & {
     color: $theme-dark-blurb;
   }
@@ -124,8 +210,35 @@
 }
 
 
+// Title bar
 .title-3qD0b- {
   background-color: transparent !important;
   box-shadow: 0 0 !important;
   padding-right: 0;
+}
+
+.channelName-3stJzi, .groupDM-3qU0Ks .channelName-3stJzi, .groupDMManaged-1GyXtq .channelName-3stJzi, .input-autosize-input, .input-autosize-input:focus {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.channelIcon-MsmKOO {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+
+.topic-2QX7LI {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
 }

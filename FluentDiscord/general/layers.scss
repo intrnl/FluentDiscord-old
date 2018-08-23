@@ -11,6 +11,9 @@
   }
 }
 
-::-webkit-input-placeholder, body, button, input, select, textarea {
+body, button, input, select, textarea {
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets';
+}
+::placeholder {
   font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets';
 }

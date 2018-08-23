@@ -1,0 +1,45 @@
+.bd-notifications .bd-notificationContainer {
+  background-color: lighten($theme-dark, 7.5%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  width: 365px;
+  border-radius: 0;
+
+  .bd-notificationHeader {
+    height: 16px;
+  }
+  .bd-notificationBody {
+    padding: 0 16px;
+  }
+  .bd-notificationFooter {
+    height: auto;
+    padding: 16px;
+
+    &:not(:empty) {
+      border-top: 0;
+    }
+
+    .bd-notificationBtn {
+      background-color: lighten($theme-dark, 22%);
+      color: $theme-light-bg;
+      line-height: normal;
+      cursor: default;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: auto;
+      min-height: 33px;
+      padding: 0 8px;
+      border: 2px solid transparent;
+      border-radius: 0;
+      box-sizing: border-box;
+
+      &:hover {
+        border-color: lighten($theme-dark, 35%);
+      }
+      &:active {
+        background-color: lighten($theme-dark, 35%);
+        border-color: transparent;
+      }
+    }
+  }
+}

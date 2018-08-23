@@ -1,91 +1,49 @@
 ::-webkit-scrollbar {
   .theme-dark & {
     background-color: $theme-dark-scrollbar !important;
-
-    &-thumb {
-      background-color: $theme-dark-scrollbar-thumb !important;
-    
-      &:hover {
-        background-color: $theme-dark-scrollbar-thumb-hover !important;
-      }
-      &:active {
-        background-color: $theme-dark-scrollbar-thumb-active !important;
-      }
-    }
-  
-    &-button {
-      &:hover {
-        background-color: $theme-dark-scrollbar-button-hover !important;
-      }
-      &:active {
-        background-color: $theme-dark-scrollbar-button-active !important;
-      }
-
-      &:vertical:decrement {
-        background-image: var(--theme-icon-scroll-chevron-top) !important;
-      }
-      &:vertical:increment {
-        background-image: var(--theme-icon-scroll-chevron-bottom) !important;
-      }
-      &:horizontal:decrement {
-        background-image: var(--theme-icon-scroll-chevron-left) !important;
-      }
-      &:horizontal:increment {
-        background-image: var(--theme-icon-scroll-chevron-right) !important;
-      }
-    }
   }
   .theme-light & {
     background-color: $theme-light-scrollbar !important;
-
-    &-thumb {
-      background-color: $theme-light-scrollbar-thumb !important;
-  
-      &:hover {
-        background-color: $theme-light-scrollbar-thumb-hover !important;
-      }
-      &:active {
-        background-color: $theme-light-scrollbar-thumb-active !important;
-      }
-    }
-  
-    &-button {
-      &:hover {
-        background-color: $theme-light-scrollbar-button-hover !important;
-      }
-      &:active {
-        background-color: $theme-light-scrollbar-button-active !important;
-      }
-
-      &:vertical:decrement {
-        background-image: var(--theme-icon-scroll-chevron-top) !important;
-      }
-      &:vertical:increment {
-        background-image: var(--theme-icon-scroll-chevron-bottom) !important;
-      }
-      &:horizontal:decrement {
-        background-image: var(--theme-icon-scroll-chevron-left) !important;
-      }
-      &:horizontal:increment {
-        background-image: var(--theme-icon-scroll-chevron-right) !important;
-      }
-    }
   }
 
   width: 16px !important;
-  
+
   &-thumb {
+    .theme-dark & {
+      background-color: $theme-dark-scrollbar-thumb !important;
+    }
+    .theme-light & {
+      background-color: $theme-light-scrollbar-thumb !important;
+    }
+
     visibility: visible !important;
     border: 0 !important;
     border-radius: 0 !important;
+
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-scrollbar-thumb-hover !important;
+      }
+      .theme-light & {
+        background-color: $theme-light-scrollbar-thumb-hover !important;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-dark-scrollbar-thumb-active !important;
+      }
+      .theme-light & {
+        background-color: $theme-light-scrollbar-thumb-active !important;
+      }
+    }
   }
-  
+
   &-track, &-track-piece {
     background-color: transparent !important;
     border: 0 !important;
     border-radius: 0 !important;
   }
-  
+
   &-button {
     background-color: transparent !important;
     background-size: 8px !important;
@@ -93,8 +51,38 @@
     background-repeat: no-repeat !important;
     height: 17px !important;
 
+    &:hover {
+      .theme-dark & {
+        background-color: $theme-dark-scrollbar-button-hover !important;
+      }
+      .theme-light & {
+        background-color: $theme-light-scrollbar-button-hover !important;
+      }
+    }
+    &:active {
+      .theme-dark & {
+        background-color: $theme-dark-scrollbar-button-active !important;
+      }
+      .theme-light & {
+        background-color: $theme-light-scrollbar-button-active !important;
+      }
+    }
+
     &:start:increment, &:end:decrement {
       height: 0 !important;
+    }
+
+    &:vertical:decrement {
+      background-image: var(--theme-icon-scroll-chevron-top) !important;
+    }
+    &:vertical:increment {
+      background-image: var(--theme-icon-scroll-chevron-bottom) !important;
+    }
+    &:horizontal:decrement {
+      background-image: var(--theme-icon-scroll-chevron-left) !important;
+    }
+    &:horizontal:increment {
+      background-image: var(--theme-icon-scroll-chevron-right) !important;
     }
   }
 }

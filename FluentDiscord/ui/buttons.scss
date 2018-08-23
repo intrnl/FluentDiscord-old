@@ -2,36 +2,10 @@
   .theme-dark & {
     color: #ffffff;
     background-color: $theme-dark !important;
-
-    &:hover {
-      background-color: $theme-dark !important;
-      border-color: $theme-dark-active !important;
-    }
-    &:active {
-      background-color: $theme-dark-active !important;
-      border-color: transparent !important;
-    }
-
-    &:disabled {
-      color: $theme-dark-blurb;
-    }
   }
   .theme-light & {
     color: #000000;
     background-color: $theme-light !important;
-
-    &:hover {
-      background-color: $theme-light !important;
-      border-color: $theme-light-active !important;
-    }
-    &:active {
-      background-color: $theme-light-active !important;
-      border-color: transparent !important;
-    }
-
-    &:disabled {
-      color: $theme-light-blurb;
-    }
   }
 
   font-size: 14px;
@@ -44,13 +18,22 @@
   min-height: unset;
   width: auto;
   min-width: unset;
-  box-sizing: border-box;
   padding: 0 8px;
   border-radius: 0;
   border: 2px solid;
   border-color: transparent !important;
+  box-sizing: border-box;
 
   &:hover {
+    .theme-dark & {
+      background-color: $theme-dark !important;
+      border-color: $theme-dark-active !important;
+    }
+    .theme-light & {
+      background-color: $theme-light !important;
+      border-color: $theme-light-active !important;
+    }
+
     text-decoration: none;
 
     .contents-18-Yxp {
@@ -58,11 +41,27 @@
     }
   }
   &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active !important;
+      border-color: transparent !important;
+    }
+    .theme-light & {
+      background-color: $theme-light-active !important;
+      border-color: transparent !important;
+    }
+
     transform: scale(0.99);
     transition: none;
   }
 
   &:disabled {
+    .theme-dark & {
+      color: $theme-dark-blurb;
+    }
+    .theme-light & {
+      color: $theme-light-blurb;
+    }
+
     opacity: 1;
     pointer-events: none;
   }

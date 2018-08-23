@@ -5,7 +5,12 @@
   .theme-light & {
     background-color: $theme-light;
   }
-  
+
   margin-top: -48px;
   padding-top: 48px;
+
+  .search-header {
+    background-color: transparent !important;
+    box-shadow: 0 0 !important;
+  }
 }
