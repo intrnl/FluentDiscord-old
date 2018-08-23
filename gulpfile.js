@@ -26,7 +26,7 @@ gulp.task('build', function () {
     gulp.src('FluentDiscord/bdv1.scss'),
     sourcemap.init(),
     sass().on('error', sass.logError),
-    prefix({ browsers: ['last 3 versions'] }),
+    prefix(),
     prepend(builtmeta),
     rename(`${config.name}.theme.css`),
     sourcemap.write('.'),
