@@ -49,9 +49,11 @@
   code, code.inline {
     .theme-dark & {
       background-color: $theme-dark;
+      color: $theme-dark-blurb;
     }
     .theme-light & {
       background-color: $theme-light;
+      color: $theme-light-blurb;
     }
 
     border: 0;

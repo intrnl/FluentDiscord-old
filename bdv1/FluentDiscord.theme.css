@@ -203,9 +203,11 @@ body {
   border: 0;
   border-radius: 0; }
   .theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {
-    background-color: #141414; }
+    background-color: #141414;
+    color: #8e8e8e; }
   .theme-light .markup-2BOw-j code, .theme-light .markup-2BOw-j code.inline {
-    background-color: #e6e6e6; }
+    background-color: #e6e6e6;
+    color: #7b7b7b; }
 
 .username-_4ZSMR {
   -webkit-backface-visibility: hidden;
