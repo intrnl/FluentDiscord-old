@@ -567,21 +567,19 @@ body {
 .guildsAdd-21_IdK {
   opacity: 1;
   transition: none;
-  cursor: default;
+  cursor: default !important;
   border: 0;
   border-radius: 0; }
-  .theme-dark .guildsAdd-21_IdK {
+  .theme-dark .guildsAdd-21_IdK, .theme-light .guildsAdd-21_IdK {
     background-color: transparent; }
-    .theme-dark .guildsAdd-21_IdK:hover {
-      background-color: rgba(255, 255, 255, 0.1); }
-    .theme-dark .guildsAdd-21_IdK:active {
-      background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .guildsAdd-21_IdK {
-    background-color: transparent; }
-    .theme-light .guildsAdd-21_IdK:hover {
-      background-color: rgba(0, 0, 0, 0.1); }
-    .theme-light .guildsAdd-21_IdK:active {
-      background-color: rgba(0, 0, 0, 0.2); }
+  .theme-dark .guildsAdd-21_IdK:hover {
+    background-color: rgba(255, 255, 255, 0.1); }
+  .theme-light .guildsAdd-21_IdK:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .guildsAdd-21_IdK:active {
+    background-color: rgba(255, 255, 255, 0.2); }
+  .theme-light .guildsAdd-21_IdK:active {
+    background-color: rgba(0, 0, 0, 0.2); }
   .guildsAdd-21_IdK::before {
     font-family: 'Segoe MDL2 Assets';
     font-size: 16px;
@@ -601,7 +599,6 @@ body {
   display: none; }
 
 .guildsError-3cFMtY {
-  background-color: transparent;
   font-size: 0;
   line-height: 0;
   text-decoration: none;
@@ -610,12 +607,15 @@ body {
   width: 100%;
   border: 0;
   border-radius: 0; }
+  .theme-dark .guildsError-3cFMtY, .theme-light .guildsError-3cFMtY {
+    background-color: transparent;
+    border-color: transparent; }
   .theme-dark .guildsError-3cFMtY:hover {
     background-color: rgba(255, 255, 255, 0.1); }
-  .theme-dark .guildsError-3cFMtY:active {
-    background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .guildsError-3cFMtY:hover {
     background-color: rgba(0, 0, 0, 0.1); }
+  .theme-dark .guildsError-3cFMtY:active {
+    background-color: rgba(255, 255, 255, 0.2); }
   .theme-light .guildsError-3cFMtY:active {
     background-color: rgba(0, 0, 0, 0.2); }
   .guildsError-3cFMtY::before {
@@ -1150,19 +1150,19 @@ body {
     overflow: visible; }
 
 body, button, input, select, textarea {
-  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets'; }
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets' !important; }
 
 ::-webkit-input-placeholder {
-  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets'; }
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets' !important; }
 
 :-ms-input-placeholder {
-  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets'; }
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets' !important; }
 
 ::-ms-input-placeholder {
-  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets'; }
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets' !important; }
 
 ::placeholder {
-  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets'; }
+  font-family: 'Segoe UI', 'Meiryo', 'MS PGothic', 'MS Mincho', 'Malgun Gothic', 'Yu Gothic', 'Segoe UI Emoji', 'Segoe MDL2 Assets' !important; }
 
 .ui-standard-sidebar-view {
   display: flex;
@@ -1863,7 +1863,9 @@ body, button, input, select, textarea {
   padding: 5px 10px;
   border: 1px solid #767676;
   border-radius: 0;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  position: absolute;
+  z-index: 3005; }
   .tooltip::before, .tooltip::after {
     display: none; }
 

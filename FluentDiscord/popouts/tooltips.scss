@@ -12,6 +12,8 @@
   border: 1px solid $theme-dark-outline;
   border-radius: 0;
   box-sizing: content-box;
+  position: absolute;
+  z-index: 3005;
 
   &::before, &::after {
     display: none;
