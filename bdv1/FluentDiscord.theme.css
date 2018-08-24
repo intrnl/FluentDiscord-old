@@ -1399,6 +1399,11 @@ body, button, input, select, textarea {
   .contextMenu-HLZMGh .scroller-2FKFPG {
     margin: -8px 0;
     padding: 8px 0; }
+  .contextMenu-HLZMGh .contextMenu-HLZMGh {
+    margin-top: 1px;
+    margin-left: 208px; }
+  .contextMenu-HLZMGh.invertChildX-2fq7sY .contextMenu-HLZMGh {
+    margin-left: -208px; }
 
 .item-1Yvehc {
   background-color: transparent;
