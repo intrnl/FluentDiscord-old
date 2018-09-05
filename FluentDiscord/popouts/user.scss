@@ -1,0 +1,31 @@
+.userPopout-3XzG_A {
+  .theme-dark & {
+    background-color: lighten($theme-dark, 7.5%);
+  }
+  .theme-light & {
+    background-color: darken($theme-light, 7.5%);
+  }
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+}
+
+.header-2BwW8b {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
+}
+
+.body-3iLsc4 {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
+}
+
+.footer-1fjuF6 {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
+
+  border: 0;
+}

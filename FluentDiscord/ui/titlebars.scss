@@ -10,6 +10,7 @@
   padding-bottom: 1px;
   border: 1px solid $titlebar-border-color;
   border-bottom: 0;
+  z-index: 3003;
 
   .hidden-by-NativeTitlebar & {
     display: none;

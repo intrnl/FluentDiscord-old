@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: row;
 
+  .platform-win & {
+    top: 0;
+  }
+
   .content-region, .scrollerWrap-2lJEkd {
     position: unset;
   }

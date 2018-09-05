@@ -1,4 +1,29 @@
 // Main chat
+.noChannel-Z1DQK7 {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+}
+.title-2BxgL2 {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.text-GwUZgS {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+
 .chat-3bRxxu {
   .theme-dark & {
     background-color: $theme-dark-bg;

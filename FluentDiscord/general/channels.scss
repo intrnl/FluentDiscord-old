@@ -200,16 +200,16 @@
           z-index: 5;
         }
 
-        &[href="/activity"]::before {
+        &[href='/activity']::before {
           content: '';
         }
-        &[href="/library"]::before {
+        &[href='/library']::before {
           content: '';
         }
-        &[href="/store"]::before {
+        &[href='/store']::before {
           content: '';
         }
-        &[href="/channels/@me"]::before {
+        &[href='/channels/@me']::before {
           content: '';
         }
       }
@@ -283,6 +283,13 @@
   pointer-events: none;
 }
 .header-2o-2hj {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
   background-color: transparent !important;
   box-shadow: 0 0;
   cursor: default;
@@ -335,12 +342,9 @@
   }
 }
 .name-3YKhmS {
-  .theme-dark & {
-    color: $theme-light-bg;
-  }
-  .theme-light & {
-    color: $theme-dark-bg;
-  }
+  font-size: 16px;
+  line-height: normal;
+  flex: 1;
 }
 
 // Channel
