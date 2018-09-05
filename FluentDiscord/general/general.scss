@@ -59,6 +59,7 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 1;
   max-width: unset;
   margin-bottom: 10px;
@@ -80,6 +81,7 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 2;
 }
 .attribution-aTC3hS {
@@ -95,7 +97,12 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 3;
+
+  a {
+    color: inherit;
+  }
 }
 
 .problemsText-1Yx-Kl {
@@ -107,6 +114,8 @@ body {
   }
 
   font-size: 14px;
+  line-height: normal;
+  cursor: default;
   margin-bottom: 10px;
 }
 .links-3Ldd4A {

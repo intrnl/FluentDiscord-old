@@ -186,6 +186,7 @@ body {
   font-weight: 600;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 1;
   max-width: unset;
   margin-bottom: 10px; }
@@ -202,6 +203,7 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 2; }
   .theme-dark ~ .container-16j22k .quote-3aooyW {
     color: #8e8e8e; }
@@ -214,14 +216,19 @@ body {
   font-style: normal;
   line-height: normal;
   text-transform: none;
+  cursor: default;
   order: 3; }
   .theme-dark ~ .container-16j22k .attribution-aTC3hS {
     color: #8e8e8e; }
   .theme-light ~ .container-16j22k .attribution-aTC3hS {
     color: #7b7b7b; }
+  .attribution-aTC3hS a {
+    color: inherit; }
 
 .problemsText-1Yx-Kl {
   font-size: 14px;
+  line-height: normal;
+  cursor: default;
   margin-bottom: 10px; }
   .theme-dark ~ .container-16j22k .problemsText-1Yx-Kl {
     color: #8e8e8e; }
