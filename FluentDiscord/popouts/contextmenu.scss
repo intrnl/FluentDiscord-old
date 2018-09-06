@@ -4,8 +4,8 @@
     border-color: lighten($theme-dark, 7.5%);
   }
   .theme-light &, &.theme-light {
-    background-color: darken($theme-light, 7.5%);
-    border-color: darken($theme-light, 7.5%);
+    background-color: lighten($theme-light, 2.5%);
+    border-color: darken($theme-light, 20%);
   }
 
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2) !important;
@@ -41,9 +41,13 @@
 
   background-color: transparent;
   background-image: none !important;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
   white-space: nowrap;
   text-overflow: ellipsis;
   min-height: 32px;
+  width: unset;
   margin: 0;
   padding: 8px 12px 8px (12px + 16px + 12px);
   border-radius: 0;
@@ -214,6 +218,72 @@
 
     &::before {
       border-top-width: 0;
+    }
+  }
+}
+
+.container-3cGP6G {
+  .theme-dark & {
+    background-color: lighten($theme-dark, 7.5%);
+    border-color: lighten($theme-dark, 7.5%);
+  }
+  .theme-light & {
+    background-color: darken($theme-light, 7.5%);
+    border-color: darken($theme-light, 7.5%);
+  }
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2) !important;
+  display: flex;
+  flex-direction: column;
+  min-width: unset;
+  padding: 4px 0;
+  border: 1px solid transparent;
+  border-radius: 0;
+  -webkit-app-region: no-drag;
+}
+
+.item-2J1YMK {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: default;
+  height: 32px;
+  width: auto;
+  margin: 0;
+  padding: 0 12px;
+  border-radius: 0;
+
+  &:hover {
+    .theme-dark & {
+      color: $theme-light-bg;
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+      background-color: $theme-light-hover;
+    }
+
+    cursor: default;
+  }
+  &:active {
+    .theme-dark & {
+      color: $theme-light-bg;
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+      background-color: $theme-light-active;
     }
   }
 }

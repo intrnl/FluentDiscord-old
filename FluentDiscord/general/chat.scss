@@ -108,6 +108,45 @@
   display: none;
 }
 
+.divider-3gKybi {
+  text-transform: none;
+  height: auto;
+  margin: 15px 20px 8px 20px;
+
+  &::before, div {
+    display: none;
+  }
+
+  &.dividerRed-MKoLlr {
+    text-transform: none;
+
+    &::after {
+      background-color: $accent-color;
+      content: '';
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+    }
+  }
+
+  span {
+    .theme-dark & {
+      color: $theme-dark-blurb !important;
+    }
+    .theme-light & {
+      color: $theme-light-blurb !important;
+    }
+
+    background-color: transparent !important;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: normal;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 0;
+  }
+}
+
 // Member list
 .membersWrap-2h-GB4 {
   .theme-dark & {
