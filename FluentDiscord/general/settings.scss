@@ -85,6 +85,7 @@
   font-size: 14px;
   font-weight: normal;
   text-transform: none;
+  line-height: normal;
   cursor: default;
   display: flex;
   align-items: center;
@@ -205,4 +206,26 @@
 .ed-settings + .separator-gCa7yv {
   display: block;
   margin-top: 16px;
+}
+
+
+// Settings content region
+.ui-standard-sidebar-view .content-region {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+}
+
+.content-column > div,
+.content-column > div:not([class]) > div[class]:first-of-type {
+  & > .h2-2gWE-o {
+    font-size: 23px;
+    font-weight: normal;
+    line-height: normal;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
 }

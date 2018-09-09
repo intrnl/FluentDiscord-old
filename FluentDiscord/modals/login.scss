@@ -1,0 +1,83 @@
+
+.authBox-hW6HRx {
+  background-color: $theme-dark-bg;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  padding: 24px;
+  border: 1px solid $accent-color;
+  border-radius: 0;
+}
+
+.centeringWrapper-2Rs1dR {
+  text-align: left;
+
+  img.marginBottom20-32qID7 {
+    display: none;
+  }
+}
+
+.canvas-3XuBXe {
+  display: none;
+}
+
+.splashBackground-1FRCko {
+  &::before {
+    display: none;
+  }
+}
+
+.rightSplit-2US0xy {
+  opacity: 1;
+  transition: none;
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.leftSplit-1qOwnR {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: unset;
+  max-height: unset;
+  width: 100%;
+  min-width: unset;
+  max-width: unset;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.wrapper-6URcxg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title-jXR8lp {
+  color: $theme-light-bg;
+  font-size: 23px;
+  font-weight: normal;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+.subTitle-3TUjmF {
+  color: $theme-dark-blurb;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.errorMessage-3Guw2R {
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+}
