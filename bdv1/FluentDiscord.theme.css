@@ -976,7 +976,7 @@ body {
       content: ''; }
     .channel-2QD9_O a[href='/channels/@me']::before {
       content: ''; }
-  .channel-2QD9_O svg {
+  .channel-2QD9_O .linkButtonIcon-Mlm5d6 {
     display: none; }
   .channel-2QD9_O .wrapper-2F3Zv8 {
     margin-right: 12px;
@@ -1019,11 +1019,7 @@ body {
   display: block;
   height: auto;
   width: auto;
-  padding: 0 12px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  padding: 0;
   z-index: 5; }
   .close-3hZ5Ni:hover {
     opacity: 1; }
