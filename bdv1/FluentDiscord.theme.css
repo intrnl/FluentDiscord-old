@@ -990,21 +990,21 @@ body {
   .theme-light .name-2WpE7M {
     color: #000000; }
 
-.activityText-OW8WYb {
+.activity-525YDR {
   font-size: 11px;
   font-weight: 400;
   line-height: 13px; }
-  .theme-dark .activityText-OW8WYb {
+  .theme-dark .activity-525YDR {
     color: #8e8e8e; }
-  .theme-light .activityText-OW8WYb {
+  .theme-light .activity-525YDR {
     color: #7b7b7b; }
-  .activityText-OW8WYb strong {
+  .activity-525YDR strong {
     font-weight: 700; }
-  .theme-dark .selected-1HYmZZ .activityText-OW8WYb {
+  .theme-dark .selected-1HYmZZ .activity-525YDR {
     color: #ffffff; }
-  .theme-light .selected-1HYmZZ .activityText-OW8WYb {
+  .theme-light .selected-1HYmZZ .activity-525YDR {
     color: #000000; }
-  .selected-1HYmZZ .activityText-OW8WYb::before {
+  .selected-1HYmZZ .activity-525YDR::before {
     background-color: var(--accent-color);
     opacity: .55;
     content: ''; }
