@@ -782,117 +782,129 @@ body {
 .container-PNkimc {
   background-color: transparent; }
 
-.private-channels .searchBar-2_Yu-C, .private-channels .search-bar {
+.searchBar-6Kv8R2 {
   box-shadow: 0 0;
   display: flex;
-  justify-content: flex-end;
+  flex: 0 0 auto;
   height: 48px;
   padding: 0 0 0 12px; }
-  .private-channels .searchBar-2_Yu-C::before, .private-channels .search-bar::before {
+  .searchBar-6Kv8R2::before {
     font-size: 16px;
     content: 'i18n_home';
     margin-right: auto; }
-    .theme-dark .private-channels .searchBar-2_Yu-C::before, .theme-dark .private-channels .search-bar::before {
+    .theme-dark .searchBar-6Kv8R2::before {
       color: #ffffff; }
-    .theme-light .private-channels .searchBar-2_Yu-C::before, .theme-light .private-channels .search-bar::before {
+    .theme-light .searchBar-6Kv8R2::before {
       color: #000000; }
-    html[lang='bg'] .private-channels .searchBar-2_Yu-C::before, html[lang='bg'] .private-channels .search-bar::before {
+    html[lang='bg'] .searchBar-6Kv8R2::before {
       content: "У дома"; }
-    html[lang='cs'] .private-channels .searchBar-2_Yu-C::before, html[lang='cs'] .private-channels .search-bar::before {
+    html[lang='cs'] .searchBar-6Kv8R2::before {
       content: "Domov"; }
-    html[lang='da'] .private-channels .searchBar-2_Yu-C::before, html[lang='da'] .private-channels .search-bar::before {
+    html[lang='da'] .searchBar-6Kv8R2::before {
       content: "Hjem"; }
-    html[lang='de'] .private-channels .searchBar-2_Yu-C::before, html[lang='de'] .private-channels .search-bar::before {
+    html[lang='de'] .searchBar-6Kv8R2::before {
       content: "Zuhause"; }
-    html[lang='el'] .private-channels .searchBar-2_Yu-C::before, html[lang='el'] .private-channels .search-bar::before {
+    html[lang='el'] .searchBar-6Kv8R2::before {
       content: "Σπίτι"; }
-    html[lang='en-GB'] .private-channels .searchBar-2_Yu-C::before, html[lang='en-GB'] .private-channels .search-bar::before {
+    html[lang='en-GB'] .searchBar-6Kv8R2::before {
       content: "Home"; }
-    html[lang='en-US'] .private-channels .searchBar-2_Yu-C::before, html[lang='en-US'] .private-channels .search-bar::before {
+    html[lang='en-US'] .searchBar-6Kv8R2::before {
       content: "Home"; }
-    html[lang='es-ES'] .private-channels .searchBar-2_Yu-C::before, html[lang='es-ES'] .private-channels .search-bar::before {
+    html[lang='es-ES'] .searchBar-6Kv8R2::before {
       content: "Casa"; }
-    html[lang='fi'] .private-channels .searchBar-2_Yu-C::before, html[lang='fi'] .private-channels .search-bar::before {
+    html[lang='fi'] .searchBar-6Kv8R2::before {
       content: "Koti"; }
-    html[lang='fr'] .private-channels .searchBar-2_Yu-C::before, html[lang='fr'] .private-channels .search-bar::before {
+    html[lang='fr'] .searchBar-6Kv8R2::before {
       content: "Accueil"; }
-    html[lang='hr'] .private-channels .searchBar-2_Yu-C::before, html[lang='hr'] .private-channels .search-bar::before {
+    html[lang='hr'] .searchBar-6Kv8R2::before {
       content: "Dom"; }
-    html[lang='hu'] .private-channels .searchBar-2_Yu-C::before, html[lang='hu'] .private-channels .search-bar::before {
+    html[lang='hu'] .searchBar-6Kv8R2::before {
       content: "itthon"; }
-    html[lang='it'] .private-channels .searchBar-2_Yu-C::before, html[lang='it'] .private-channels .search-bar::before {
+    html[lang='it'] .searchBar-6Kv8R2::before {
       content: "Casa"; }
-    html[lang='ja'] .private-channels .searchBar-2_Yu-C::before, html[lang='ja'] .private-channels .search-bar::before {
+    html[lang='ja'] .searchBar-6Kv8R2::before {
       content: "家"; }
-    html[lang='ko'] .private-channels .searchBar-2_Yu-C::before, html[lang='ko'] .private-channels .search-bar::before {
+    html[lang='ko'] .searchBar-6Kv8R2::before {
       content: "집"; }
-    html[lang='lt'] .private-channels .searchBar-2_Yu-C::before, html[lang='lt'] .private-channels .search-bar::before {
+    html[lang='lt'] .searchBar-6Kv8R2::before {
       content: "Namai"; }
-    html[lang='nl'] .private-channels .searchBar-2_Yu-C::before, html[lang='nl'] .private-channels .search-bar::before {
+    html[lang='nl'] .searchBar-6Kv8R2::before {
       content: "Huis"; }
-    html[lang='no'] .private-channels .searchBar-2_Yu-C::before, html[lang='no'] .private-channels .search-bar::before {
+    html[lang='no'] .searchBar-6Kv8R2::before {
       content: "Hjem"; }
-    html[lang='pl'] .private-channels .searchBar-2_Yu-C::before, html[lang='pl'] .private-channels .search-bar::before {
+    html[lang='pl'] .searchBar-6Kv8R2::before {
       content: "Dom"; }
-    html[lang='pt-BR'] .private-channels .searchBar-2_Yu-C::before, html[lang='pt-BR'] .private-channels .search-bar::before {
+    html[lang='pt-BR'] .searchBar-6Kv8R2::before {
       content: "Casa"; }
-    html[lang='ro'] .private-channels .searchBar-2_Yu-C::before, html[lang='ro'] .private-channels .search-bar::before {
+    html[lang='ro'] .searchBar-6Kv8R2::before {
       content: "Acasă"; }
-    html[lang='ru'] .private-channels .searchBar-2_Yu-C::before, html[lang='ru'] .private-channels .search-bar::before {
+    html[lang='ru'] .searchBar-6Kv8R2::before {
       content: "Главная"; }
-    html[lang='sv-SE'] .private-channels .searchBar-2_Yu-C::before, html[lang='sv-SE'] .private-channels .search-bar::before {
+    html[lang='sv-SE'] .searchBar-6Kv8R2::before {
       content: "Hem"; }
-    html[lang='tr'] .private-channels .searchBar-2_Yu-C::before, html[lang='tr'] .private-channels .search-bar::before {
+    html[lang='tr'] .searchBar-6Kv8R2::before {
       content: "Ev"; }
-    html[lang='uk'] .private-channels .searchBar-2_Yu-C::before, html[lang='uk'] .private-channels .search-bar::before {
+    html[lang='uk'] .searchBar-6Kv8R2::before {
       content: "будинки"; }
-    html[lang='zh-CN'] .private-channels .searchBar-2_Yu-C::before, html[lang='zh-CN'] .private-channels .search-bar::before {
+    html[lang='zh-CN'] .searchBar-6Kv8R2::before {
       content: "家"; }
-    html[lang='zh-TW'] .private-channels .searchBar-2_Yu-C::before, html[lang='zh-TW'] .private-channels .search-bar::before {
+    html[lang='zh-TW'] .searchBar-6Kv8R2::before {
       content: "家"; }
-
-.private-channels .searchBarInner-1_Tg2R, .private-channels .search-bar-inner {
-  background-color: transparent;
-  flex: 0;
-  height: 100%;
-  width: 48px;
-  padding: 0;
-  border: 0;
-  border-radius: 0;
-  position: relative; }
-  .private-channels .searchBarInner-1_Tg2R::before, .private-channels .search-bar-inner::before {
-    font-family: 'Segoe MDL2 Assets';
-    font-size: 16px;
-    pointer-events: none;
+  .searchBar-6Kv8R2 .search-bar {
+    background-color: transparent;
+    height: 100%;
+    width: 48px;
+    border-radius: 0;
+    overflow: hidden; }
+  .searchBar-6Kv8R2 .search-bar-inner {
+    background-color: transparent;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    content: '';
+    flex: 1;
     height: 100%;
     width: 100%;
-    position: absolute; }
-    .theme-dark .private-channels .searchBarInner-1_Tg2R::before, .theme-dark .private-channels .search-bar-inner::before {
-      color: #ffffff; }
-    .theme-light .private-channels .searchBarInner-1_Tg2R::before, .theme-light .private-channels .search-bar-inner::before {
-      color: #000000; }
-  .theme-dark .private-channels .searchBarInner-1_Tg2R:hover, .theme-dark .private-channels .search-bar-inner:hover {
-    background-color: rgba(255, 255, 255, 0.1); }
-  .theme-light .private-channels .searchBarInner-1_Tg2R:hover, .theme-light .private-channels .search-bar-inner:hover {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .theme-dark .private-channels .searchBarInner-1_Tg2R:active, .theme-dark .private-channels .search-bar-inner:active {
-    background-color: rgba(0, 0, 0, 0.1); }
-  .theme-light .private-channels .searchBarInner-1_Tg2R:active, .theme-light .private-channels .search-bar-inner:active {
-    background-color: rgba(0, 0, 0, 0.2); }
-  .private-channels .searchBarInner-1_Tg2R input, .private-channels .search-bar-inner input {
-    font-size: 0;
-    cursor: default !important;
-    flex: 1;
-    height: inherit;
+    padding: 0;
+    border: 0;
+    border-radius: 0; }
+    .searchBar-6Kv8R2 .search-bar-inner::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      content: '';
+      height: 100%;
+      width: 100%;
+      position: absolute; }
+      .theme-dark .searchBar-6Kv8R2 .search-bar-inner::before {
+        color: #ffffff; }
+      .theme-light .searchBar-6Kv8R2 .search-bar-inner::before {
+        color: #000000; }
+  .searchBar-6Kv8R2 input {
+    color: transparent;
+    cursor: default;
+    height: 100%;
+    width: 100%;
     min-width: unset !important;
-    width: inherit;
     padding: 0; }
+    .searchBar-6Kv8R2 input::-webkit-input-placeholder {
+      color: transparent; }
+    .searchBar-6Kv8R2 input:-ms-input-placeholder {
+      color: transparent; }
+    .searchBar-6Kv8R2 input::-ms-input-placeholder {
+      color: transparent; }
+    .searchBar-6Kv8R2 input::placeholder {
+      color: transparent; }
+    .theme-dark .searchBar-6Kv8R2 input:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
+    .theme-light .searchBar-6Kv8R2 input:hover {
+      background-color: rgba(0, 0, 0, 0.2); }
+    .theme-dark .searchBar-6Kv8R2 input:active {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .theme-light .searchBar-6Kv8R2 input:active {
+      background-color: rgba(0, 0, 0, 0.2); }
 
-.private-channels header {
+.privateChannels-1nO12o header {
   opacity: 1;
   font-size: 12px;
   font-weight: 600;
@@ -903,99 +915,132 @@ body {
   margin-top: 17px;
   padding: 0 12px;
   box-sizing: border-box; }
-  .theme-dark .private-channels header {
+  .theme-dark .privateChannels-1nO12o header {
     color: #8e8e8e; }
-  .theme-light .private-channels header {
+  .theme-light .privateChannels-1nO12o header {
     color: #7b7b7b; }
 
-.private-channels .channel {
+.channel-2QD9_O {
+  font-size: 14px;
+  line-height: normal;
   cursor: default;
   height: 42px;
   box-sizing: border-box; }
-  .private-channels .channel.private:not([style*='opacity: 1;']) {
+  .channel-2QD9_O[style]:not([style*='opacity: 1;']) {
     display: none; }
-  .private-channels .channel::before {
+  .channel-2QD9_O::before {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     z-index: 2; }
-  .theme-dark .private-channels .channel:hover {
+  .theme-dark .channel-2QD9_O:hover {
     background-color: rgba(255, 255, 255, 0.1); }
-  .theme-light .private-channels .channel:hover {
+  .theme-light .channel-2QD9_O:hover {
     background-color: rgba(0, 0, 0, 0.1); }
-  .theme-dark .private-channels .channel:active {
+  .theme-dark .channel-2QD9_O:active {
     background-color: rgba(255, 255, 255, 0.2); }
-  .theme-light .private-channels .channel:active {
+  .theme-light .channel-2QD9_O:active {
     background-color: rgba(0, 0, 0, 0.2); }
-  .theme-dark .private-channels .channel.selected .channel-activity {
-    color: #ffffff; }
-  .theme-light .private-channels .channel.selected .channel-activity {
-    color: #000000; }
-  .private-channels .channel.selected::before {
+  .channel-2QD9_O.selected-1HYmZZ::before {
     background-color: var(--accent-color);
     opacity: .55;
     content: ''; }
-  .private-channels .channel.btn-friends a::before {
-    font-family: 'Segoe MDL2 Assets';
-    font-size: 16px;
-    text-align: center;
-    display: block;
-    width: 30px;
-    margin-right: 12px;
-    z-index: 5; }
-    .theme-dark .private-channels .channel.btn-friends a::before {
-      color: #ffffff; }
-    .theme-light .private-channels .channel.btn-friends a::before {
-      color: #000000; }
-  .private-channels .channel.btn-friends a[href='/activity']::before {
-    content: ''; }
-  .private-channels .channel.btn-friends a[href='/library']::before {
-    content: ''; }
-  .private-channels .channel.btn-friends a[href='/store']::before {
-    content: ''; }
-  .private-channels .channel.btn-friends a[href='/channels/@me']::before {
-    content: ''; }
-  .private-channels .channel a {
+  .channel-2QD9_O a {
     background-color: transparent !important;
     cursor: default;
     -webkit-user-drag: none;
     height: 100%;
     margin: 0;
     padding: 8px 12px;
+    position: relative;
     z-index: 5; }
-  .private-channels .channel svg {
-    margin-right: 12px;
-    z-index: 5; }
-  .private-channels .channel .wrapper-2F3Zv8 {
-    margin-right: 12px;
-    z-index: 5; }
-  .private-channels .channel .channel-name {
-    opacity: 1;
-    z-index: 5; }
-    .theme-dark .private-channels .channel .channel-name {
-      color: #ffffff; }
-    .theme-light .private-channels .channel .channel-name {
-      color: #000000; }
-  .private-channels .channel .channel-activity {
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 13px; }
-    .theme-dark .private-channels .channel .channel-activity {
-      color: #8e8e8e; }
-    .theme-light .private-channels .channel .channel-activity {
-      color: #7b7b7b; }
-    .private-channels .channel .channel-activity strong {
-      font-weight: 700; }
-  .private-channels .channel .channel-activity-icon-foreground {
-    fill: currentColor !important; }
-  .private-channels .channel .close {
-    z-index: 5; }
-  .private-channels .channel .wrapper-232cHJ {
-    z-index: 5; }
-  .private-channels .channel .link-button-icon {
+    .channel-2QD9_O a::before {
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      width: 30px;
+      margin-right: 12px;
+      z-index: 5; }
+      .theme-dark .channel-2QD9_O a::before {
+        color: #ffffff; }
+      .theme-light .channel-2QD9_O a::before {
+        color: #000000; }
+    .channel-2QD9_O a[href='/activity']::before {
+      content: ''; }
+    .channel-2QD9_O a[href='/library']::before {
+      content: ''; }
+    .channel-2QD9_O a[href='/store']::before {
+      content: ''; }
+    .channel-2QD9_O a[href='/channels/@me']::before {
+      content: ''; }
+  .channel-2QD9_O svg {
     display: none; }
+  .channel-2QD9_O .wrapper-2F3Zv8 {
+    margin-right: 12px;
+    z-index: 5; }
+
+.name-2WpE7M {
+  opacity: 1;
+  z-index: 5; }
+  .theme-dark .name-2WpE7M {
+    color: #ffffff; }
+  .theme-light .name-2WpE7M {
+    color: #000000; }
+
+.activityText-OW8WYb {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px; }
+  .theme-dark .activityText-OW8WYb {
+    color: #8e8e8e; }
+  .theme-light .activityText-OW8WYb {
+    color: #7b7b7b; }
+  .activityText-OW8WYb strong {
+    font-weight: 700; }
+  .theme-dark .selected-1HYmZZ .activityText-OW8WYb {
+    color: #ffffff; }
+  .theme-light .selected-1HYmZZ .activityText-OW8WYb {
+    color: #000000; }
+  .selected-1HYmZZ .activityText-OW8WYb::before {
+    background-color: var(--accent-color);
+    opacity: .55;
+    content: ''; }
+
+.activityIconForeground-3VIgI8 {
+  fill: currentColor !important; }
+
+.close-3hZ5Ni {
+  background-image: none;
+  opacity: .35;
+  visibility: hidden;
+  display: block;
+  height: auto;
+  width: auto;
+  padding: 0 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5; }
+  .close-3hZ5Ni:hover {
+    opacity: 1; }
+  .close-3hZ5Ni::after {
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 10px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: ''; }
+    .theme-dark .close-3hZ5Ni::after {
+      color: #ffffff; }
+    .theme-light .close-3hZ5Ni::after {
+      color: #000000; }
+  .channel-2QD9_O:hover .close-3hZ5Ni {
+    visibility: visible; }
 
 .container-2Rl01u {
   pointer-events: none; }

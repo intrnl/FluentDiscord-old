@@ -18,43 +18,48 @@
 }
 
 // Home header
-.private-channels {
-  .searchBar-2_Yu-C, .search-bar {
-    box-shadow: 0 0;
-    display: flex;
-    justify-content: flex-end;
-    height: 48px;
-    padding: 0 0 0 12px;
+.searchBar-6Kv8R2 {
+  box-shadow: 0 0;
+  display: flex;
+  flex: 0 0 auto;
+  height: 48px;
+  padding: 0 0 0 12px;
 
-    &::before {
-      .theme-dark & {
-        color: #ffffff;
-      }
-      .theme-light & {
-        color: #000000;
-      }
+  &::before {
+    .theme-dark & {
+      color: #ffffff;
+    }
+    .theme-light & {
+      color: #000000;
+    }
 
-      font-size: 16px;
-      content: 'i18n_home';
-      margin-right: auto;
+    font-size: 16px;
+    content: 'i18n_home';
+    margin-right: auto;
 
-      @each $id, $text in $i18n-home {
-        html[lang='#{$id}'] & {
-          content: $text;
-        }
+    @each $id, $text in $i18n-home {
+      html[lang='#{$id}'] & {
+        content: $text;
       }
     }
   }
-  .searchBarInner-1_Tg2R, .search-bar-inner {
 
+  .search-bar {
     background-color: transparent;
-    flex: 0;
     height: 100%;
     width: 48px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+  .search-bar-inner {
+    background-color: transparent;
+    display: flex;
+    flex: 1;
+    height: 100%;
+    width: 100%;
     padding: 0;
     border: 0;
     border-radius: 0;
-    position: relative;
 
     &::before {
       .theme-dark & {
@@ -75,6 +80,18 @@
       width: 100%;
       position: absolute;
     }
+  }
+  input {
+    color: transparent;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+    min-width: unset !important;
+    padding: 0;
+
+    &::placeholder {
+      color: transparent;
+    }
 
     &:hover {
       .theme-dark & {
@@ -92,21 +109,12 @@
         background-color: $theme-light-active;
       }
     }
-
-    input {
-      font-size: 0;
-      cursor: default !important;
-      flex: 1;
-      height: inherit;
-      min-width: unset !important;
-      width: inherit;
-      padding: 0;
-    }
   }
 }
 
+
 // DM channel stuff
-.private-channels {
+.privateChannels-1nO12o {
   header {
     .theme-dark & {
       color: $theme-dark-blurb;
@@ -128,153 +136,187 @@
     padding: 0 12px;
     box-sizing: border-box;
   }
+}
 
-  .channel {
+.channel-2QD9_O {
+  font-size: 14px;
+  line-height: normal;
+  cursor: default;
+  height: 42px;
+  box-sizing: border-box;
+
+  &[style]:not([style*='opacity: 1;']) {
+    display: none;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  &:hover {
+    .theme-dark & {
+      background-color: $theme-dark-hover;
+    }
+    .theme-light & {
+      background-color: $theme-light-hover;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active;
+    }
+    .theme-light & {
+      background-color: $theme-light-active;
+    }
+  }
+
+  &.selected-1HYmZZ {
+    &::before {
+      background-color: $accent-color;
+      opacity: .55;
+      content: '';
+    }
+  }
+
+  a {
+    background-color: transparent !important;
     cursor: default;
-    height: 42px;
-    box-sizing: border-box;
+    -webkit-user-drag: none;
+    height: 100%;
+    margin: 0;
+    padding: 8px 12px;
+    position: relative;
+    z-index: 5;
 
-    &.private:not([style*='opacity: 1;']) {
-      display: none;
+    &::before {
+      .theme-dark & {
+        color: #ffffff;
+      }
+      .theme-light & {
+        color: #000000;
+      }
+
+      font-family: 'Segoe MDL2 Assets';
+      font-size: 16px;
+      text-align: center;
+      display: block;
+      width: 30px;
+      margin-right: 12px;
+      z-index: 5;
+    }
+
+    &[href='/activity']::before {
+      content: '';
+    }
+    &[href='/library']::before {
+      content: '';
+    }
+    &[href='/store']::before {
+      content: '';
+    }
+    &[href='/channels/@me']::before {
+      content: '';
+    }
+  }
+
+  svg {
+    display: none;
+  }
+  .wrapper-2F3Zv8 {
+    margin-right: 12px;
+    z-index: 5;
+  }
+}
+
+.name-2WpE7M {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  opacity: 1;
+  z-index: 5;
+}
+
+.activityText-OW8WYb {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+
+  strong {
+    font-weight: 700;
+  }
+
+  .selected-1HYmZZ & {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
     }
 
     &::before {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: 2;
+      background-color: $accent-color;
+      opacity: .55;
+      content: '';
+    }
+  }
+}
+.activityIconForeground-3VIgI8 {
+  fill: currentColor !important;
+}
+
+.close-3hZ5Ni {
+  background-image: none;
+  opacity: .35;
+  visibility: hidden;
+  display: block;
+  height: auto;
+  width: auto;
+  padding: 0 12px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::after {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
     }
 
-    &:hover {
-      .theme-dark & {
-        background-color: $theme-dark-hover;
-      }
-      .theme-light & {
-        background-color: $theme-light-hover;
-      }
-    }
-    &:active {
-      .theme-dark & {
-        background-color: $theme-dark-active;
-      }
-      .theme-light & {
-        background-color: $theme-light-active;
-      }
-    }
+    font-family: 'Segoe MDL2 Assets';
+    font-size: 10px;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: '';
+  }
 
-    &.selected {
-      .channel-activity {
-        .theme-dark & {
-          color: $theme-light-bg;
-        }
-        .theme-light & {
-          color: $theme-dark-bg;
-        }
-      }
-
-      &::before {
-        background-color: $accent-color;
-        opacity: .55;
-        content: '';
-      }
-    }
-
-    &.btn-friends {
-      a {
-        &::before {
-          .theme-dark & {
-            color: #ffffff;
-          }
-          .theme-light & {
-            color: #000000;
-          }
-
-          font-family: 'Segoe MDL2 Assets';
-          font-size: 16px;
-          text-align: center;
-          display: block;
-          width: 30px;
-          margin-right: 12px;
-          z-index: 5;
-        }
-
-        &[href='/activity']::before {
-          content: '';
-        }
-        &[href='/library']::before {
-          content: '';
-        }
-        &[href='/store']::before {
-          content: '';
-        }
-        &[href='/channels/@me']::before {
-          content: '';
-        }
-      }
-    }
-
-    a {
-      background-color: transparent !important;
-      cursor: default;
-      -webkit-user-drag: none;
-      height: 100%;
-      margin: 0;
-      padding: 8px 12px;
-      z-index: 5;
-    }
-
-    svg {
-      margin-right: 12px;
-      z-index: 5;
-    }
-    .wrapper-2F3Zv8 {
-      margin-right: 12px;
-      z-index: 5;
-    }
-
-    .channel-name {
-      .theme-dark & {
-        color: $theme-light-bg;
-      }
-      .theme-light & {
-        color: $theme-dark-bg;
-      }
-
-      opacity: 1;
-      z-index: 5;
-    }
-    .channel-activity {
-      .theme-dark & {
-        color: $theme-dark-blurb;
-      }
-      .theme-light & {
-        color: $theme-light-blurb;
-      }
-
-      font-size: 11px;
-      font-weight: 400;
-      line-height: 13px;
-
-      strong {
-        font-weight: 700;
-      }
-    }
-    .channel-activity-icon-foreground {
-      fill: currentColor !important;
-    }
-
-    .close {
-      z-index: 5;
-    }
-    .wrapper-232cHJ {
-      z-index: 5;
-    }
-
-    .link-button-icon {
-      display: none;
-    }
+  .channel-2QD9_O:hover & {
+    visibility: visible;
   }
 }
 
