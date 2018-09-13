@@ -251,6 +251,30 @@ body {
 .theme-light .noChannel-Z1DQK7 {
   background-color: #ffffff; }
 
+.image-1GzsFd {
+  display: none; }
+
+.title-2BxgL2 {
+  font-size: 1.35rem;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: none;
+  margin-bottom: 1.5rem; }
+  .theme-dark .title-2BxgL2 {
+    color: #ffffff; }
+  .theme-light .title-2BxgL2 {
+    color: #000000; }
+
+.text-GwUZgS {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  margin-top: 0; }
+  .theme-dark .text-GwUZgS {
+    color: #8e8e8e; }
+  .theme-light .text-GwUZgS {
+    color: #7b7b7b; }
+
 .theme-dark .title-2BxgL2 {
   color: #ffffff; }
 
@@ -1651,6 +1675,12 @@ body, button, input, select, textarea {
     left: 0;
     right: 0;
     z-index: -1; }
+  .item-1Yvehc .hint-22uc-R {
+    opacity: 1; }
+    .theme-dark .item-1Yvehc .hint-22uc-R {
+      color: #8e8e8e; }
+    .theme-light .item-1Yvehc .hint-22uc-R {
+      color: #7b7b7b; }
 
 .itemSubMenu-1vN_Yn {
   padding-right: 36px !important; }

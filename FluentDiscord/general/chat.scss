@@ -1,4 +1,4 @@
-// Main chat
+// No channel screen
 .noChannel-Z1DQK7 {
   .theme-dark & {
     background-color: $theme-dark-bg;
@@ -7,6 +7,40 @@
     background-color: $theme-light-bg;
   }
 }
+
+.image-1GzsFd {
+  display: none;
+}
+
+.title-2BxgL2 {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  font-size: 1.35rem;
+  font-weight: normal;
+  line-height: normal;
+  text-transform: none;
+  margin-bottom: 1.5rem;
+}
+.text-GwUZgS {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: normal;
+  margin-top: 0;
+}
+
+// Main chat
 .title-2BxgL2 {
   .theme-dark & {
     color: $theme-light-bg;

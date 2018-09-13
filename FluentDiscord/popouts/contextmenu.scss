@@ -100,6 +100,17 @@
     right: 0;
     z-index: -1;
   }
+
+  .hint-22uc-R {
+    .theme-dark & {
+      color: $theme-dark-blurb;
+    }
+    .theme-light & {
+      color: $theme-light-blurb;
+    }
+
+    opacity: 1;
+  }
 }
 .itemSubMenu-1vN_Yn {
   padding-right: 36px !important;
