@@ -210,13 +210,13 @@
       z-index: 5;
     }
 
-    &[href='/activity']::before {
+    &[href^='/activity']::before {
       content: '';
     }
-    &[href='/library']::before {
+    &[href^='/library']::before {
       content: '';
     }
-    &[href='/store']::before {
+    &[href^='/store']::before {
       content: '';
     }
     &[href='/channels/@me']::before {
@@ -314,6 +314,10 @@
   .channel-2QD9_O:hover & {
     visibility: visible;
   }
+}
+
+.empty-388osJ {
+  display: none;
 }
 
 // Server header

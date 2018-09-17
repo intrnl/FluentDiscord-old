@@ -35,5 +35,32 @@
   }
 }
 
-// That's all there is to it at the moment.
-// Don't have access to the Store :shrug:
+
+.applicationStore-1pNvnv {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+
+  .headerBar-UHpsPw {
+    height: auto;
+    padding: 20px;
+
+    .flex-1xMQg5 {
+      margin: -20px 0;
+    }
+  }
+  .title-1aVOXw {
+    font-size: 21px;
+    font-weight: normal;
+    line-height: normal;
+  }
+}
+
+.headerTitle-3TLQ7P {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal;
+}

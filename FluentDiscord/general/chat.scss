@@ -181,6 +181,19 @@
   }
 }
 
+
+.message-2qRu38 {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+
+  box-shadow: 0 0 !important;
+  border-radius: 0;
+}
+
 // Member list
 .membersWrap-2h-GB4 {
   .theme-dark & {

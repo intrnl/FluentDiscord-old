@@ -378,6 +378,14 @@ body {
     .theme-light .divider-3gKybi span {
       color: #7b7b7b !important; }
 
+.message-2qRu38 {
+  box-shadow: 0 0 !important;
+  border-radius: 0; }
+  .theme-dark .message-2qRu38 {
+    background-color: #141414; }
+  .theme-light .message-2qRu38 {
+    background-color: #e6e6e6; }
+
 .membersWrap-2h-GB4 {
   margin-top: -48px;
   padding-top: 48px; }
@@ -992,11 +1000,11 @@ body {
         color: #ffffff; }
       .theme-light .channel-2QD9_O a::before {
         color: #000000; }
-    .channel-2QD9_O a[href='/activity']::before {
+    .channel-2QD9_O a[href^='/activity']::before {
       content: ''; }
-    .channel-2QD9_O a[href='/library']::before {
+    .channel-2QD9_O a[href^='/library']::before {
       content: ''; }
-    .channel-2QD9_O a[href='/store']::before {
+    .channel-2QD9_O a[href^='/store']::before {
       content: ''; }
     .channel-2QD9_O a[href='/channels/@me']::before {
       content: ''; }
@@ -1061,6 +1069,9 @@ body {
       color: #000000; }
   .channel-2QD9_O:hover .close-3hZ5Ni {
     visibility: visible; }
+
+.empty-388osJ {
+  display: none; }
 
 .container-2Rl01u {
   pointer-events: none; }
@@ -1546,12 +1557,13 @@ body, button, input, select, textarea {
     background-color: #ffffff; }
   .activityFeed-28jde9 .headerBar-UHpsPw {
     height: auto;
-    padding: 20px 20px 10px 20px; }
+    padding: 20px; }
     .activityFeed-28jde9 .headerBar-UHpsPw .flex-1xMQg5 {
-      display: none; }
+      margin: -20px 0; }
   .activityFeed-28jde9 .title-1aVOXw {
     font-size: 21px;
-    font-weight: normal; }
+    font-weight: normal;
+    line-height: normal; }
 
 .feed-1o0xmF {
   overflow-y: visible; }
@@ -1569,11 +1581,12 @@ body, button, input, select, textarea {
   height: auto;
   padding: 20px; }
   .gameLibrary-TTDw4Y .headerBar-UHpsPw .flex-1xMQg5 {
-    display: none; }
+    margin: -20px 0; }
 
 .gameLibrary-TTDw4Y .title-1aVOXw {
   font-size: 21px;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: normal; }
 
 .missingAccess-3szpts {
   display: flex;
@@ -1597,6 +1610,28 @@ body, button, input, select, textarea {
     color: #000000; }
   .missingAccess-3szpts .embedVideo-3nf0O9 {
     display: none; }
+
+.theme-dark .applicationStore-1pNvnv {
+  background-color: #000000; }
+
+.theme-light .applicationStore-1pNvnv {
+  background-color: #ffffff; }
+
+.applicationStore-1pNvnv .headerBar-UHpsPw {
+  height: auto;
+  padding: 20px; }
+  .applicationStore-1pNvnv .headerBar-UHpsPw .flex-1xMQg5 {
+    margin: -20px 0; }
+
+.applicationStore-1pNvnv .title-1aVOXw {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal; }
+
+.headerTitle-3TLQ7P {
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal; }
 
 .popout-3sVMXz {
   box-shadow: 0 0;
