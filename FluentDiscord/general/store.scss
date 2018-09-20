@@ -52,7 +52,7 @@
       margin: -20px 0;
     }
   }
-  .title-1aVOXw {
+  .title-1aVOXw, .titleName-2Z2SHw {
     font-size: 21px;
     font-weight: normal;
     line-height: normal;
@@ -75,6 +75,7 @@
   transform: none;
   opacity: 0;
   transition: opacity .2s ease;
+  margin: -3px 0;
   border-right: 1px solid transparent;
 
   &.active-MpmWDn {
@@ -266,6 +267,7 @@ h1.title-3KTIjF {
   font-size: 21px;
   font-weight: normal;
   line-height: normal;
+  cursor: default;
 }
 h3.title-3KTIjF {
   .theme-dark & {
@@ -278,6 +280,8 @@ h3.title-3KTIjF {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.14;
+  cursor: default;
+  user-select: none;
 
   .description-1AwRKJ & {
     .theme-dark & {
@@ -299,6 +303,8 @@ h4.title-3KTIjF {
   font-size: 12px;
   font-weight: 600;
   line-height: 1.33;
+  cursor: default;
+  user-select: none;
 }
 
 .divider-21LyPb {
