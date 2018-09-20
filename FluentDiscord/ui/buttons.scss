@@ -1,11 +1,11 @@
 .sizeMin-1mJd1x, .sizeSmall-2cSMqn, .sizeMedium-1AC_Sl, .sizeLarge-1vSeWK {
   .theme-dark & {
     color: #ffffff;
-    background-color: $theme-dark !important;
+    background-color: $theme-dark-button !important;
   }
   .theme-light & {
     color: #000000;
-    background-color: $theme-light !important;
+    background-color: $theme-light-button !important;
   }
 
   font-size: 14px;
@@ -26,12 +26,12 @@
 
   &:hover {
     .theme-dark & {
-      background-color: $theme-dark !important;
-      border-color: $theme-dark-active !important;
+      background-color: $theme-dark-button !important;
+      border-color: $theme-dark-button-active !important;
     }
     .theme-light & {
-      background-color: $theme-light !important;
-      border-color: $theme-light-active !important;
+      background-color: $theme-light-button !important;
+      border-color: $theme-light-button-active !important;
     }
 
     text-decoration: none;
@@ -42,11 +42,11 @@
   }
   &:active {
     .theme-dark & {
-      background-color: $theme-dark-active !important;
+      background-color: $theme-dark-button-active !important;
       border-color: transparent !important;
     }
     .theme-light & {
-      background-color: $theme-light-active !important;
+      background-color: $theme-light-button-active !important;
       border-color: transparent !important;
     }
 

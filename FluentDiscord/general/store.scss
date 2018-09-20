@@ -65,15 +65,67 @@
   line-height: normal;
 }
 .headerPurchase-2z_nch {
+  .theme-dark & {
+    border-right-color: $theme-dark-outline;
+  }
+  .theme-light & {
+    border-right-color: $theme-light-outline;
+  }
+
   transform: none;
-  transition: opacity .2s ease;
   opacity: 0;
+  transition: opacity .2s ease;
+  border-right: 1px solid transparent;
 
   &.active-MpmWDn {
     opacity: 1;
   }
 }
 
+
+// Purchase body
+.body-1CAT0- {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+
+  border-radius: 0;
+}
+.actionText-3EKWER {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.14;
+}
+.purchaseUnitOperatingSystem-cnbJPz {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 16%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 16%);
+  }
+}
+.price-4PDWNj {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 32%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 32%);
+  }
+}
+
+.shineContainer-1HHuZ1 {
+  display: none;
+}
 
 // Rating
 .card-NB61oR {
@@ -89,15 +141,13 @@
   border-radius: 0;
 }
 .score-3d03_j {
-  .theme-dark & {
-    color: $theme-light-bg;
-  }
-  .theme-light & {
-    color: $theme-dark-bg;
-  }
+  color: $theme-light-bg;
 
   &[style="flex: 0 0 auto; background-color: rgb(102, 204, 51);"] {
     background-color: #33661a !important;
+  }
+  &[style="flex: 0 0 auto; background-color: rgb(255, 204, 51);"] {
+    background-color: #80661a !important;
   }
 }
 .verdict-1JnQka {
@@ -137,8 +187,14 @@
 
   &.bubbleLeft-1yuG1e {
     &::after {
+      .theme-dark & {
+        border-top-color: $theme-dark;
+      }
+      .theme-light & {
+        border-top-color: $theme-light;
+      }
+
       border-width: 24px 22px 0 0;
-      border-color: $theme-dark transparent transparent transparent;
       right: -22px;
     }
   }
@@ -169,6 +225,10 @@
   .theme-light & {
     color: $theme-light-blurb;
   }
+
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal;
 }
 .description-1AwRKJ {
   .theme-dark & {
@@ -178,18 +238,54 @@
     color: $theme-dark-bg;
   }
 
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.4;
+
   .title-3KTIjF:first-child {
     display: none;
   }
 }
 
+.assetWrapper-2Qw_5D {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
 
+  border-radius: 0;
+}
+
+h1.title-3KTIjF {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  font-size: 21px;
+  font-weight: normal;
+  line-height: normal;
+}
 h3.title-3KTIjF {
   .theme-dark & {
     color: lighten($theme-dark-blurb, 32%);
   }
   .theme-light & {
     color: darken($theme-light-blurb, 32%);
+  }
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.14;
+
+  .description-1AwRKJ & {
+    .theme-dark & {
+      color: lighten($theme-dark-blurb, 16%);
+    }
+    .theme-light & {
+      color: darken($theme-light-blurb, 16%);
+    }
   }
 }
 h4.title-3KTIjF {
@@ -199,9 +295,38 @@ h4.title-3KTIjF {
   .theme-light & {
     color: darken($theme-light-blurb, 8%);
   }
+
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+}
+
+.divider-21LyPb {
+  .theme-dark & {
+    border-bottom-color: darken($theme-dark-outline, 32%);
+  }
+  .theme-light & {
+    border-bottom-color: lighten($theme-light-outline, 32%);
+  }
+
+  border: 0;
+  border-bottom: 1px solid transparent;
 }
 
 
+// Server invite
+.content-35aVm0 {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+
+  border-radius: 0;
+}
+
+// Side info
 .row-1bU71H {
   .theme-dark & {
     color: $theme-light-bg;
@@ -230,6 +355,7 @@ h4.title-3KTIjF {
   }
 }
 
+// Requirements
 .requirements-dEriwm {
   .theme-dark & {
     color: $theme-light-bg;
@@ -245,4 +371,18 @@ h4.title-3KTIjF {
   .theme-light & {
     color: $theme-light-blurb;
   }
+}
+
+// Legal stuff
+.content-3FEARf {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 16%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 16%);
+  }
+
+  font-size: 13px;
+  font-weight: normal;
+  line-height: normal;
 }

@@ -27,6 +27,9 @@ $theme-dark-scrollbar-button-color: #cdcdcd;
 $theme-dark-scrollbar-button-active-color: #444444;
 $theme-dark-scrollbar-overlay: #858585;
 
+$theme-dark-button: rgba(#fff, .1);
+$theme-dark-button-active: rgba(#fff, .3);
+
 // Light theme
 $theme-light: #e6e6e6;
 $theme-light-hover: rgba(#000, .1);
@@ -44,3 +47,6 @@ $theme-light-scrollbar-button-active: #5d5d5d;
 $theme-light-scrollbar-button-color: #565656;
 $theme-light-scrollbar-button-active-color: #dbdbdb;
 $theme-light-scrollbar-overlay: #7a7a7a;
+
+$theme-light-button: rgba(#000, .1);
+$theme-light-button-active: rgba(#000, .3);
