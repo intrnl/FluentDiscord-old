@@ -64,3 +64,185 @@
   font-weight: normal;
   line-height: normal;
 }
+.headerPurchase-2z_nch {
+  transform: none;
+  transition: opacity .2s ease;
+  opacity: 0;
+
+  &.active-MpmWDn {
+    opacity: 1;
+  }
+}
+
+
+// Rating
+.card-NB61oR {
+  .theme-dark & {
+    background-color: $theme-dark;
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+    color: $theme-light-blurb;
+  }
+
+  border-radius: 0;
+}
+.score-3d03_j {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  &[style="flex: 0 0 auto; background-color: rgb(102, 204, 51);"] {
+    background-color: #33661a !important;
+  }
+}
+.verdict-1JnQka {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+
+
+// Review
+.bubble-1gL_TN {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+
+  border-radius: 0;
+
+  &::after {
+    transform: none;
+    height: auto;
+    width: auto;
+    border-style: solid;
+    border-width: 0;
+    border-color: transparent;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &.bubbleLeft-1yuG1e {
+    &::after {
+      border-width: 24px 22px 0 0;
+      border-color: $theme-dark transparent transparent transparent;
+      right: -22px;
+    }
+  }
+}
+.reviewContent-2sGcOc {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 24%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 24%);
+  }
+}
+.reviewAuthor-h_z6TM {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+
+
+// Description
+.blurb-1iBKJy {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+.description-1AwRKJ {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  .title-3KTIjF:first-child {
+    display: none;
+  }
+}
+
+
+h3.title-3KTIjF {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 32%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 32%);
+  }
+}
+h4.title-3KTIjF {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 8%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 8%);
+  }
+}
+
+
+.row-1bU71H {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  border-bottom: 0;
+}
+
+.info-1Emy1X {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.label-13UUcd {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+
+.requirements-dEriwm {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.requirementKey-14DT2D {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}

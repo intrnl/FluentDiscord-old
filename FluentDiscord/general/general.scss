@@ -15,6 +15,15 @@ body {
   border-radius: 0;
 }
 
+.container-2lgZY8 {
+  .theme-dark & {
+    background-color: $theme-dark-bg;
+  }
+  .theme-light & {
+    background-color: $theme-light-bg;
+  }
+}
+
 // BDv1 blue
 .bd-blue {
   --accent-color: #3e82e5;
