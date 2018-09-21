@@ -3,7 +3,7 @@
     color: $theme-light-bg;
     border-color: $theme-dark-hover;
   }
-  .theme-light {
+  .theme-light & {
     color: $theme-dark-bg;
     border-color: $theme-light-hover;
   }

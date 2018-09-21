@@ -1735,6 +1735,15 @@ body, button, input, select, textarea {
 .shineContainer-1HHuZ1 {
   display: none; }
 
+.headerFancy-1AcCLF {
+  border-radius: 0; }
+  .theme-dark .headerFancy-1AcCLF, .theme-light .headerFancy-1AcCLF {
+    background-color: #7289da;
+    background-image: none; }
+
+.premiumHeaderIcon-bTc_nQ {
+  margin-bottom: -1px; }
+
 .card-NB61oR {
   border-radius: 0; }
   .theme-dark .card-NB61oR {
@@ -2717,7 +2726,7 @@ h4.title-3KTIjF {
   .theme-dark .input-cIJ7To {
     color: #ffffff;
     border-color: rgba(255, 255, 255, 0.1); }
-  .input-cIJ7To .theme-light {
+  .theme-light .input-cIJ7To {
     color: #000000;
     border-color: rgba(0, 0, 0, 0.1); }
   .theme-dark .input-cIJ7To:hover {
