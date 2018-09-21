@@ -1,10 +1,10 @@
 .sizeMin-1mJd1x, .sizeSmall-2cSMqn, .sizeMedium-1AC_Sl, .sizeLarge-1vSeWK {
   .theme-dark & {
-    color: #ffffff;
+    color: $theme-light-bg !important;
     background-color: $theme-dark-button !important;
   }
   .theme-light & {
-    color: #000000;
+    color: $theme-dark-bg !important;
     background-color: $theme-light-button !important;
   }
 

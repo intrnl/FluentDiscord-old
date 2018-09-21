@@ -66,9 +66,11 @@
 }
 .headerPurchase-2z_nch {
   .theme-dark & {
+    color: $theme-light-bg;
     border-right-color: $theme-dark-outline;
   }
   .theme-light & {
+    color: $theme-dark-bg;
     border-right-color: $theme-light-outline;
   }
 
@@ -80,6 +82,73 @@
 
   &.active-MpmWDn {
     opacity: 1;
+  }
+}
+
+.back-v_LyjN {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  opacity: 1;
+  margin-bottom: -2px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+// Carousel
+.carouselItem-3UIHqv {
+  .theme-dark & {
+    background-color: $theme-dark;
+  }
+  .theme-light & {
+    background-color: $theme-light;
+  }
+}
+.itemBackground-1jfD8p {
+  opacity: .25;
+
+  &::before {
+    display: none;
+  }
+}
+.featuredGame-ia1yht {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  user-select: none;
+  cursor: default;
+}
+.title-RcZEhJ {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  margin-top: 2px;
+  margin-bottom: 8px;
+}
+.itemDescription-1_B4j2 {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
   }
 }
 
@@ -143,6 +212,9 @@
 }
 .score-3d03_j {
   color: $theme-light-bg;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
 
   &[style="flex: 0 0 auto; background-color: rgb(102, 204, 51);"] {
     background-color: #33661a !important;
@@ -158,6 +230,10 @@
   .theme-light & {
     color: $theme-dark-bg;
   }
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
 }
 
 
@@ -330,6 +406,34 @@ h4.title-3KTIjF {
   }
 
   border-radius: 0;
+}
+
+.guildIcon-3du51s {
+  border-radius: 50%;
+}
+.name-3TBxUq {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+.memberInfo-1TAaKC {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  font-size: 12px;
+  font-weight: normal;
+  line-height: normal;
 }
 
 // Side info
