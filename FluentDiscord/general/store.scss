@@ -153,29 +153,80 @@
 }
 
 
-// Purchase body
-.body-1CAT0- {
+// Tile popout
+.popout-2xBvMR {
   .theme-dark & {
-    background-color: $theme-dark;
+    background-color: lighten($theme-dark, 5%);
+    border-color: $theme-dark-outline;
   }
   .theme-light & {
-    background-color: $theme-light;
+    background-color: darken($theme-light, 5%);
+    border-color: $theme-light-outline;
   }
 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
   border-radius: 0;
 }
-.actionText-3EKWER {
+
+.popoutSocialInfo-1qhqSY {
+  .theme-dark & {
+    border-bottom-color: $theme-dark-outline;
+  }
+  .theme-light & {
+    border-bottom-color: $theme-light-outline;
+  }
+
+  border-bottom: 1px solid transparent;
+}
+.description-2Ifi6N {
   .theme-dark & {
     color: $theme-dark-blurb;
   }
   .theme-light & {
     color: $theme-light-blurb;
   }
-
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.14;
 }
+.username-2gp_Xw {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+
+
+// Purchase body
+.warning-2DA6zZ {
+  .theme-dark & {
+    border-top-color: darken($theme-dark-outline, 32%);
+  }
+  .theme-light & {
+    border-top-color: lighten($theme-light-outline, 32%);
+  }
+
+  margin-top: 20px;
+  padding: 0;
+  padding-top: 20px;
+  border: 0;
+  border-top: 1px solid transparent;
+}
+
+.title-3zfWaO {
+  cursor: default;
+}
+.description-Gcecy9 {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 24%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 24%);
+  }
+
+  cursor: default;
+}
+
 .purchaseUnitOperatingSystem-cnbJPz {
   .theme-dark & {
     color: lighten($theme-dark-blurb, 16%);
@@ -184,49 +235,35 @@
     color: darken($theme-light-blurb, 16%);
   }
 }
-.price-4PDWNj {
-  .theme-dark & {
-    color: lighten($theme-dark-blurb, 32%);
-  }
-  .theme-light & {
-    color: darken($theme-light-blurb, 32%);
-  }
-}
-
-.shineContainer-1HHuZ1 {
-  display: none;
-}
-
-.headerFancy-1AcCLF {
-  .theme-dark &, .theme-light & {
-    background-color: #7289da;
-    background-image: none;
-  }
-
-  border-radius: 0;
-}
-.premiumHeaderIcon-bTc_nQ {
-  margin-bottom: -1px;
-}
 
 // Rating
 .card-NB61oR {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
   .theme-dark & {
-    background-color: $theme-dark;
     color: $theme-dark-blurb;
   }
   .theme-light & {
-    background-color: $theme-light;
     color: $theme-light-blurb;
   }
 
+  margin-top: 12px;
   border-radius: 0;
 }
+.body-Y9XnCo {
+  margin-left: 15px !important;
+  padding: 0;
+}
+
 .score-3d03_j {
   color: $theme-light-bg;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   line-height: normal;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 
   &[style="flex: 0 0 auto; background-color: rgb(102, 204, 51);"] {
     background-color: #33661a !important;
@@ -248,9 +285,13 @@
   line-height: 20px;
 }
 
+.icon-3kOcCa {
+  display: none;
+}
+
 
 // Review
-.bubble-1gL_TN {
+.whyYouMightLikeIt-2zZIIj {
   .theme-dark & {
     background-color: $theme-dark;
   }
@@ -258,45 +299,49 @@
     background-color: $theme-light;
   }
 
+  margin-bottom: 30px;
   border-radius: 0;
-
-  &::after {
-    transform: none;
-    height: auto;
-    width: auto;
-    border-style: solid;
-    border-width: 0;
-    border-color: transparent;
-    border-radius: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  &.bubbleLeft-1yuG1e {
-    &::after {
-      .theme-dark & {
-        border-top-color: $theme-dark;
-      }
-      .theme-light & {
-        border-top-color: $theme-light;
-      }
-
-      border-width: 24px 22px 0 0;
-      right: -22px;
-    }
-  }
 }
-.reviewContent-2sGcOc {
+
+.header-3HFF3R {
   .theme-dark & {
-    color: lighten($theme-dark-blurb, 24%);
+    color: $theme-light-bg;
   }
   .theme-light & {
-    color: darken($theme-light-blurb, 24%);
+    color: $theme-dark-bg;
   }
 }
-.reviewAuthor-h_z6TM {
+.section-7tu4tu {
+  .theme-dark & {
+    border-bottom-color: darken($theme-dark-outline, 32%);
+  }
+  .theme-light & {
+    border-bottom-color: lighten($theme-light-outline, 32%);
+  }
+}
+
+.iconCircle-1dlYo0 {
+  .theme-dark & {
+    background-color: lighten($theme-dark, 16%);
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    background-color: darken($theme-light, 16%);
+    color: $theme-dark-bg;
+  }
+}
+.reviewCircle-1o-MOB {
+  color: $theme-light-bg;
+
+  &[style="background-color: rgb(102, 204, 51);"] {
+    background-color: #33661a !important;
+  }
+  &[style="background-color: rgb(255, 204, 51);"] {
+    background-color: #80661a !important;
+  }
+}
+
+.smallHeader-2h-9-U {
   .theme-dark & {
     color: $theme-dark-blurb;
   }
@@ -304,9 +349,48 @@
     color: $theme-light-blurb;
   }
 }
+.text-1Z3P6i {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+
+.label-2zCFFs {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+}
+.username-Ga9-tM {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+.notes-3hkVr0 {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 24%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 24%);
+  }
+
+  font-style: normal;
+}
 
 
 // Description
+.whyYouMightLikeIt-2zZIIj + h1.title-3KTIjF {
+  display: none;
+}
+
 .blurb-1iBKJy {
   .theme-dark & {
     color: $theme-dark-blurb;
@@ -449,7 +533,38 @@ h4.title-3KTIjF {
 }
 
 // Side info
+.bodySection-jqkkIP {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
+
+  padding: 0;
+  border-top: 0;
+
+  &:first-child {
+    .theme-dark & {
+      background-color: $theme-dark;
+    }
+    .theme-light & {
+      background-color: $theme-light;
+    }
+
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  &:first-child, &:last-child {
+    border-radius: 0;
+  }
+  &:empty {
+    display: none;
+  }
+}
+
 .row-1bU71H {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
+  }
   .theme-dark & {
     color: $theme-light-bg;
   }
@@ -457,7 +572,18 @@ h4.title-3KTIjF {
     color: $theme-dark-bg;
   }
 
-  border-bottom: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+
+  &:first-of-type {
+    margin-top: 10px;
+  }
+}
+
+.checkmarkIcon-2EnYwn {
+  display: none;
 }
 
 .info-1Emy1X {

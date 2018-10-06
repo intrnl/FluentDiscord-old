@@ -144,6 +144,9 @@
 
 .divider-3gKybi {
   text-transform: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   height: auto;
   margin: 15px 20px 8px 20px;
 
@@ -181,6 +184,12 @@
   }
 }
 
+.dividerContent-2L12VI {
+  &::before, &::after {
+    display: none;
+  }
+}
+
 
 .message-2qRu38 {
   .theme-dark & {
@@ -192,6 +201,29 @@
 
   box-shadow: 0 0 !important;
   border-radius: 0;
+}
+
+// Local bot
+.isLocalBot-38G0P0 {
+  .theme-dark &, .theme-light & {
+    background-image: none;
+    box-shadow: none;
+    border-color: transparent;
+  }
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
+  }
+
+  border: 0;
+
+  &.containerCozy-jafyvG {
+    .theme-dark &, .theme-light & {
+      padding: 10px 0;
+    }
+  }
 }
 
 // Member list

@@ -2,5 +2,9 @@
   margin: 1px;
   margin-top: 31px;
 
-  .hidden-by-NativeTitlebar & { margin: 0; }
+  .hidden-by-NativeTitlebar &,
+  .platform-web ~ div &,
+  .platform-linux ~ div & {
+    margin: 0;
+  }
 }

@@ -9,7 +9,7 @@ body {
   border-top: 0;
 
   .hidden-by-NativeTitlebar & { border: 0; }
-  &.platform-web { border: 0; }
+  &.platform-web, &.platform-linux { border: 0; }
 }
 .base-3dtUhz {
   border-radius: 0;
