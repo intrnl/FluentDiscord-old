@@ -150,6 +150,10 @@
   height: auto;
   margin: 15px 20px 8px 20px;
 
+  & + & {
+    display: flex;
+  }
+
   &::before, div {
     display: none;
   }
