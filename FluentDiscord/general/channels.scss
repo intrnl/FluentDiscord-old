@@ -243,6 +243,16 @@
 
   opacity: 1;
   z-index: 5;
+
+  .channel-2QD9_O.selected-1HYmZZ &, 
+  .channel-2QD9_O:hover & {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+  }
 }
 
 .activity-525YDR {

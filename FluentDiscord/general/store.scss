@@ -67,18 +67,15 @@
 .headerPurchase-2z_nch {
   .theme-dark & {
     color: $theme-light-bg;
-    border-right-color: $theme-dark-outline;
   }
   .theme-light & {
     color: $theme-dark-bg;
-    border-right-color: $theme-light-outline;
   }
 
   transform: none;
   opacity: 0;
   transition: opacity .2s ease;
   margin: -3px 0;
-  border-right: 1px solid transparent;
 
   &.active-MpmWDn {
     opacity: 1;
@@ -236,6 +233,25 @@
   }
 }
 
+.actionText-3EKWER {
+  .theme-dark & {
+    color: lighten($theme-dark-blurb, 16%);
+  }
+  .theme-light & {
+    color: darken($theme-light-blurb, 16%);
+  }
+}
+
+.price-4PDWNj {
+  .theme-dark & {
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    color: $theme-dark-bg;
+  }
+}
+
+
 // Rating
 .card-NB61oR {
   .theme-dark &, .theme-light & {
@@ -250,6 +266,14 @@
 
   margin-top: 12px;
   border-radius: 0;
+
+  .clickableWrapper-1gXS_1 & {
+    &:hover {
+      .theme-dark &, .theme-light & {
+        box-shadow: 0 0;
+      }
+    }
+  }
 }
 .body-Y9XnCo {
   margin-left: 15px !important;
@@ -533,6 +557,31 @@ h4.title-3KTIjF {
 }
 
 // Side info
+.entitledHeader-3LRNDT {
+  .theme-dark & {
+    background-color: lighten($theme-dark, 5%);
+    color: $theme-light-bg;
+  }
+  .theme-light & {
+    background-color: darken($theme-light, 5%);
+    color: $theme-dark-bg;
+  }
+
+  pointer-events: none;
+
+  &:hover {
+    .theme-dark & {
+      color: $theme-light-bg;
+    }
+    .theme-light & {
+      color: $theme-dark-bg;
+    }
+  }
+
+  &:first-child {
+    border-radius: 0;
+  }
+}
 .bodySection-jqkkIP {
   .theme-dark &, .theme-light & {
     background-color: transparent;
@@ -541,7 +590,7 @@ h4.title-3KTIjF {
   padding: 0;
   border-top: 0;
 
-  &:first-child {
+  &:first-child, .entitledHeader-3LRNDT:first-child + & {
     .theme-dark & {
       background-color: $theme-dark;
     }
@@ -579,6 +628,15 @@ h4.title-3KTIjF {
 
   &:first-of-type {
     margin-top: 10px;
+  }
+}
+
+.featureIcon-1f78KU {
+  .theme-dark & {
+    color: $theme-dark-blurb;
+  }
+  .theme-light & {
+    color: $theme-light-blurb;
   }
 }
 
