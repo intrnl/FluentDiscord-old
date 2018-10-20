@@ -1,78 +1,48 @@
-.ui-standard-sidebar-view {
-  display: flex;
-  flex-direction: row;
-
-  .platform-win & {
-    top: 0;
-  }
-
-  .content-region, .scrollerWrap-2lJEkd {
-    position: unset;
-  }
-
-  .tools, .content-region-scroller .tools,
-  .tools-container, .content-region-scroller .tools-container {
-    width: auto;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .custom-column {
-    position: relative;
-    max-width: unset;
-    margin-right: -71px;
-  }
-}
-
-.closeButton-1tv5uR {
-  background-color: transparent !important;
-  cursor: default;
-  height: 100%;
-  width: $guilds-width;
-  border: 0;
-  border-radius: 0;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -$guilds-width;
-  z-index: 1001;
-
-  svg {
-    display: none;
-  }
-}
-.keybind-KpFkfr {
-  display: none;
-}
-
-.ui-standard-sidebar-view .sidebar-region {
+.sidebarRegion-VFTUkN {
   .theme-dark & {
     background-color: $theme-dark;
+    color: $theme-light-bg;
   }
   .theme-light & {
     background-color: $theme-light;
+    color: $theme-dark-bg;
   }
 
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 0;
-  justify-content: flex-start;
-}
-.ui-standard-sidebar-view .sidebar-region .sidebar-region-scroller {
-  justify-content: flex-start;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
 
-  .sidebar {
-    width: 100%;
-    padding: 0 0 84px 0;
+  &::before {
+    content: 'Settings';
+    display: flex;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px;
   }
 }
+.sidebarRegionScroller-3MXcoP {
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+}
+.sidebar-CFHs9e {
+  flex: 1;
+  padding: 0;
+  width: auto;
+}
 
-.side-8zPYf6 .header-2RyJ0Y, .ui-tab-bar-header {
+.side-8zPYf6 .separator-gCa7yv {
+  height: 0;
+  margin-top: 16px;
+  margin-bottom: 0;
+
+  & + .header-2RyJ0Y {
+    margin-top: 0;
+  }
+}
+.side-8zPYf6 .header-2RyJ0Y {
   .theme-dark & {
     background-color: $theme-dark;
     color: $theme-dark-blurb;
@@ -84,43 +54,23 @@
 
   font-size: 14px;
   font-weight: normal;
-  text-transform: none;
   line-height: normal;
-  cursor: default;
+  text-transform: none;
   display: flex;
   align-items: center;
   height: 48px;
   margin-top: 16px;
-  padding: 0 16px;
+  padding: 0 12px;
   position: sticky;
   top: 0;
-  z-index: 6;
-
-  &:first-child {
-    margin-top: 0;
-  }
+  z-index: 5;
 }
-.category-2ux-7P {
-  opacity: .8;
-  font-size: inherit;
-  font-weight: normal;
-  margin-left: 12px;
-}
-
-.side-8zPYf6 .item-PXvHYJ, .ui-tab-bar-item {
+.side-8zPYf6 .item-PXvHYJ {
   .theme-dark & {
-    color: #ffffff;
-
-    &:hover {
-      color: #ffffff;
-    }
+    color: $theme-light-bg !important;
   }
   .theme-light & {
-    color: #000000;
-
-    &:hover {
-      color: #000000;
-    }
+    color: $theme-dark-bg !important;
   }
 
   cursor: default;
@@ -128,104 +78,87 @@
   align-items: center;
   height: 48px;
   margin: 0;
-  padding: 0 16px;
+  padding: 0 12px;
   border-radius: 0;
+  position: relative;
+  z-index: 3;
 
-  &::after {
-    background-color: transparent;
-    transform: translateY(-50%);
-    transition: none;
-    pointer-events: none;
-    content: '';
-    display: block;
-    width: 5px;
-    margin-top: 0;
-    border-radius: 0;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    z-index: 3;
-  }
-  &.itemSelected-1qLhcL, &.selected {
-    color: $accent-color !important;
-    background-color: transparent !important;
-
-    &::after {
-      background-color: $accent-color;
-      opacity: 1;
-      height: 25px;
-    }
-  }
-
-  &.selected-3s45Ha, &.notSelected-1N1G5p, &.selected {
+  &:hover {
     .theme-dark & {
-      &:hover {
-        background-color: $theme-dark-hover !important;
-      }
-      &:active {
-        background-color: $theme-dark-active !important;
-      }
+      background-color: $theme-dark-hover !important;
+      color: $theme-light-bg !important;
     }
     .theme-light & {
-      &:hover {
-        background-color: $theme-light-hover !important;
-      }
-      &:active {
-        background-color: $theme-light-active !important;
-      }
+      background-color: $theme-light-hover !important;
+      color: $theme-dark-bg !important;
+    }
+  }
+  &:active {
+    .theme-dark & {
+      background-color: $theme-dark-active !important;
+    }
+    .theme-light & {
+      background-color: $theme-light-active !important;
     }
   }
 
-  // Icons
-  &::before {
-    font-family: 'Segoe MDL2 Assets';
-    font-size: 16px;
-    font-weight: normal;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px;
+  &.selected-3s45Ha {
+    background-color: transparent !important;
+
+    &::before {
+      background-color: $accent-color;
+      transform: translateY(-50%);
+      content: '';
+      height: 25px;
+      width: 5px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
   }
 }
 
-.side-8zPYf6 .separator-gCa7yv, .ui-tab-bar-separator {
-  background-color: transparent !important;
 
+.contentRegion-3nDuYy {
+  position: unset;
+}
+.contentRegionScrollerWrap-3YZXdm {
+  position: unset;
+}
+
+
+.toolsContainer-1edPuj {
+  position: unset;
+
+  .tools-3-3s-N {
+    position: unset;
+  }
+}
+.keybind-KpFkfr {
   display: none;
-  height: 0;
-
-  margin: 0;
 }
-
-.socialLinks-3jqNFy {
-  padding: 10px 16px;
-}
-
-// EnhancedDiscord
-.ed-settings + .separator-gCa7yv {
-  display: block;
-  margin-top: 16px;
-}
-
-
-// Settings content region
-.ui-standard-sidebar-view .content-region {
-  .theme-dark & {
-    background-color: $theme-dark-bg;
+.closeButton-1tv5uR {
+  .theme-dark &, .theme-light & {
+    background-color: transparent;
   }
-  .theme-light & {
-    background-color: $theme-light-bg;
-  }
-}
 
-.content-column > div,
-.content-column > div:not([class]) > div[class]:first-of-type {
-  & > .h2-2gWE-o {
-    font-size: 23px;
-    font-weight: normal;
-    line-height: normal;
-    text-transform: none;
-    margin-bottom: 20px;
+  cursor: default;
+  height: auto;
+  width: $guilds-width;
+  border: 0;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -48px;
+
+  &:hover {
+    .theme-dark &, .theme-light & {
+      background-color: transparent;
+    }
+  }
+
+  svg {
+    display: none;
   }
 }
